@@ -1,0 +1,37 @@
+Importing C-Shapes file
+
+Download most recent cshapes file
+http://downloads.weidmann.ws/cshapes/Shapefiles/
+
+use pgShapeUploader to upload the most current file using SRID 4326
+
+---
+in cshapes0.4-2 the cutoff date is 6/30/2012
+*note that this will create data that may have some accuracies if there have been country changes between the cshapes cutoff date and the iwp date
+update these records to current year. E.G. for 2013 update to 
+COWEYEAR=2013
+COWEMONTH=12
+COWEDAY=31
+
+UPDATE cshapes SET COWEYEAR=2013, COWEMONTH=12, COWEDAY=31
+WHERE COWEYEAR = 2012 AND COWEMONTH=6 AND COWEDAY=30
+
+Update invalid date (-1) on Yugoslavia COW dates to values in corresponding GW Dates columns
+
+---
+Add 2 date columns to the end of the cshapes table
+cowsdate
+cowedate
+
+ALTER TABLE cshapes ADD COLUMN cowsdate date;
+ALTER TABLE cshapes ADD COLUMN cowedate date;
+
+update these to date formed by individual columns
+
+UPDATE cshapes SET cowsdate = to_date(cowsyear::text||'-'||cowsmonth::text||'-'||cowsday::text,'YYYY-MM-DD');
+UPDATE cshapes SET cowedate = to_date(coweyear::text||'-'||cowemonth::text||'-'||coweday::text,'YYYY-MM-DD');
+
+to_date()
+
+SELECT to_char(mydate, 'YYYY-MM') || '-25' AS text_value, 
+date_trunc('MONTH', mydate)::date + 24 AS date_value

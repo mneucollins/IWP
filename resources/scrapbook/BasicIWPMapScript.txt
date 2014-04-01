@@ -1,0 +1,22 @@
+        <script type="text/javascript">
+            var map;
+            
+            function init() {
+                var bounds = (new OpenLayers.Bounds(-173.25,-75.15,186.75,104.85));
+                map = new OpenLayers.Map('map_container', 
+                            {
+                                projection:﻿'EPSG:4326',
+                                fractionalZoom:true,
+                                maxExtent:bounds                       
+                            });
+                            
+                var wms = new OpenLayers.Layer.WMS(
+                    'C Shapes',
+                    'http://192.168.56.10:8080/geoserver/IWP/wms?service=WMS&version=1.1.0&request=GetMap&layers=IWP:cshapes',
+                    {layers: 'basic'}
+                );
+                map.addLayer(wms);
+                map.zoomToMaxExtent();
+             }              
+           
+           </script>

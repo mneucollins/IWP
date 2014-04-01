@@ -1,0 +1,374 @@
+body
+{
+    background-color: #fff;
+    margin: 20px;
+    font: 13px/20px normal Helvetica, Arial, sans-serif;
+    color: #4F5155;
+}
+#container
+{
+    margin: 10px;
+    border: 1px solid #D0D0D0;
+    -webkit-box-shadow: 0 0 8px #D0D0D0;
+    width: 1260px;
+}
+
+#topsection h1
+{
+    margin: 0;
+    padding-top: 15px;
+}
+
+#contentwrapper
+{
+    float: left;
+    width: 100%;
+    border-top: 1px solid #000;
+    overflow: hidden;
+    width: 1260px;
+}
+
+#leftcolumn
+{
+    float: left;
+    width: 240px;
+    /*Width of left column*/
+    /*margin-left: -100%;*/
+    background: #CCCCCC;
+    padding:10px;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+.no_marker {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;	
+}
+
+#contentcolumn
+{
+    float: left;
+    margin: 10px auto;
+    width: 1000px
+}
+
+#footer
+{
+    clear: left;
+    width: 100%;
+    background: black;
+    color: #FFF;
+    text-align: center;
+    padding: 4px 0 4px 120px;
+}
+
+#footer a { color: #FFFF80; }
+
+.innertube
+{
+    margin: 10px;
+    /*Margins for inner DIV inside each column (to provide padding)*/
+    margin-top: 0;
+}
+
+#map {
+    height: 600px;
+    margin-left: 10px;
+    margin-right: auto;
+    width: 990px;
+    z-index: 0;
+}
+
+/*#map { height: 180px; }*/
+/* from codeigniter */
+::selection
+{
+    background-color: #E13300;
+    color: white;
+}
+
+::moz-selection
+{
+    background-color: #E13300;
+    color: white;
+}
+
+::webkit-selection
+{
+    background-color: #E13300;
+    color: white;
+}
+
+
+a
+{
+    color: #003399;
+    background-color: transparent;
+    font-weight: normal;
+}
+
+h1
+{
+    color: #444;
+    background-color: transparent;
+    border-bottom: 1px solid #D0D0D0;
+    font-size: 19px;
+    font-weight: normal;
+    margin: 0 0 14px 0;
+    padding: 14px 15px 10px 15px;
+}
+
+code
+{
+    font-family: Consolas, Monaco, Courier New, Courier, monospace;
+    font-size: 12px;
+    background-color: #f9f9f9;
+    border: 1px solid #D0D0D0;
+    color: #002166;
+    display: block;
+    margin: 14px 0 14px 0;
+    padding: 12px 10px 12px 10px;
+}
+
+
+p.footer
+{
+    text-align: right;
+    font-size: 11px;
+    border-top: 1px solid #D0D0D0;
+    line-height: 32px;
+    padding: 0 10px 0 10px;
+    margin: 20px 0 0 0;
+}
+
+/* Page Layout: header, fixed column left, fluid column right */
+
+#topsection
+{
+    background: #EAEAEA;
+    height: 90px;
+    postion: relative;
+    /*relative position makes divs within this div position themselves relative to this div*/
+    padding-top: 10px;
+}
+
+
+#logo {
+    float:left;
+    width:200px;
+    margin-left: auto;
+    margin-right:auto;
+    text-align: center;
+}
+.tagline {
+    font-size: 14.5px;
+    font-weight: bold;
+    font-variant:small-caps;
+    text-align: center;
+}
+.italic {
+    font-style: italic;
+}
+
+#main_menu {
+    float: left;
+    padding-left: 10px;
+    top: 45px;
+}
+
+#authorlist
+{
+    float: left;
+    width: 100px;
+    position: : relative;
+}
+
+
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/final_drop.html
+Copyright (c) Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+.top_menu
+{
+    /*width: 745px;*/
+    height: 32px;
+    position: relative;
+    z-index: 2000;
+    border-right: 1px solid #585752;
+    font-family: arial, sans-serif;
+}
+
+/* remove all the bullets, borders and padding from the default list styling */
+.top_menu ul
+{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.top_menu ul ul { 
+/*    width: 160px;    */
+}
+
+/* float the list to make it horizontal and a relative positon so that you can control the dropdown menu positon */
+.top_menu li
+{
+    float: left;
+/*    width: 160px;*/
+    position: relative;
+
+}
+
+/* style the links for the top level */
+.top_menu a, .top_menu a:visited
+{
+    display: block;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    width: 151px;
+    height: 30px;
+    border: 1px solid #585752;
+    border-width: 1px 0 1px 1px;
+    background-color: #a6a299;
+    padding-left: 10px;
+    line-height: 29px;
+    font-weight: bold;
+
+}
+
+/*Style the top_menu drop downs
+/* style the second level background */
+.top_menu ul ul a.drop, .top_menu ul ul a.drop:visited 
+{ 
+/*    background: #d4d8bd url(http://www.cssplay.co.uk/menus/breadcrumbs/grey-arrow.gif) no-repeat 130px center;*/
+    background-color:#d4d8bd; 
+/*    width: 160px;*/
+}
+
+/* style the second level hover */
+.top_menu ul ul a.drop:hover 
+{ 
+/*    background: #c9ba65 url(http://www.cssplay.co.uk/menus/breadcrumbs/blue-arrow.gif) no-repeat 130px center; */
+    background-color:#c9ba65; 
+/*    width: 160px;*/
+}
+.top_menu ul ul :hover > a.drop 
+{ 
+/*    background: #c9ba65 url(http://www.cssplay.co.uk/menus/breadcrumbs/blue-arrow.gif) no-repeat 130px center; */
+    background-color:#c9ba65;
+/*    width: 160px;*/
+}
+
+/* style the third level background */
+.top_menu ul ul ul a, .top_menu ul ul ul a:visited 
+{ 
+/*    background: #e2dfa8; */
+    background-color:#e2dfa8; 
+}
+
+/* style the third level hover */
+.top_menu ul ul ul a:hover 
+{ 
+/*    background: #b2ab9b; */
+    background-color:#b2ab9b; 
+}
+
+/* hide the sub levels and give them a positon absolute so that they take up no room */
+.top_menu ul ul
+{
+    visibility: hidden;
+    position: absolute;
+    height: 0;
+    top: 31px;
+    left: 0;
+/*    width: 160px;*/
+    border-top: 1px solid #000;
+}
+
+/* position the third level flyout menu */
+.top_menu ul ul ul
+{
+    left: 181px;
+    top: -1px;
+/*    width: 160px;*/
+}
+
+/* position the third level flyout menu for a left flyout */
+.top_menu ul ul ul.left { 
+    /*left: -149px;*/
+    left: -160px;
+}
+
+
+/* style the second level links */
+.top_menu ul ul a, .top_menu ul ul a:visited
+{
+    background-color: #e5e1d6;
+    color: #000;
+    height: auto;
+    line-height: 1em;
+    padding: 5px 10px;
+    width: 160px;
+    border-width: 0 1px 1px 1px;
+
+}
+
+
+/* style the top level hover */
+.top_menu a:hover, .top_menu ul ul a:hover
+{
+    color: #000;
+    background-color: #fcd6a7;
+}
+
+.top_menu :hover > a, .top_menu ul ul :hover > a
+{
+    color: #000;
+    background-color: #fcd6a7;
+/*    width: 160px;*/
+}
+
+/* make the second level visible when hover on first level list OR link */
+.top_menu ul li:hover ul,
+.top_menu ul a:hover ul 
+{ 
+    visibility: visible; 
+}
+
+/* keep the third level hidden when you hover on first level list OR link */
+.top_menu ul :hover ul ul 
+{ 
+    visibility: hidden; 
+}
+
+/* make the third level visible when you hover over second level list OR link */
+.top_menu ul :hover ul :hover ul 
+{ 
+    visibility: visible; 
+}
+
+/*
+mediaqueries
+Work the page down so that the map fits nicely on 1024 width monitor
+when viewport drops beneath 1024 px width, convert left vertical menu to
+horizontal menu under top menu */
+
+.inlineForm {
+    margin: 0px auto 0px auto;
+    padding: 0px;
+    display: inline;
+}
+.centered {
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+}

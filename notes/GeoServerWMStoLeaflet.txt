@@ -1,0 +1,40 @@
+var nexrad = L.tileLayer.wms("http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi", {
+    layers: 'nexrad-n0r-900913',
+    format: 'image/png',
+    transparent: true,
+    attribution: "Weather data © 2012 IEM Nexrad"
+});
+http://dsph-dev.provost.uiowa.edu:8080/geoserver/IWP/wms?service=WMS&version=1.1.0&request=GetMap&layers=IWP:cshapes&styles=&bbox=-180.0,-55.902226968244,180.000000335276,83.113873161225&width=854&height=330&srs=EPSG:4326&format=application/openlayers
+
+var cshapes=L.tileLayer.wms("http://dsph-dev.provost.uiowa.edu:8080/geoserver/IWP", 
+
+Example
+
+GeoServer Specification
+http://wfs-kbhkort.kk.dk/k101/wms?service=WMS&version=1.1.0&request=GetMap&layers=k101:theme-startkort&styles=&bbox=12.451709828167994,55.63150896601625,12.64714535243575,55.72503797474024&width=512&height=495&srs=EPSG:4326&format=application/openlayers
+
+Leaflet Interpretation
+var map = L.map('map').setView([55.67, 12.60], 11);
+
+var mywms = L.tileLayer.wms("http://wfs-kbhkort.kk.dk/k101/wms", {
+    layers: 'k101:theme-startkort',
+    format: 'image/png',
+    transparent: true,
+    version: '1.1.0',
+    attribution: "myattribution"
+});
+mywms.addTo(map);
+
+
+http://dsph-dev.provost.uiowa.edu:8080/geoserver/IWP/wms?service=WMS&version=1.1.0&request=GetMap&layers=IWP:cshapes&styles=&bbox=-180.0,-55.902226968244,180.000000335276,83.113873161225&width=854&height=330&srs=EPSG:4326&format=application/openlayers
+var map = L.map('map').setView([13.61,0], 1);
+var cshapes=L.tileLayer.wms("http://dsph-dev.provost.uiowa.edu:8080/geoserver/IWP/wms", {
+    layers:'IWP:cshapes',
+    format: 'image/png',
+    transparent: true,
+    version: '1.1.0',
+    attribution: "myattribution"
+});
+cshapes.addTo(map);
+
+http://dsph-dev.provost.uiowa.edu:8080/geoserver/IWP/wms?service=WMS&version=1.1.0&request=GetMap&layers=IWP:cshapes_mw&styles=&bbox=-1.754168E7,-6469567.0,1.7820924E7,8711154.0&width=768&height=330&srs=EPSG:54004&format=application/openlayers
