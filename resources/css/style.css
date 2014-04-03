@@ -148,7 +148,7 @@ p.footer
 {
     background: #EAEAEA;
     height: 90px;
-    postion: relative;
+    position: relative;
     /*relative position makes divs within this div position themselves relative to this div*/
     padding-top: 10px;
 }
@@ -180,9 +180,12 @@ p.footer
 #authorlist
 {
     float: left;
-    width: 100px;
-    position: : relative;
+    width: 150px;
+    position: relative;
+    white-space: nowrap;
+    vertical-align:top;
 }
+
 
 
 /* ================================================================ 
