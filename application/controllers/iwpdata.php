@@ -93,6 +93,58 @@ class IWPData extends CI_Controller {
 		$data['counts'] = $this->authors->counts_by_country();
 		$this->load->view('scratchpad_view',$data);
 	}
+	
+	public function createViews() {
+	$minyear = 1967;
+	$maxyear = 2014;
+	for ($year=1967; $year<2014; $year++) {
+	
+		$vname = "cshapes_mollweide_042_".$year;
+		$vdate = "$year-12-31";
+		$sql = "DROP VIEW IF EXISTS $vname";
+		$this->db->query($sql);
+	
+		$sql = "CREATE OR REPLACE VIEW $vname AS 
+				 SELECT cshapes_042_mollweide.gid, 
+				    cshapes_042_mollweide.cntry_name, 
+				    cshapes_042_mollweide.area, 
+				    cshapes_042_mollweide.capname, 
+				    cshapes_042_mollweide.caplong, 
+				    cshapes_042_mollweide.caplat, 
+				    cshapes_042_mollweide.featureid, 
+				    cshapes_042_mollweide.cowcode, 
+				    cshapes_042_mollweide.cowsyear, 
+				    cshapes_042_mollweide.cowsmonth, 
+				    cshapes_042_mollweide.cowsday, 
+				    cshapes_042_mollweide.coweyear, 
+				    cshapes_042_mollweide.cowemonth, 
+				    cshapes_042_mollweide.coweday, 
+				    cshapes_042_mollweide.gwcode, 
+				    cshapes_042_mollweide.gwsyear, 
+				    cshapes_042_mollweide.gwsmonth, 
+				    cshapes_042_mollweide.gwsday, 
+				    cshapes_042_mollweide.gweyear, 
+				    cshapes_042_mollweide.gwemonth, 
+				    cshapes_042_mollweide.gweday, 
+				    cshapes_042_mollweide.isoname, 
+				    cshapes_042_mollweide.iso1num, 
+				    cshapes_042_mollweide.iso1al2, 
+				    cshapes_042_mollweide.iso1al3, 
+				    cshapes_042_mollweide.geom, 
+				    cshapes_042_mollweide.cowsdate, 
+				    cshapes_042_mollweide.cowedate
+				  FROM cshapes_042_mollweide
+				  WHERE cshapes_042_mollweide.cowsdate <= '".$vdate."'::date AND cshapes_042_mollweide.cowedate > '".$vdate."'::date";
+				  
+		$this->db->query($sql);
+	
+		$sql = "ALTER TABLE $vname OWNER TO postgres";
+		$this->db->query($sql);
+		}
+		$data ['results']= "Created views $minyear to $maxyear ";
+		$this->load->view('results_view', $data);		
+
+	}
 
 }
 

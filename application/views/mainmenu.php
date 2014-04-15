@@ -49,6 +49,11 @@
 	            <td colspan="2"><i>Country Markers link is no longer applicable, countries added after 2013 will need to have markers manually added to country_markers_projected table using mouseclick coordinates (uncomment map.on('click'...) line at endd of map script in map_view)<i></td>
 	        </tr>			
 	        <tr>
+	            <td><a href="iwpdata/createViews">Year Views</a></td>
+	            <td>Create Annual Views for CShapes Countries</td>
+	        </tr>
+
+	        <tr>
 	            <td colspan="2"><i>&nbsp;</i></td>
 	        </tr>
 	        <tr>
