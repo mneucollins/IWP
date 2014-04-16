@@ -1,7 +1,8 @@
 <?php  ?>
 <form action="<?php echo site_url('iwpmap') ?>" method="post" accept-charset="utf-8" class="inlineForm" >
-    <ul class="no_marker">
-    	<li class='menu_item'>Country<br />
+    <hr />
+        <ul class="no_marker">
+    	<li class='menu_item'>Country:<br />
             <select name="country">
                 <option value="0" <?php if($country=='0'){echo "selected";}?> ></option>
                 <?php
@@ -15,7 +16,7 @@
             </select>
         </li>    		
     		
-        <li class='menu_item'>Region<br />
+        <li class='menu_item'>Region:<br />
             <select name="region">
                 <option value="0" <?php if($region=='0'){echo "selected";}?> ></option>
                 <option value="Australia and New Zealand" <?php if($region=='Australia and New Zealand'){echo "selected";}?> >Australia and New Zealand</option>
@@ -38,7 +39,7 @@
                 <option value="Western Europe" <?php if($region=='Western Europe'){echo "selected";}?> >Western Europe</option>
             </select>
         </li>
-        <li class='menu_item'>Continent<br />
+        <li class='menu_item'>Continent:<br />
             <select name="continent">
                 <option value="0" <?php if($continent=='0'){echo "selected";}?> ></option>
                 <option value="Africa" <?php if($continent=='Africa'){echo "selected";}?> >Africa</option>
@@ -48,7 +49,7 @@
                 <option value="Oceania" <?php if($continent=='Oceania'){echo "selected";}?> >Oceania</option>
             </select>
         </li>
-        <li class='menu_item'>Year<br />
+        <li class='menu_item'>Year of Residency:&nbsp;&nbsp;
             <select name="residency">
                 <option value="0" <?php if($residency=='0'){echo "selected";}?> ></option>
             	<?php 
@@ -65,7 +66,7 @@
             <input type="radio" name="count_type" value="annual" class="in1" <?php if($count_type=='annual'){echo "checked = 'checked'";} ?> />
             This year only&nbsp;&nbsp;&nbsp;
             <input type="radio" name="count_type" value="cumulative" class="in1" <?php if($count_type=='cumulative'){echo "checked = 'checked'";} ?>/>
-            Cumulative<br /><br />
+            Cumulative<br />
         </li>        
         <li class='menu_item'>Author Number of Languages:<br />
             <?php if (empty($multilingual)) {$multilingual = "any" ;} ?>        
@@ -74,9 +75,9 @@
             <input type="radio" name="multilingual" value="multi" class="in1" <?php if($multilingual=='multi'){echo "checked = 'checked'";}?> />
             Multiple&nbsp;&nbsp;&nbsp;
             <input type="radio" name="multilingual" value="any" class="in1" <?php if($multilingual=='any'){echo "checked = 'checked'";}?> />
-            Any<br /><br />
+            Any<br />
         </li>
-        <li class='menu_item'>Language<br />
+        <li class='menu_item'>Language:&nbsp;&nbsp;
             <select name="language">
                 <option value="0" <?php if($language=='0'){echo "selected";}?> > </option>						    
                 <option value="Afrikaans" <?php if ($language=='Afrikaans'){echo "selected";} ?> >Afrikaans</option>
@@ -143,7 +144,7 @@
                 <option value="Yiddish" <?php if ($language=='Yiddish'){echo "selected";} ?> >Yiddish</option>
             </select>
         </li>
-        <li class='menu_item'>Writing Role<br />
+        <li class='menu_item'>Writing Role:&nbsp;&nbsp;
             <select name="role">
                 <option value="0" <?php if($role=='0'){echo "selected";}?> ></option>
                 <option value="activist" <?php if($role=='activist'){echo "selected";}?> >Activist</option>
@@ -165,17 +166,17 @@
                 <option value="visual artist" <?php if($role=='visual artist'){echo "selected";}?> >Visual Artist</option>
             </select>
         </li>
-        <li class='menu_item'>Gender <br />
+        <li class='menu_item'>Gender: <br />
             <?php if (empty($gender)) {$gender = "any" ;} ?>
             <input type="radio" name="gender" value="Male" class="in1" <?php if($gender=='Male'){echo "checked = 'checked'";}?> />
             Male&nbsp;&nbsp;&nbsp;
             <input type="radio" name="gender" value="Female" class="in1" <?php if($gender=='Female'){echo "checked = 'checked'";}?>/>
             Female&nbsp;&nbsp;&nbsp;
             <input type="radio" name="gender" value="any" class="in1" <?php if($gender=='any'){echo "checked = 'checked'";}?>/>
-            Any<br /><br />
+            Any<br />
             
         </li>
-        <li class='menu_item'>Year of Birth<br />
+        <li class='menu_item'>Year of Birth:&nbsp;&nbsp;
             <select name="YOB">
                 <option value="0" <?php if($YOB=='0'){echo "selected";}?> ></option>
 				<?php $sql = "select Min(year_of_birth) as yob_min, Max(year_of_birth) as yob_max FROM authors"; 
@@ -190,7 +191,6 @@
         </li>        
 
     </ul>
-    <br />
     <hr />
 	<div class="centered">
 	    <button name="apply" type="submit" value="apply">Apply / Reset View</button>

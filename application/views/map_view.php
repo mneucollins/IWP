@@ -21,8 +21,15 @@
         <div id="contentwrapper">
             <div id="leftcolumn">
                 <div class="innertube">
+                	<a href="http://iwp.uiowa.edu/">
+                    <?php
+                     	echo '<img src="'.base_url("resources/img/iwp-main-logo.gif").'" width="230">';
+                    ?>
+                	</a>
                     <h3>Choose Map Parameters</h3>
-                    <?php include ("common/map_parameters.incl") ?>
+                    <?php
+                    	include ("common/map_parameters.incl") 
+                    ?>
                 </div>
             </div>
             <div id="contentcolumn">
@@ -35,7 +42,7 @@
                 </div>
             </div>
             <div id="footer">
-                University of Iowa International Writing Program. 
+                <a href="http://iwp.uiowa.edu/">University of Iowa International Writing Program.</a> 
             </div>
         </div>
     </div>
