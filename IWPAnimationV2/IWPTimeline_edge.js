@@ -27,7 +27,6 @@ var symbols = {
                 display: 'block',
                 type: 'image',
                 rect: ['0px', '75px','1260px','591px','auto', 'auto'],
-                overflow: 'hidden',
                 fill: ["rgba(0,0,0,0)",im+"1966.gif",'0px','0px']
             },
             {
@@ -763,7 +762,7 @@ var symbols = {
                 ["style", "left", '627px'],
                 ["style", "opacity", '0.35']
             ],
-            "${__2000}": [
+            "${__1997}": [
                 ["style", "top", '75px'],
                 ["style", "height", '591px'],
                 ["style", "display", 'none'],
@@ -774,9 +773,12 @@ var symbols = {
                 ["style", "left", '587px'],
                 ["style", "opacity", '0.35']
             ],
-            "${_M2012}": [
-                ["style", "left", '1071px'],
-                ["style", "opacity", '0.35']
+            "${__2012}": [
+                ["style", "top", '75px'],
+                ["style", "height", '591px'],
+                ["style", "display", 'none'],
+                ["style", "left", '-6px'],
+                ["style", "width", '1260px']
             ],
             "${_M1974}": [
                 ["style", "left", '304px'],
@@ -831,16 +833,16 @@ var symbols = {
                 ["style", "left", '119px'],
                 ["transform", "scaleY", '1.1']
             ],
-            "${_M1967}": [
-                ["style", "left", '163px'],
+            "${_M2001}": [
+                ["style", "left", '849px'],
                 ["style", "opacity", '0.35']
             ],
             "${_M1986}": [
                 ["style", "left", '546px'],
                 ["style", "opacity", '0.35']
             ],
-            "${_M1998}": [
-                ["style", "left", '788px'],
+            "${_M2006}": [
+                ["style", "left", '950px'],
                 ["style", "opacity", '0.35']
             ],
             "${__2001}": [
@@ -850,9 +852,12 @@ var symbols = {
                 ["style", "left", '0px'],
                 ["style", "width", '1260px']
             ],
-            "${_M1991}": [
-                ["style", "left", '647px'],
-                ["style", "opacity", '0.35']
+            "${__1970}": [
+                ["style", "top", '75px'],
+                ["style", "height", '591px'],
+                ["style", "display", 'none'],
+                ["style", "left", '0px'],
+                ["style", "width", '1260px']
             ],
             "${__1975}": [
                 ["style", "top", '75px'],
@@ -869,12 +874,9 @@ var symbols = {
                 ["style", "left", '405px'],
                 ["style", "opacity", '0.35']
             ],
-            "${__1970}": [
-                ["style", "top", '75px'],
-                ["style", "height", '591px'],
-                ["style", "display", 'none'],
-                ["style", "left", '0px'],
-                ["style", "width", '1260px']
+            "${_M2000}": [
+                ["style", "left", '829px'],
+                ["style", "opacity", '0.35']
             ],
             "${__2004}": [
                 ["style", "top", '75px'],
@@ -883,14 +885,14 @@ var symbols = {
                 ["style", "left", '0px'],
                 ["style", "width", '1260px']
             ],
-            "${__1978}": [
+            "${__1988}": [
                 ["style", "top", '75px'],
                 ["style", "height", '591px'],
                 ["style", "display", 'none'],
                 ["style", "left", '0px'],
                 ["style", "width", '1260px']
             ],
-            "${__1984}": [
+            "${__1978}": [
                 ["style", "top", '75px'],
                 ["style", "height", '591px'],
                 ["style", "display", 'none'],
@@ -915,14 +917,14 @@ var symbols = {
                 ["style", "left", '0px'],
                 ["style", "width", '1260px']
             ],
-            "${__1997}": [
+            "${__1999}": [
                 ["style", "top", '75px'],
                 ["style", "height", '591px'],
                 ["style", "display", 'none'],
                 ["style", "left", '0px'],
                 ["style", "width", '1260px']
             ],
-            "${__1968}": [
+            "${__1977}": [
                 ["style", "top", '75px'],
                 ["style", "height", '591px'],
                 ["style", "display", 'none'],
@@ -945,14 +947,11 @@ var symbols = {
                 ["style", "left", '1159px'],
                 ["style", "width", '90px']
             ],
-            "${__1995}": [
-                ["style", "top", '75px'],
-                ["style", "height", '591px'],
-                ["style", "display", 'none'],
-                ["style", "left", '0px'],
-                ["style", "width", '1260px']
+            "${_M1991}": [
+                ["style", "left", '647px'],
+                ["style", "opacity", '0.35']
             ],
-            "${__1987}": [
+            "${__1968}": [
                 ["style", "top", '75px'],
                 ["style", "height", '591px'],
                 ["style", "display", 'none'],
@@ -986,15 +985,12 @@ var symbols = {
                 ["style", "height", '750px'],
                 ["style", "overflow", 'hidden']
             ],
-            "${__1980}": [
-                ["style", "top", '75px'],
-                ["style", "height", '591px'],
-                ["style", "display", 'none'],
-                ["style", "left", '0px'],
-                ["style", "width", '1260px']
+            "${_M1994}": [
+                ["style", "left", '708px'],
+                ["style", "opacity", '0.35']
             ],
-            "${_M2001}": [
-                ["style", "left", '849px'],
+            "${_M1997}": [
+                ["style", "left", '768px'],
                 ["style", "opacity", '0.35']
             ],
             "${_M2007}": [
@@ -1005,12 +1001,9 @@ var symbols = {
                 ["style", "left", '1051px'],
                 ["style", "opacity", '0.35']
             ],
-            "${__1988}": [
-                ["style", "top", '75px'],
-                ["style", "height", '591px'],
-                ["style", "display", 'none'],
-                ["style", "left", '0px'],
-                ["style", "width", '1260px']
+            "${_M1967}": [
+                ["style", "left", '163px'],
+                ["style", "opacity", '0.35']
             ],
             "${__1985}": [
                 ["style", "top", '75px'],
@@ -1019,17 +1012,23 @@ var symbols = {
                 ["style", "left", '0px'],
                 ["style", "width", '1260px']
             ],
-            "${_M2000}": [
-                ["style", "left", '829px'],
-                ["style", "opacity", '0.35']
+            "${__1995}": [
+                ["style", "top", '75px'],
+                ["style", "height", '591px'],
+                ["style", "display", 'none'],
+                ["style", "left", '0px'],
+                ["style", "width", '1260px']
             ],
             "${_M1980}": [
                 ["style", "left", '425px'],
                 ["style", "opacity", '0.35']
             ],
-            "${_M1992}": [
-                ["style", "left", '667px'],
-                ["style", "opacity", '0.35']
+            "${__1987}": [
+                ["style", "top", '75px'],
+                ["style", "height", '591px'],
+                ["style", "display", 'none'],
+                ["style", "left", '0px'],
+                ["style", "width", '1260px']
             ],
             "${_M2003}": [
                 ["style", "left", '889px'],
@@ -1045,7 +1044,7 @@ var symbols = {
                 ["style", "left", '1159px'],
                 ["style", "width", '90px']
             ],
-            "${__1977}": [
+            "${__1984}": [
                 ["style", "top", '75px'],
                 ["style", "height", '591px'],
                 ["style", "display", 'none'],
@@ -1059,33 +1058,9 @@ var symbols = {
                 ["style", "left", '-6px'],
                 ["style", "width", '1260px']
             ],
-            "${__1981}": [
-                ["style", "top", '75px'],
-                ["style", "height", '591px'],
-                ["style", "display", 'none'],
-                ["style", "left", '0px'],
-                ["style", "width", '1260px']
-            ],
-            "${__1983}": [
-                ["style", "top", '75px'],
-                ["style", "height", '591px'],
-                ["style", "display", 'none'],
-                ["style", "left", '0px'],
-                ["style", "width", '1260px']
-            ],
-            "${__1999}": [
-                ["style", "top", '75px'],
-                ["style", "height", '591px'],
-                ["style", "display", 'none'],
-                ["style", "left", '0px'],
-                ["style", "width", '1260px']
-            ],
-            "${__2003}": [
-                ["style", "top", '75px'],
-                ["style", "height", '591px'],
-                ["style", "display", 'none'],
-                ["style", "left", '0px'],
-                ["style", "width", '1260px']
+            "${_M1984}": [
+                ["style", "left", '506px'],
+                ["style", "opacity", '0.35']
             ],
             "${__2009}": [
                 ["style", "top", '75px'],
@@ -1094,9 +1069,30 @@ var symbols = {
                 ["style", "left", '0px'],
                 ["style", "width", '1260px']
             ],
-            "${_M1997}": [
-                ["style", "left", '768px'],
+            "${__2007}": [
+                ["style", "top", '75px'],
+                ["style", "height", '591px'],
+                ["style", "display", 'none'],
+                ["style", "left", '0px'],
+                ["style", "width", '1260px']
+            ],
+            "${_M1992}": [
+                ["style", "left", '667px'],
                 ["style", "opacity", '0.35']
+            ],
+            "${__1983}": [
+                ["style", "top", '75px'],
+                ["style", "height", '591px'],
+                ["style", "display", 'none'],
+                ["style", "left", '0px'],
+                ["style", "width", '1260px']
+            ],
+            "${__2000}": [
+                ["style", "top", '75px'],
+                ["style", "height", '591px'],
+                ["style", "display", 'none'],
+                ["style", "left", '0px'],
+                ["style", "width", '1260px']
             ],
             "${__2006}": [
                 ["style", "top", '75px'],
@@ -1127,14 +1123,11 @@ var symbols = {
                 ["style", "left", '526px'],
                 ["style", "opacity", '0.35']
             ],
-            "${__2012}": [
-                ["style", "top", '75px'],
-                ["style", "height", '591px'],
-                ["style", "display", 'none'],
-                ["style", "left", '-6px'],
-                ["style", "width", '1260px']
+            "${_M2012}": [
+                ["style", "left", '1071px'],
+                ["style", "opacity", '0.35']
             ],
-            "${__1982}": [
+            "${__1981}": [
                 ["style", "top", '75px'],
                 ["style", "height", '591px'],
                 ["style", "display", 'none'],
@@ -1145,10 +1138,11 @@ var symbols = {
                 ["style", "left", '728px'],
                 ["style", "opacity", '0.35']
             ],
-            "${__2007}": [
+            "${__1966}": [
                 ["style", "top", '75px'],
+                ["style", "overflow", 'hidden'],
                 ["style", "height", '591px'],
-                ["style", "display", 'none'],
+                ["style", "display", 'block'],
                 ["style", "left", '0px'],
                 ["style", "width", '1260px']
             ],
@@ -1174,13 +1168,11 @@ var symbols = {
                 ["style", "left", '688px'],
                 ["style", "opacity", '0.35']
             ],
-            "${__1966}": [
-                ["style", "top", '75px'],
-                ["style", "overflow", 'hidden'],
-                ["style", "height", '591px'],
-                ["style", "display", 'block'],
-                ["style", "left", '0px'],
-                ["style", "width", '1260px']
+            "${_play-pause-bk}": [
+                ["style", "top", '673px'],
+                ["style", "height", '44px'],
+                ["style", "left", '19px'],
+                ["style", "width", '90px']
             ],
             "${__1979}": [
                 ["style", "top", '75px'],
@@ -1238,18 +1230,21 @@ var symbols = {
                 ["style", "left", '345px'],
                 ["style", "opacity", '0.35']
             ],
-            "${_pause}": [
-                ["transform", "scaleX", '1.1'],
-                ["style", "left", '69px'],
-                ["transform", "scaleY", '1.1']
+            "${__2003}": [
+                ["style", "top", '75px'],
+                ["style", "height", '591px'],
+                ["style", "display", 'none'],
+                ["style", "left", '0px'],
+                ["style", "width", '1260px']
             ],
             "${_M1989}": [
                 ["style", "left", '607px'],
                 ["style", "opacity", '0.35']
             ],
-            "${_M1984}": [
-                ["style", "left", '506px'],
-                ["style", "opacity", '0.35']
+            "${_pause}": [
+                ["transform", "scaleX", '1.1'],
+                ["style", "left", '69px'],
+                ["transform", "scaleY", '1.1']
             ],
             "${_M1972}": [
                 ["style", "left", '264px'],
@@ -1302,30 +1297,34 @@ var symbols = {
                 ["style", "height", '590px'],
                 ["style", "width", '1260px']
             ],
-            "${_M1973}": [
-                ["style", "left", '284px'],
-                ["style", "opacity", '0.35']
+            "${__1980}": [
+                ["style", "top", '75px'],
+                ["style", "height", '591px'],
+                ["style", "display", 'none'],
+                ["style", "left", '0px'],
+                ["style", "width", '1260px']
             ],
-            "${_play-pause-bk}": [
-                ["style", "top", '673px'],
-                ["style", "height", '44px'],
-                ["style", "left", '19px'],
-                ["style", "width", '90px']
+            "${__1982}": [
+                ["style", "top", '75px'],
+                ["style", "height", '591px'],
+                ["style", "display", 'none'],
+                ["style", "left", '0px'],
+                ["style", "width", '1260px']
             ],
-            "${_M1994}": [
-                ["style", "left", '708px'],
+            "${_M1971}": [
+                ["style", "left", '244px'],
                 ["style", "opacity", '0.35']
             ],
             "${_M1987}": [
                 ["style", "left", '566px'],
                 ["style", "opacity", '0.35']
             ],
-            "${_M2006}": [
-                ["style", "left", '950px'],
+            "${_M1998}": [
+                ["style", "left", '788px'],
                 ["style", "opacity", '0.35']
             ],
-            "${_M1971}": [
-                ["style", "left", '244px'],
+            "${_M1973}": [
+                ["style", "left", '284px'],
                 ["style", "opacity", '0.35']
             ],
             "${_end}": [
@@ -1435,8 +1434,8 @@ var symbols = {
                 { id: "eid167", tween: [ "style", "${__2013}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid303", tween: [ "style", "${__2013}", "display", 'block', { fromValue: 'none'}], position: 23500, duration: 0 },
                 { id: "eid304", tween: [ "style", "${__2013}", "display", 'block', { fromValue: 'block'}], position: 24000, duration: 0 },
-                { id: "eid51", tween: [ "style", "${_M2003}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid148", tween: [ "style", "${_M2003}", "opacity", '1', { fromValue: '0.35'}], position: 18250, duration: 0 },
+                { id: "eid28", tween: [ "style", "${_M1980}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid125", tween: [ "style", "${_M1980}", "opacity", '1', { fromValue: '0.35'}], position: 6750, duration: 0 },
                 { id: "eid188", tween: [ "style", "${__1977}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid231", tween: [ "style", "${__1977}", "display", 'block', { fromValue: 'none'}], position: 5500, duration: 0 },
                 { id: "eid232", tween: [ "style", "${__1977}", "display", 'none', { fromValue: 'block'}], position: 6000, duration: 0 },
@@ -1454,19 +1453,22 @@ var symbols = {
                 { id: "eid171", tween: [ "style", "${__1973}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid223", tween: [ "style", "${__1973}", "display", 'block', { fromValue: 'none'}], position: 3500, duration: 0 },
                 { id: "eid224", tween: [ "style", "${__1973}", "display", 'none', { fromValue: 'block'}], position: 4000, duration: 0 },
-                { id: "eid19", tween: [ "style", "${_M1972}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid117", tween: [ "style", "${_M1972}", "opacity", '1', { fromValue: '0.35'}], position: 2750, duration: 0 },
+                { id: "eid65", tween: [ "style", "${_M2000}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid145", tween: [ "style", "${_M2000}", "opacity", '1', { fromValue: '0.35'}], position: 16750, duration: 0 },
                 { id: "eid10", tween: [ "transform", "${_end}", "scaleY", '1.1', { fromValue: '1.1'}], position: 0, duration: 0 },
                 { id: "eid30", tween: [ "style", "${_M1982}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
                 { id: "eid127", tween: [ "style", "${_M1982}", "opacity", '1', { fromValue: '0.35'}], position: 7750, duration: 0 },
                 { id: "eid170", tween: [ "style", "${__1968}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid217", tween: [ "style", "${__1968}", "display", 'block', { fromValue: 'none'}], position: 1000, duration: 0 },
                 { id: "eid218", tween: [ "style", "${__1968}", "display", 'none', { fromValue: 'block'}], position: 1500, duration: 0 },
-                { id: "eid9", tween: [ "transform", "${_end}", "scaleX", '1.1', { fromValue: '1.1'}], position: 0, duration: 0 },
+                { id: "eid46", tween: [ "style", "${_M1998}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid143", tween: [ "style", "${_M1998}", "opacity", '1', { fromValue: '0.35'}], position: 15750, duration: 0 },
                 { id: "eid306", tween: [ "style", "${__2011}", "left", '-6px', { fromValue: '-6px'}], position: 22500, duration: 0 },
                 { id: "eid64", tween: [ "style", "${_M2002}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
                 { id: "eid147", tween: [ "style", "${_M2002}", "opacity", '1', { fromValue: '0.35'}], position: 17750, duration: 0 },
-                { id: "eid11", tween: [ "style", "${_end}", "left", '1114px', { fromValue: '1114px'}], position: 0, duration: 0 },
+                { id: "eid205", tween: [ "style", "${__1999}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid275", tween: [ "style", "${__1999}", "display", 'block', { fromValue: 'none'}], position: 16500, duration: 0 },
+                { id: "eid276", tween: [ "style", "${__1999}", "display", 'none', { fromValue: 'block'}], position: 17000, duration: 0 },
                 { id: "eid168", tween: [ "style", "${__1970}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid215", tween: [ "style", "${__1970}", "display", 'block', { fromValue: 'none'}], position: 2000, duration: 0 },
                 { id: "eid216", tween: [ "style", "${__1970}", "display", 'none', { fromValue: 'block'}], position: 2500, duration: 0 },
@@ -1481,8 +1483,9 @@ var symbols = {
                 { id: "eid260", tween: [ "style", "${__1991}", "display", 'none', { fromValue: 'block'}], position: 13000, duration: 0 },
                 { id: "eid29", tween: [ "style", "${_M1981}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
                 { id: "eid126", tween: [ "style", "${_M1981}", "opacity", '1', { fromValue: '0.35'}], position: 7250, duration: 0 },
-                { id: "eid308", tween: [ "style", "${__2013}", "left", '-6px', { fromValue: '-6px'}], position: 23500, duration: 0 },
-                { id: "eid307", tween: [ "style", "${__2012}", "left", '-6px', { fromValue: '-6px'}], position: 23000, duration: 0 },
+                { id: "eid199", tween: [ "style", "${__2004}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid285", tween: [ "style", "${__2004}", "display", 'block', { fromValue: 'none'}], position: 19000, duration: 0 },
+                { id: "eid286", tween: [ "style", "${__2004}", "display", 'none', { fromValue: 'block'}], position: 19500, duration: 0 },
                 { id: "eid192", tween: [ "style", "${__1992}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid261", tween: [ "style", "${__1992}", "display", 'block', { fromValue: 'none'}], position: 13000, duration: 0 },
                 { id: "eid262", tween: [ "style", "${__1992}", "display", 'none', { fromValue: 'block'}], position: 13500, duration: 0 },
@@ -1492,51 +1495,49 @@ var symbols = {
                 { id: "eid209", tween: [ "style", "${__2007}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid291", tween: [ "style", "${__2007}", "display", 'block', { fromValue: 'none'}], position: 20500, duration: 0 },
                 { id: "eid292", tween: [ "style", "${__2007}", "display", 'none', { fromValue: 'block'}], position: 21000, duration: 0 },
-                { id: "eid211", tween: [ "style", "${__2011}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid299", tween: [ "style", "${__2011}", "display", 'block', { fromValue: 'none'}], position: 22500, duration: 0 },
-                { id: "eid300", tween: [ "style", "${__2011}", "display", 'none', { fromValue: 'block'}], position: 23000, duration: 0 },
-                { id: "eid208", tween: [ "style", "${__2008}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid293", tween: [ "style", "${__2008}", "display", 'block', { fromValue: 'none'}], position: 21000, duration: 0 },
-                { id: "eid294", tween: [ "style", "${__2008}", "display", 'none', { fromValue: 'block'}], position: 21500, duration: 0 },
-                { id: "eid38", tween: [ "style", "${_M1990}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid135", tween: [ "style", "${_M1990}", "opacity", '1', { fromValue: '0.35'}], position: 11750, duration: 0 },
-                { id: "eid39", tween: [ "style", "${_M1991}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid136", tween: [ "style", "${_M1991}", "opacity", '1', { fromValue: '0.35'}], position: 12250, duration: 0 },
-                { id: "eid206", tween: [ "style", "${__1998}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid273", tween: [ "style", "${__1998}", "display", 'block', { fromValue: 'none'}], position: 16000, duration: 0 },
-                { id: "eid274", tween: [ "style", "${__1998}", "display", 'none', { fromValue: 'block'}], position: 16500, duration: 0 },
-                { id: "eid56", tween: [ "style", "${_M2009}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid154", tween: [ "style", "${_M2009}", "opacity", '1', { fromValue: '0.35'}], position: 21250, duration: 0 },
-                { id: "eid205", tween: [ "style", "${__1999}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid275", tween: [ "style", "${__1999}", "display", 'block', { fromValue: 'none'}], position: 16500, duration: 0 },
-                { id: "eid276", tween: [ "style", "${__1999}", "display", 'none', { fromValue: 'block'}], position: 17000, duration: 0 },
                 { id: "eid203", tween: [ "style", "${__2001}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid279", tween: [ "style", "${__2001}", "display", 'block', { fromValue: 'none'}], position: 17500, duration: 0 },
                 { id: "eid280", tween: [ "style", "${__2001}", "display", 'none', { fromValue: 'block'}], position: 18000, duration: 0 },
+                { id: "eid9", tween: [ "transform", "${_end}", "scaleX", '1.1', { fromValue: '1.1'}], position: 0, duration: 0 },
+                { id: "eid208", tween: [ "style", "${__2008}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid293", tween: [ "style", "${__2008}", "display", 'block', { fromValue: 'none'}], position: 21000, duration: 0 },
+                { id: "eid294", tween: [ "style", "${__2008}", "display", 'none', { fromValue: 'block'}], position: 21500, duration: 0 },
+                { id: "eid11", tween: [ "style", "${_end}", "left", '1114px', { fromValue: '1114px'}], position: 0, duration: 0 },
+                { id: "eid39", tween: [ "style", "${_M1991}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid136", tween: [ "style", "${_M1991}", "opacity", '1', { fromValue: '0.35'}], position: 12250, duration: 0 },
+                { id: "eid201", tween: [ "style", "${__2003}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid283", tween: [ "style", "${__2003}", "display", 'block', { fromValue: 'none'}], position: 18500, duration: 0 },
+                { id: "eid284", tween: [ "style", "${__2003}", "display", 'none', { fromValue: 'block'}], position: 19000, duration: 0 },
+                { id: "eid56", tween: [ "style", "${_M2009}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid154", tween: [ "style", "${_M2009}", "opacity", '1', { fromValue: '0.35'}], position: 21250, duration: 0 },
+                { id: "eid51", tween: [ "style", "${_M2003}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid148", tween: [ "style", "${_M2003}", "opacity", '1', { fromValue: '0.35'}], position: 18250, duration: 0 },
+                { id: "eid17", tween: [ "style", "${_M1970}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid115", tween: [ "style", "${_M1970}", "opacity", '1', { fromValue: '0.35'}], position: 1750, duration: 0 },
                 { id: "eid175", tween: [ "style", "${__1975}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid227", tween: [ "style", "${__1975}", "display", 'block', { fromValue: 'none'}], position: 4500, duration: 0 },
                 { id: "eid228", tween: [ "style", "${__1975}", "display", 'none', { fromValue: 'block'}], position: 5000, duration: 0 },
                 { id: "eid54", tween: [ "style", "${_M2011}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
                 { id: "eid156", tween: [ "style", "${_M2011}", "opacity", '1', { fromValue: '0.35'}], position: 22250, duration: 0 },
-                { id: "eid202", tween: [ "style", "${__2002}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid281", tween: [ "style", "${__2002}", "display", 'block', { fromValue: 'none'}], position: 18000, duration: 0 },
-                { id: "eid282", tween: [ "style", "${__2002}", "display", 'none', { fromValue: 'block'}], position: 18500, duration: 0 },
+                { id: "eid183", tween: [ "style", "${__1982}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid241", tween: [ "style", "${__1982}", "display", 'block', { fromValue: 'none'}], position: 8000, duration: 0 },
+                { id: "eid242", tween: [ "style", "${__1982}", "display", 'none', { fromValue: 'block'}], position: 8500, duration: 0 },
                 { id: "eid166", tween: [ "style", "${__1967}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid163", tween: [ "style", "${__1967}", "display", 'block', { fromValue: 'none'}], position: 500, duration: 0 },
                 { id: "eid164", tween: [ "style", "${__1967}", "display", 'none', { fromValue: 'block'}], position: 1000, duration: 0 },
-                { id: "eid201", tween: [ "style", "${__2003}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid283", tween: [ "style", "${__2003}", "display", 'block', { fromValue: 'none'}], position: 18500, duration: 0 },
-                { id: "eid284", tween: [ "style", "${__2003}", "display", 'none', { fromValue: 'block'}], position: 19000, duration: 0 },
-                { id: "eid200", tween: [ "style", "${__2006}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid289", tween: [ "style", "${__2006}", "display", 'block', { fromValue: 'none'}], position: 20000, duration: 0 },
-                { id: "eid290", tween: [ "style", "${__2006}", "display", 'none', { fromValue: 'block'}], position: 20500, duration: 0 },
+                { id: "eid194", tween: [ "style", "${__1993}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid263", tween: [ "style", "${__1993}", "display", 'block', { fromValue: 'none'}], position: 13500, duration: 0 },
+                { id: "eid264", tween: [ "style", "${__1993}", "display", 'none', { fromValue: 'block'}], position: 14000, duration: 0 },
+                { id: "eid172", tween: [ "style", "${__1972}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid222", tween: [ "style", "${__1972}", "display", 'block', { fromValue: 'none'}], position: 3000, duration: 0 },
+                { id: "eid305", tween: [ "style", "${__1972}", "display", 'none', { fromValue: 'block'}], position: 3500, duration: 0 },
                 { id: "eid31", tween: [ "style", "${_M1983}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
                 { id: "eid128", tween: [ "style", "${_M1983}", "opacity", '1', { fromValue: '0.35'}], position: 8250, duration: 0 },
                 { id: "eid37", tween: [ "style", "${_M1989}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
                 { id: "eid134", tween: [ "style", "${_M1989}", "opacity", '1', { fromValue: '0.35'}], position: 11250, duration: 0 },
-                { id: "eid199", tween: [ "style", "${__2004}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid285", tween: [ "style", "${__2004}", "display", 'block', { fromValue: 'none'}], position: 19000, duration: 0 },
-                { id: "eid286", tween: [ "style", "${__2004}", "display", 'none', { fromValue: 'block'}], position: 19500, duration: 0 },
+                { id: "eid193", tween: [ "style", "${__1994}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid265", tween: [ "style", "${__1994}", "display", 'block', { fromValue: 'none'}], position: 14000, duration: 0 },
+                { id: "eid266", tween: [ "style", "${__1994}", "display", 'none', { fromValue: 'block'}], position: 14500, duration: 0 },
                 { id: "eid198", tween: [ "style", "${__2005}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid287", tween: [ "style", "${__2005}", "display", 'block', { fromValue: 'none'}], position: 19500, duration: 0 },
                 { id: "eid288", tween: [ "style", "${__2005}", "display", 'none', { fromValue: 'block'}], position: 20000, duration: 0 },
@@ -1545,36 +1546,24 @@ var symbols = {
                 { id: "eid187", tween: [ "style", "${__1978}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid233", tween: [ "style", "${__1978}", "display", 'block', { fromValue: 'none'}], position: 6000, duration: 0 },
                 { id: "eid234", tween: [ "style", "${__1978}", "display", 'none', { fromValue: 'block'}], position: 6500, duration: 0 },
-                { id: "eid17", tween: [ "style", "${_M1970}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid115", tween: [ "style", "${_M1970}", "opacity", '1', { fromValue: '0.35'}], position: 1750, duration: 0 },
-                { id: "eid197", tween: [ "style", "${__1989}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid255", tween: [ "style", "${__1989}", "display", 'block', { fromValue: 'none'}], position: 11500, duration: 0 },
-                { id: "eid256", tween: [ "style", "${__1989}", "display", 'none', { fromValue: 'block'}], position: 12000, duration: 0 },
-                { id: "eid196", tween: [ "style", "${__1990}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid257", tween: [ "style", "${__1990}", "display", 'block', { fromValue: 'none'}], position: 12000, duration: 0 },
-                { id: "eid258", tween: [ "style", "${__1990}", "display", 'none', { fromValue: 'block'}], position: 12500, duration: 0 },
-                { id: "eid55", tween: [ "style", "${_M2010}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid155", tween: [ "style", "${_M2010}", "opacity", '1', { fromValue: '0.35'}], position: 21750, duration: 0 },
-                { id: "eid194", tween: [ "style", "${__1993}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid263", tween: [ "style", "${__1993}", "display", 'block', { fromValue: 'none'}], position: 13500, duration: 0 },
-                { id: "eid264", tween: [ "style", "${__1993}", "display", 'none', { fromValue: 'block'}], position: 14000, duration: 0 },
-                { id: "eid161", tween: [ "style", "${__1966}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0 },
-                { id: "eid162", tween: [ "style", "${__1966}", "display", 'none', { fromValue: 'block'}], position: 500, duration: 0 },
-                { id: "eid34", tween: [ "style", "${_M1986}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid131", tween: [ "style", "${_M1986}", "opacity", '1', { fromValue: '0.35'}], position: 9750, duration: 0 },
-                { id: "eid13", tween: [ "style", "${_M1967}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid12", tween: [ "style", "${_M1967}", "opacity", '1', { fromValue: '0.35'}], position: 250, duration: 0 },
-                { id: "eid193", tween: [ "style", "${__1994}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid265", tween: [ "style", "${__1994}", "display", 'block', { fromValue: 'none'}], position: 14000, duration: 0 },
-                { id: "eid266", tween: [ "style", "${__1994}", "display", 'none', { fromValue: 'block'}], position: 14500, duration: 0 },
+                { id: "eid53", tween: [ "style", "${_M2012}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid157", tween: [ "style", "${_M2012}", "opacity", '1', { fromValue: '0.35'}], position: 22750, duration: 0 },
                 { id: "eid190", tween: [ "style", "${__1996}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid269", tween: [ "style", "${__1996}", "display", 'block', { fromValue: 'none'}], position: 15000, duration: 0 },
                 { id: "eid270", tween: [ "style", "${__1996}", "display", 'none', { fromValue: 'block'}], position: 15500, duration: 0 },
                 { id: "eid186", tween: [ "style", "${__1979}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid235", tween: [ "style", "${__1979}", "display", 'block', { fromValue: 'none'}], position: 6500, duration: 0 },
                 { id: "eid236", tween: [ "style", "${__1979}", "display", 'none', { fromValue: 'block'}], position: 7000, duration: 0 },
-                { id: "eid32", tween: [ "style", "${_M1984}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid129", tween: [ "style", "${_M1984}", "opacity", '1', { fromValue: '0.35'}], position: 8750, duration: 0 },
+                { id: "eid55", tween: [ "style", "${_M2010}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid155", tween: [ "style", "${_M2010}", "opacity", '1', { fromValue: '0.35'}], position: 21750, duration: 0 },
+                { id: "eid58", tween: [ "style", "${_M2007}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid152", tween: [ "style", "${_M2007}", "opacity", '1', { fromValue: '0.35'}], position: 20250, duration: 0 },
+                { id: "eid161", tween: [ "style", "${__1966}", "display", 'block', { fromValue: 'block'}], position: 0, duration: 0 },
+                { id: "eid162", tween: [ "style", "${__1966}", "display", 'none', { fromValue: 'block'}], position: 500, duration: 0 },
+                { id: "eid36", tween: [ "style", "${_M1988}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid133", tween: [ "style", "${_M1988}", "opacity", '1', { fromValue: '0.35'}], position: 10750, duration: 0 },
+                { id: "eid13", tween: [ "style", "${_M1967}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid12", tween: [ "style", "${_M1967}", "opacity", '1', { fromValue: '0.35'}], position: 250, duration: 0 },
                 { id: "eid169", tween: [ "style", "${__1969}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid213", tween: [ "style", "${__1969}", "display", 'block', { fromValue: 'none'}], position: 1500, duration: 0 },
                 { id: "eid214", tween: [ "style", "${__1969}", "display", 'none', { fromValue: 'block'}], position: 2000, duration: 0 },
@@ -1583,22 +1572,34 @@ var symbols = {
                 { id: "eid240", tween: [ "style", "${__1981}", "display", 'none', { fromValue: 'block'}], position: 8000, duration: 0 },
                 { id: "eid42", tween: [ "style", "${_M1994}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
                 { id: "eid139", tween: [ "style", "${_M1994}", "opacity", '1', { fromValue: '0.35'}], position: 13750, duration: 0 },
-                { id: "eid33", tween: [ "style", "${_M1985}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid130", tween: [ "style", "${_M1985}", "opacity", '1', { fromValue: '0.35'}], position: 9250, duration: 0 },
-                { id: "eid183", tween: [ "style", "${__1982}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid241", tween: [ "style", "${__1982}", "display", 'block', { fromValue: 'none'}], position: 8000, duration: 0 },
-                { id: "eid242", tween: [ "style", "${__1982}", "display", 'none', { fromValue: 'block'}], position: 8500, duration: 0 },
+                { id: "eid196", tween: [ "style", "${__1990}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid257", tween: [ "style", "${__1990}", "display", 'block', { fromValue: 'none'}], position: 12000, duration: 0 },
+                { id: "eid258", tween: [ "style", "${__1990}", "display", 'none', { fromValue: 'block'}], position: 12500, duration: 0 },
+                { id: "eid32", tween: [ "style", "${_M1984}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid129", tween: [ "style", "${_M1984}", "opacity", '1', { fromValue: '0.35'}], position: 8750, duration: 0 },
                 { id: "eid178", tween: [ "style", "${__1987}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid251", tween: [ "style", "${__1987}", "display", 'block', { fromValue: 'none'}], position: 10500, duration: 0 },
                 { id: "eid252", tween: [ "style", "${__1987}", "display", 'none', { fromValue: 'block'}], position: 11000, duration: 0 },
+                { id: "eid197", tween: [ "style", "${__1989}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid255", tween: [ "style", "${__1989}", "display", 'block', { fromValue: 'none'}], position: 11500, duration: 0 },
+                { id: "eid256", tween: [ "style", "${__1989}", "display", 'none', { fromValue: 'block'}], position: 12000, duration: 0 },
+                { id: "eid33", tween: [ "style", "${_M1985}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid130", tween: [ "style", "${_M1985}", "opacity", '1', { fromValue: '0.35'}], position: 9250, duration: 0 },
                 { id: "eid181", tween: [ "style", "${__1984}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid245", tween: [ "style", "${__1984}", "display", 'block', { fromValue: 'none'}], position: 9000, duration: 0 },
                 { id: "eid246", tween: [ "style", "${__1984}", "display", 'none', { fromValue: 'block'}], position: 9500, duration: 0 },
+                { id: "eid202", tween: [ "style", "${__2002}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid281", tween: [ "style", "${__2002}", "display", 'block', { fromValue: 'none'}], position: 18000, duration: 0 },
+                { id: "eid282", tween: [ "style", "${__2002}", "display", 'none', { fromValue: 'block'}], position: 18500, duration: 0 },
+                { id: "eid211", tween: [ "style", "${__2011}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid299", tween: [ "style", "${__2011}", "display", 'block', { fromValue: 'none'}], position: 22500, duration: 0 },
+                { id: "eid300", tween: [ "style", "${__2011}", "display", 'none', { fromValue: 'block'}], position: 23000, duration: 0 },
                 { id: "eid23", tween: [ "style", "${_M1975}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
                 { id: "eid120", tween: [ "style", "${_M1975}", "opacity", '1', { fromValue: '0.35'}], position: 4250, duration: 0 },
                 { id: "eid179", tween: [ "style", "${__1986}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid249", tween: [ "style", "${__1986}", "display", 'block', { fromValue: 'none'}], position: 10000, duration: 0 },
                 { id: "eid250", tween: [ "style", "${__1986}", "display", 'none', { fromValue: 'block'}], position: 10500, duration: 0 },
+                { id: "eid307", tween: [ "style", "${__2012}", "left", '-6px', { fromValue: '-6px'}], position: 23000, duration: 0 },
                 { id: "eid16", tween: [ "style", "${_M1969}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
                 { id: "eid114", tween: [ "style", "${_M1969}", "opacity", '1', { fromValue: '0.35'}], position: 1250, duration: 0 },
                 { id: "eid173", tween: [ "style", "${__1971}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
@@ -1607,29 +1608,26 @@ var symbols = {
                 { id: "eid176", tween: [ "style", "${__1974}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid225", tween: [ "style", "${__1974}", "display", 'block', { fromValue: 'none'}], position: 4000, duration: 0 },
                 { id: "eid226", tween: [ "style", "${__1974}", "display", 'none', { fromValue: 'block'}], position: 4500, duration: 0 },
+                { id: "eid206", tween: [ "style", "${__1998}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid273", tween: [ "style", "${__1998}", "display", 'block', { fromValue: 'none'}], position: 16000, duration: 0 },
+                { id: "eid274", tween: [ "style", "${__1998}", "display", 'none', { fromValue: 'block'}], position: 16500, duration: 0 },
                 { id: "eid174", tween: [ "style", "${__1976}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid229", tween: [ "style", "${__1976}", "display", 'block', { fromValue: 'none'}], position: 5000, duration: 0 },
                 { id: "eid230", tween: [ "style", "${__1976}", "display", 'none', { fromValue: 'block'}], position: 5500, duration: 0 },
                 { id: "eid26", tween: [ "style", "${_M1978}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
                 { id: "eid123", tween: [ "style", "${_M1978}", "opacity", '0.98', { fromValue: '0.35'}], position: 5750, duration: 0 },
-                { id: "eid58", tween: [ "style", "${_M2007}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid152", tween: [ "style", "${_M2007}", "opacity", '1', { fromValue: '0.35'}], position: 20250, duration: 0 },
-                { id: "eid44", tween: [ "style", "${_M1996}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid141", tween: [ "style", "${_M1996}", "opacity", '1', { fromValue: '0.35'}], position: 14750, duration: 0 },
                 { id: "eid207", tween: [ "style", "${__2009}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid295", tween: [ "style", "${__2009}", "display", 'block', { fromValue: 'none'}], position: 21500, duration: 0 },
                 { id: "eid296", tween: [ "style", "${__2009}", "display", 'none', { fromValue: 'block'}], position: 22000, duration: 0 },
-                { id: "eid172", tween: [ "style", "${__1972}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
-                { id: "eid222", tween: [ "style", "${__1972}", "display", 'block', { fromValue: 'none'}], position: 3000, duration: 0 },
-                { id: "eid305", tween: [ "style", "${__1972}", "display", 'none', { fromValue: 'block'}], position: 3500, duration: 0 },
-                { id: "eid53", tween: [ "style", "${_M2012}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid157", tween: [ "style", "${_M2012}", "opacity", '1', { fromValue: '0.35'}], position: 22750, duration: 0 },
-                { id: "eid28", tween: [ "style", "${_M1980}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid125", tween: [ "style", "${_M1980}", "opacity", '1', { fromValue: '0.35'}], position: 6750, duration: 0 },
+                { id: "eid44", tween: [ "style", "${_M1996}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid141", tween: [ "style", "${_M1996}", "opacity", '1', { fromValue: '0.35'}], position: 14750, duration: 0 },
+                { id: "eid308", tween: [ "style", "${__2013}", "left", '-6px', { fromValue: '-6px'}], position: 23500, duration: 0 },
+                { id: "eid34", tween: [ "style", "${_M1986}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid131", tween: [ "style", "${_M1986}", "opacity", '1', { fromValue: '0.35'}], position: 9750, duration: 0 },
                 { id: "eid25", tween: [ "style", "${_M1977}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
                 { id: "eid122", tween: [ "style", "${_M1977}", "opacity", '1', { fromValue: '0.35'}], position: 5250, duration: 0 },
-                { id: "eid36", tween: [ "style", "${_M1988}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid133", tween: [ "style", "${_M1988}", "opacity", '1', { fromValue: '0.35'}], position: 10750, duration: 0 },
+                { id: "eid38", tween: [ "style", "${_M1990}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid135", tween: [ "style", "${_M1990}", "opacity", '1', { fromValue: '0.35'}], position: 11750, duration: 0 },
                 { id: "eid61", tween: [ "style", "${_M2004}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
                 { id: "eid149", tween: [ "style", "${_M2004}", "opacity", '1', { fromValue: '0.35'}], position: 18750, duration: 0 },
                 { id: "eid57", tween: [ "style", "${_M2008}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
@@ -1638,14 +1636,15 @@ var symbols = {
                 { id: "eid185", tween: [ "style", "${__1980}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
                 { id: "eid237", tween: [ "style", "${__1980}", "display", 'block', { fromValue: 'none'}], position: 7000, duration: 0 },
                 { id: "eid238", tween: [ "style", "${__1980}", "display", 'none', { fromValue: 'block'}], position: 7500, duration: 0 },
-                { id: "eid65", tween: [ "style", "${_M2000}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid145", tween: [ "style", "${_M2000}", "opacity", '1', { fromValue: '0.35'}], position: 16750, duration: 0 },
+                { id: "eid19", tween: [ "style", "${_M1972}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
+                { id: "eid117", tween: [ "style", "${_M1972}", "opacity", '1', { fromValue: '0.35'}], position: 2750, duration: 0 },
                 { id: "eid59", tween: [ "style", "${_M2006}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
                 { id: "eid151", tween: [ "style", "${_M2006}", "opacity", '1', { fromValue: '0.35'}], position: 19750, duration: 0 },
                 { id: "eid43", tween: [ "style", "${_M1995}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
                 { id: "eid140", tween: [ "style", "${_M1995}", "opacity", '1', { fromValue: '0.35'}], position: 14250, duration: 0 },
-                { id: "eid46", tween: [ "style", "${_M1998}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
-                { id: "eid143", tween: [ "style", "${_M1998}", "opacity", '1', { fromValue: '0.35'}], position: 15750, duration: 0 },
+                { id: "eid200", tween: [ "style", "${__2006}", "display", 'none', { fromValue: 'none'}], position: 0, duration: 0 },
+                { id: "eid289", tween: [ "style", "${__2006}", "display", 'block', { fromValue: 'none'}], position: 20000, duration: 0 },
+                { id: "eid290", tween: [ "style", "${__2006}", "display", 'none', { fromValue: 'block'}], position: 20500, duration: 0 },
                 { id: "eid60", tween: [ "style", "${_M2005}", "opacity", '0.35', { fromValue: '0.35'}], position: 0, duration: 0 },
                 { id: "eid150", tween: [ "style", "${_M2005}", "opacity", '1', { fromValue: '0.35'}], position: 19250, duration: 0 }            ]
         }

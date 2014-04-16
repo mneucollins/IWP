@@ -28,8 +28,17 @@
                 	</a>
                     <h3>Choose Map Parameters</h3>
                     <?php
-                    	include ("common/map_parameters.incl") 
+                    	include ("common/map_parameters.incl");
                     ?>
+					<br />
+					<div class="centered">
+					<?php
+						echo '<a href="'.base_url("timeline/").'">';
+						echo '<img src = "'.base_url("resources/img/timelineButton.gif").'" height="20">';
+						echo '</a>';
+					?>
+					</div>
+                    
                 </div>
             </div>
             <div id="contentcolumn">
