@@ -17,7 +17,7 @@ class Marker_Features extends CI_model {
     function build_markers_geojson() {
     
     	$this->create_cohort();
-		$geojson = "{ \"type\": \"FeatureCollection\", \"features\": [";
+		$geojson = "{ \"type\": \"FeatureCollection\", \"features\": [ ";
 
     	$sql = "SELECT country_markers_projected.id AS country_id, author_countries.country, count(*) AS n , ST_AsGeoJSON(the_geom) AS geojson
 					FROM cohort JOIN author_countries
