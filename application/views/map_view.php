@@ -9,11 +9,11 @@
         echo link_tag('resources/css/style.css');
     ?>
 	        
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />       
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />       
         <!--[if lte IE 8]>
-            <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+            <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.ie.css" />
         <![endif]-->
-    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
 
 </head>
 <body>
@@ -40,19 +40,18 @@
         </div>
     </div>
 
-<?php if ($residency < 1978) : ?>
 	<script>
 		var map = L.map('map')
+<?php if ($residency < 1976) : ?>
 		var base = L.tileLayer.wms("http://dsph-dev.provost.uiowa.edu:8080/geoserver/IWP/wms?service=WMS", {
 		    layers: 'IWP:cshapes_mollweide_042_LandMass',
 		    format: 'image/png',
 		    transparent: true,
-		    version: '1.1.0',
-		    attribution: "<a href='http://nils.weidmann.ws/projects/cshapes'>cshapes country boundaries</a>"
+		    version: '1.1.0'
 		});
+<?php endif; ?>
 		base.addTo(map);
 	</script>
-<?php endif; ?>
 
 
 <script>
@@ -69,7 +68,7 @@
 	function onEachFeature(feature, layer) {
 	    // does this feature have a property named popupContent?
 	    if (feature.properties && feature.properties.popupContent) {
-	        layer.bindPopup(feature.properties.popupContent);
+	        layer.bindPopup(feature.properties.popupContent,{maxHeight:150,minWidth:200});
 	    }
 	}
 	
@@ -88,7 +87,7 @@
 		pointToLayer: function (feature, latlng) {
 			return L.circleMarker(latlng, {
 				radius: feature.radius,
-				fillColor: "#ff7800",
+				fillColor: "#711e0c",
 				color: "#000",
 				weight: 1,
 				opacity: 1,

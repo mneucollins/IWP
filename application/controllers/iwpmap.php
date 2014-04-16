@@ -9,7 +9,7 @@ class IWPMap extends CI_Controller {
 		$postvars =$this->input->post();
 		$residency = $this->input->post('residency'); 
 		if (empty($residency)) {
-			$data['residency'] = 2014;
+			$data['residency'] = date('Y')-1;
 		} else {
 			$data['residency']=$residency;			
 		}

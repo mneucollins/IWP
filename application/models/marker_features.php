@@ -29,8 +29,6 @@ class Marker_Features extends CI_model {
 		if ($counts->num_rows() > 0){
 			foreach ($counts->result() as $count){
 				//calc number of columns of 10 and set width
-				$cols = round(($count->n/10)+.5);
-				$popupWidth = $cols*150;
 				//get authors for popup
 				$sql = "SELECT author_name, year_of_attendance FROM author_names
 							JOIN cohort ON author_names.authors_id = cohort.authors_id
@@ -42,21 +40,14 @@ class Marker_Features extends CI_model {
 				
 				$geojson .= "{\"geometry\":".$count->geojson.",\"type\": \"Feature\", \"properties\":{";
 				$geojson .= "\"name\":\"".$count->country."\",";
-				$geojson .= "\"popupWidth\":\"".$popupWidth."\",";
 				$geojson .= "\"popupContent\":\"<b>".$count->country."(".$count->n.")</b><hr />";
 				$n=0;
-				$geojson .= "<table><tr><td nowrap valign='top' class='authorlist'>";
 				foreach ($authors->result() as $author){
 					$n++;
 					$geojson .= $author->author_name."(".$author->year_of_attendance.")<br />";
-					if ($n>9){
-						$geojson .= "</td><td nowrap valign='top' class='authorlist'>";
-						$n=0;
-					}
 				}
-				$geojson .= "</td></tr></table>";
 				
-				$radius = ($count->n + 5) *.5;
+				$radius = ($count->n + 6) *.4;
 				
 				$geojson .= "\"}, \"radius\": ".$radius.", \"id\": ".$count->country_id."},";
 			}
