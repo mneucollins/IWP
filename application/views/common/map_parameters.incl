@@ -53,7 +53,7 @@
                 <option value="0" <?php if($residency=='0'){echo "selected";}?> ></option>
             	<?php 
 	            	$beginyr = 1966;
-	            	$endyr = date('Y');
+	            	$endyr = date('Y')-1;
 	            	if (empty($residency)){ $residency=$endyr; }
 	            	for ($i = $beginyr;$i <= $endyr; $i++){
 		            	$selected =  ($residency == "$i")? "selected":"";
