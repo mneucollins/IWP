@@ -145,10 +145,20 @@ class iwpimport extends dbo {
 				$sql= "INSERT INTO author_writing_roles (authors_id, writing_role) VALUES ($iwprecord->id, ".$this->db->escape($writing_role).")";
 				$this->db->query($sql);
 			}
+			
+			//not all incoming continents are continents, some are countries
+			$continentValues = array("Africa". "Americas", "Asia", "Europe", "Oceania");
+			
 			$continents = explode(";", $iwprecord->continent);
 			foreach ($continents as $continent) {
-				$sql= "INSERT INTO author_continents (authors_id, continent) VALUES ($iwprecord->id, ".$this->db->escape($continent).")";
-				$this->db->query($sql);
+				if (in_array($continent, $continentValues)) {
+					$sql= "INSERT INTO author_continents (authors_id, continent) VALUES ($iwprecord->id, ".$this->db->escape($continent).")";
+					$this->db->query($sql);					
+				} else { //a country name is stored in the continent field
+					$sql= "INSERT INTO author_countries (authors_id, country) VALUES ($iwprecord->id, ".$this->db->escape($continent).")";
+					$this->db->query($sql);
+					
+				}
 			}
 			$countries = explode(";", $iwprecord->country);
 			foreach ($countries as $country) {

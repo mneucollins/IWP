@@ -3,9 +3,7 @@
 class MapTest extends CI_Controller {
 
 	function mapview() {
-		
-		$this->load->view('maptest_view');
+		$this->load->view('new_map_view');
+		//$this->load->view('map_view_mw');
 	}
-
-
 }

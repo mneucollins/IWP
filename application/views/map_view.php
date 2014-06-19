@@ -72,15 +72,15 @@
 
 <script>
 	var mywms = L.tileLayer.wms("http://dsph-dev.provost.uiowa.edu:8080/geoserver/IWP/wms?service=WMS", {
-	    layers: '<?php echo "IWP:cshapes_mollweide_042_$residency"; ?>' ,
+	    layers: '<?php echo "IWP:cshapes_mollweide_042_$residency"; ?>' ,    
 	    format: 'image/png',
 	    transparent: true,
 	    version: '1.1.0',
 	    attribution: "<a href='http://nils.weidmann.ws/projects/cshapes'>cshapes country boundaries</a>"
 	});
 	mywms.addTo(map);
-	
-	
+		
+
 	function onEachFeature(feature, layer) {
 	    // does this feature have a property named popupContent?
 	    if (feature.properties && feature.properties.popupContent) {
