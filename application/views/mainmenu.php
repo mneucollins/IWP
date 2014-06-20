@@ -61,6 +61,10 @@
 	            <td>Load menus from CSV files</td>
 	        </tr>
 	        <tr>
+	            <td><a href="iwpdata/load_iwp_participants">Load IWP_Participants</a></td>
+	            <td>Load IWP_Participants CSV File (accurate countries, regions, macro_regions)</td>
+	        </tr>
+	        <tr>
 	            <td><a href="/IWP-svn">View</a></td>
 	            <td>View Map</td>
 	        </tr>

@@ -42,6 +42,12 @@ class IWPData extends CI_Controller {
 		$data['results'] = $this->menus->load_csv();
 		$this->load->view('results_view', $data);
 	}
+	
+	public function load_iwp_participants(){
+		$sql = "COPY iwp_participants FROM '" . FCPATH . "application/import_data/iwp_participants.csv' DELIMITER ',' CSV HEADER";
+		$this->db->query($sql);
+		$this->load->view('mainmenu');
+	}
 
 //following functionality has been mobed to controller iwpmap
 	public function x_iwpMap() {
