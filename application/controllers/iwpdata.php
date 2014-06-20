@@ -44,7 +44,7 @@ class IWPData extends CI_Controller {
 	}
 	
 	public function load_iwp_participants(){
-		$sql = "COPY iwp_participants FROM '" . FCPATH . "application/import_data/iwp_participants.csv' DELIMITER ',' CSV HEADER";
+		$sql = "COPY iwp_participants (macro_region, region, country, iwp_program, year, family_name, given_name) FROM '" . FCPATH . "application/import_data/iwp_participants.csv' DELIMITER ',' CSV HEADER";
 		$this->db->query($sql);
 		$this->load->view('mainmenu');
 	}
