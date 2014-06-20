@@ -44,10 +44,11 @@ class IWPData extends CI_Controller {
 	}
 	
 	public function load_iwp_participants(){
-		//$this->db->truncate('iwp_participants');
+		$this->db->truncate('iwp_participants');
 		$sql = "COPY iwp_participants (macro_region, region, country, iwp_program, year, family_name, given_name) FROM '" . FCPATH . "application/import_data/iwp_participants.csv' DELIMITER ',' CSV HEADER";
 		$this->db->query($sql);
-		$this->load->view('mainmenu');
+		$data['results'] = "Added ".$this->db->count_all('iwp_participants')."records to iwp_participants";
+		$this->load->view('results_view', $data);
 	}
 
 //following functionality has been mobed to controller iwpmap
