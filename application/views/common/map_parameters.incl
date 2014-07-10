@@ -18,35 +18,31 @@
     		
         <li class='menu_item'>Region:<br />
             <select name="region">
+
                 <option value="0" <?php if($region=='0'){echo "selected";}?> ></option>
-                <option value="Australia and New Zealand" <?php if($region=='Australia and New Zealand'){echo "selected";}?> >Australia and New Zealand</option>
-                <option value="Central Asia" <?php if($region=='Central Asia'){echo "selected";}?> >Central Asia</option>
-                <option value="Eastern Africa" <?php if($region=='Eastern Africa'){echo "selected";}?> >Eastern Africa</option>
-                <option value="Eastern Asia" <?php if($region=='Eastern Asia'){echo "selected";}?> >Eastern Asia</option>
-                <option value="Eastern Europe" <?php if($region=='Eastern Europe'){echo "selected";}?> >Eastern Europe</option>
-                <option value="Latin America and the Caribbean" <?php if($region=='Latin America and the Caribbean'){echo "selected";}?> >Latin America and the Caribbean</option>
-                <option value="Melanesia" <?php if($region=='Melanesia'){echo "selected";}?> >Melanesia</option>
-                <option value="Middle Africa" <?php if($region=='Middle Africa'){echo "selected";}?> >Middle Africa</option>
-                <option value="Northern Africa" <?php if($region=='Northern Africa'){echo "selected";}?> >Northern Africa</option>
-                <option value="Northern America" <?php if($region=='Northern America'){echo "selected";}?> >Northern America</option>
-                <option value="Northern Europe" <?php if($region=='Northern Europe'){echo "selected";}?> >Northern Europe</option>
-                <option value="South-Eastern Asia" <?php if($region=='South-Eastern Asia'){echo "selected";}?> >South-Eastern Asia</option>
-                <option value="Southern Africa" <?php if($region=='Southern Africa'){echo "selected";}?> >Southern Africa</option>
-                <option value="Southern Asia" <?php if($region=='Southern Asia'){echo "selected";}?> >Southern Asia</option>
-                <option value="Southern Europe" <?php if($region=='Southern Europe'){echo "selected";}?> >Southern Europe</option>
-                <option value="Western Africa" <?php if($region=='Western Africa'){echo "selected";}?> >Western Africa</option>
-                <option value="Western Asia" <?php if($region=='Western Asia'){echo "selected";}?> >Western Asia</option>
-                <option value="Western Europe" <?php if($region=='Western Europe'){echo "selected";}?> >Western Europe</option>
+                <?php
+                	$sql = "SELECT region FROM iwp_participants GROUP BY region ORDER BY region";
+                	$query = $this->db->query($sql);
+                	foreach ($query->result() as $row) {
+	                	echo "<option value=\"{$row->region}\""; 
+	                	if($region==$row->region){echo "selected";}
+	                	echo ">{$row->region} </option>\n";
+                	}
+				?>
             </select>
         </li>
-        <li class='menu_item'>Continent:<br />
-            <select name="continent">
-                <option value="0" <?php if($continent=='0'){echo "selected";}?> ></option>
-                <option value="Africa" <?php if($continent=='Africa'){echo "selected";}?> >Africa</option>
-                <option value="Americas" <?php if($continent=='Americas'){echo "selected";}?> >Americas</option>
-                <option value="Asia" <?php if($continent=='Asia'){echo "selected";}?> >Asia</option>
-                <option value="Europe" <?php if($continent=='Europe'){echo "selected";}?> >Europe</option>
-                <option value="Oceania" <?php if($continent=='Oceania'){echo "selected";}?> >Oceania</option>
+        <li class='menu_item'>Macro Region:<br />
+            <select name="macro_region">
+                <option value="0" <?php if($macro_region=='0'){echo "selected";}?> ></option>
+                <?php 
+                	$sql = "SELECT macro_region FROM iwp_participants GROUP BY macro_region ORDER BY macro_region";
+                	$query = $this->db->query($sql);
+                	foreach ($query->result() as $row) {
+	                	echo "<option value=\"{$row->macro_region}\""; 
+	                	if($region==$row->macro_region){echo "selected";}
+	                	echo ">{$row->macro_region} </option>\n";
+                	}
+                ?>
             </select>
         </li>
         <li class='menu_item'>Year of Residency:&nbsp;&nbsp;
@@ -79,91 +75,30 @@
         </li>
         <li class='menu_item'>Language:&nbsp;&nbsp;
             <select name="language">
-                <option value="0" <?php if($language=='0'){echo "selected";}?> > </option>						    
-                <option value="Afrikaans" <?php if ($language=='Afrikaans'){echo "selected";} ?> >Afrikaans</option>
-                <option value="Albanian" <?php if ($language=='Albanian'){echo "selected";} ?> >Albanian</option>
-                <option value="Arabic" <?php if ($language=='Arabic'){echo "selected";} ?> >Arabic</option>
-                <option value="Armenian" <?php if ($language=='Armenian'){echo "selected";} ?> >Armenian</option>
-                <option value="Basque" <?php if ($language=='Basque'){echo "selected";} ?> >Basque</option>
-                <option value="Belarusian" <?php if ($language=='Belarusian'){echo "selected";} ?> >Belarusian</option>
-                <option value="Bengali" <?php if ($language=='Bengali'){echo "selected";} ?> >Bengali</option>
-                <option value="Bulgarian" <?php if ($language=='Bulgarian'){echo "selected";} ?> >Bulgarian</option>
-                <option value="Burmese" <?php if ($language=='Burmese'){echo "selected";} ?> >Burmese</option>
-                <option value="Catalan" <?php if ($language=='Catalan'){echo "selected";} ?> >Catalan</option>
-                <option value="Chinese" <?php if ($language=='Chinese'){echo "selected";} ?> >Chinese</option>
-                <option value="Croatian" <?php if ($language=='Croatian'){echo "selected";} ?> >Croatian</option>
-                <option value="Czech" <?php if ($language=='Czech'){echo "selected";} ?> >Czech</option>
-                <option value="Danish" <?php if ($language=='Danish'){echo "selected";} ?> >Danish</option>
-                <option value="Dutch" <?php if ($language=='Dutch'){echo "selected";} ?> >Dutch</option>
-                <option value="English" <?php if ($language=='English'){echo "selected";} ?> >English</option>
-                <option value="Estonian" <?php if ($language=='Estonian'){echo "selected";} ?> >Estonian</option>
-                <option value="Filipino" <?php if ($language=='Filipino'){echo "selected";} ?> >Filipino</option>
-                <option value="Finnish" <?php if ($language=='Finnish'){echo "selected";} ?> >Finnish</option>
-                <option value="Flemish" <?php if ($language=='Flemish'){echo "selected";} ?> >Flemish</option>
-                <option value="French" <?php if ($language=='French'){echo "selected";} ?> >French</option>
-                <option value="Georgian" <?php if ($language=='Georgian'){echo "selected";} ?> >Georgian</option>
-                <option value="German" <?php if ($language=='German'){echo "selected";} ?> >German</option>
-                <option value="Greek" <?php if ($language=='Greek'){echo "selected";} ?> >Greek</option>
-                <option value="Hebrew" <?php if ($language=='Hebrew'){echo "selected";} ?> >Hebrew</option>
-                <option value="Hindi" <?php if ($language=='Hindi'){echo "selected";} ?> >Hindi</option>
-                <option value="Hungarian" <?php if ($language=='Hungarian'){echo "selected";} ?> >Hungarian</option>
-                <option value="Icelandic" <?php if ($language=='Icelandic'){echo "selected";} ?> >Icelandic</option>
-                <option value="Indonesian" <?php if ($language=='Indonesian'){echo "selected";} ?> >Indonesian</option>
-                <option value="Italian" <?php if ($language=='Italian'){echo "selected";} ?> >Italian</option>
-                <option value="Japanese" <?php if ($language=='Japanese'){echo "selected";} ?> >Japanese</option>
-                <option value="Kannada" <?php if ($language=='Kannada'){echo "selected";} ?> >Kannada</option>
-                <option value="Khmer" <?php if ($language=='Khmer'){echo "selected";} ?> >Khmer</option>
-                <option value="Korean" <?php if ($language=='Korean'){echo "selected";} ?> >Korean</option>
-                <option value="Lao" <?php if ($language=='Lao'){echo "selected";} ?> >Lao</option>
-                <option value="Latvian" <?php if ($language=='Latvian'){echo "selected";} ?> >Latvian</option>
-                <option value="Lithuanian" <?php if ($language=='Lithuanian'){echo "selected";} ?> >Lithuanian</option>
-                <option value="Macedonian" <?php if ($language=='Macedonian'){echo "selected";} ?> >Macedonian</option>
-                <option value="Malay" <?php if ($language=='Malay'){echo "selected";} ?> >Malay</option>
-                <option value="Maltese" <?php if ($language=='Maltese'){echo "selected";} ?> >Maltese</option>
-                <option value="Mongolian" <?php if ($language=='Mongolian'){echo "selected";} ?> >Mongolian</option>
-                <option value="Nepali" <?php if ($language=='Nepali'){echo "selected";} ?> >Nepali</option>
-                <option value="Norwegian" <?php if ($language=='Norwegian'){echo "selected";} ?> >Norwegian</option>
-                <option value="Persian" <?php if ($language=='Persian'){echo "selected";} ?> >Persian</option>
-                <option value="Polish" <?php if ($language=='Polish'){echo "selected";} ?> >Polish</option>
-                <option value="Portuguese" <?php if ($language=='Portuguese'){echo "selected";} ?> >Portuguese</option>
-                <option value="Romanian" <?php if ($language=='Romanian'){echo "selected";} ?> >Romanian</option>
-                <option value="Russian" <?php if ($language=='Russian'){echo "selected";} ?> >Russian</option>
-                <option value="Serbian" <?php if ($language=='Serbian'){echo "selected";} ?> >Serbian</option>
-                <option value="Sinhalese" <?php if ($language=='Sinhalese'){echo "selected";} ?> >Sinhalese</option>
-                <option value="Slovak" <?php if ($language=='Slovak'){echo "selected";} ?> >Slovak</option>
-                <option value="Slovenian" <?php if ($language=='Slovenian'){echo "selected";} ?> >Slovenian</option>
-                <option value="Spanish" <?php if ($language=='Spanish'){echo "selected";} ?> >Spanish</option>
-                <option value="Swedish" <?php if ($language=='Swedish'){echo "selected";} ?> >Swedish</option>
-                <option value="Tamil" <?php if ($language=='Tamil'){echo "selected";} ?> >Tamil</option>
-                <option value="Thai" <?php if ($language=='Thai'){echo "selected";} ?> >Thai</option>
-                <option value="Turkish" <?php if ($language=='Turkish'){echo "selected";} ?> >Turkish</option>
-                <option value="Ukrainian" <?php if ($language=='Ukrainian'){echo "selected";} ?> >Ukrainian</option>
-                <option value="Urdu" <?php if ($language=='Urdu'){echo "selected";} ?> >Urdu</option>
-                <option value="Vietnamese" <?php if ($language=='Vietnamese'){echo "selected";} ?> >Vietnamese</option>
-                <option value="Welsh" <?php if ($language=='Welsh'){echo "selected";} ?> >Welsh</option>
-                <option value="Yiddish" <?php if ($language=='Yiddish'){echo "selected";} ?> >Yiddish</option>
+                <option value="0" <?php if($language=='0'){echo "selected";}?> > </option>
+                <?php
+                	$sql = "SELECT language FROM author_languages WHERE language <> '' GROUP BY language ORDER BY language ";
+                	$query = $this->db->query($sql);
+                	foreach ($query->result() as $row) {
+	                	echo "<option value=\"{$row->language}\""; 
+	                	if($region==$row->language){echo "selected";}
+	                	echo ">{$row->language} </option>\n";
+                	}
+                ?>
             </select>
         </li>
         <li class='menu_item'>Writing Role:&nbsp;&nbsp;
             <select name="role">
                 <option value="0" <?php if($role=='0'){echo "selected";}?> ></option>
-                <option value="activist" <?php if($role=='activist'){echo "selected";}?> >Activist</option>
-                <option value="childrens author" <?php if($role=='childrens author'){echo "selected";}?> >Children's Author</option>
-                <option value="fiction writer" <?php if($role=='fiction writer'){echo "selected";}?> >Fiction Writer</option>
-                <option value="editor" <?php if($role=='editor'){echo "selected";}?> >Editor</option>
-                <option value="filmmaker" <?php if($role=='filmmaker'){echo "selected";}?> >Filmmaker</option>
-                <option value="journalist" <?php if($role=='ournalist'){echo "selected";}?> >Journalist</option>
-                <option value="non-fiction writer" <?php if($role=='non-fiction writer'){echo "selected";}?> >Non-fiction Writer</option>
-                <option value="performance artist" <?php if($role=='performance artist'){echo "selected";}?> >Performance Artist</option>
-                <option value="physician" <?php if($role=='physician'){echo "selected";}?> >Physician</option>
-                <option value="playwright" <?php if($role=='playwright'){echo "selected";}?> >Playwright</option>
-                <option value="poet" <?php if($role=='poet'){echo "selected";}?> >Poet</option>
-                <option value="politician" <?php if($role=='politician'){echo "selected";}?> >Politician</option>
-                <option value="publisher" <?php if($role=='publisher'){echo "selected";}?> >Publisher</option>
-                <option value="scholar" <?php if($role=='scholar'){echo "selected";}?> >Scholar</option>
-                <option value="screenwriter" <?php if($role=='screenwriter'){echo "selected";}?> >Screenwriter</option>
-                <option value="translator" <?php if($role=='translator'){echo "selected";}?> >Translator</option>
-                <option value="visual artist" <?php if($role=='visual artist'){echo "selected";}?> >Visual Artist</option>
+                <?php
+                	$sql = "SELECT writing_role FROM author_writing_roles WHERE writing_role <> '' GROUP BY writing_role ORDER BY writing_role ";
+                	$query = $this->db->query($sql);
+                	foreach ($query->result() as $row) {
+	                	echo "<option value=\"{$row->writing_role}\""; 
+	                	if($role==$row->writing_role){echo "selected";}
+	                	echo ">{$row->writing_role} </option>\n";
+                	}
+                ?>
             </select>
         </li>
         <li class='menu_item'>Gender: <br />

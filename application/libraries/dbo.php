@@ -144,7 +144,7 @@ Class DBO extends CI_Model {
             }
         }
         
-        $sql = "UPDATE ".static::$tableName." SET $fieldvalues WHERE `id` = '{$this->id}'";
+        $sql = "UPDATE ".static::$tableName." SET $fieldvalues WHERE id = '{$this->id}'";
         $query = $this->db->query($sql); 
     }
 

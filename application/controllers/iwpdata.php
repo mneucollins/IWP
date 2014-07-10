@@ -26,11 +26,17 @@ class IWPData extends CI_Controller {
 	}
 	public function xmlImport(){
 		$this->load->model('iwpimport');
-
 		$this->iwpimport->clear_table();
 		$data['results'] = "Imported ".$this->iwpimport->importXML()." records";
 		$this->load->view('results_view', $data);
 	}
+	
+	public function importMasterList() {
+		$this->load->model("masterlist");
+		$data['results']="Imported ".$this->masterlist->importMasterList()." records from IWP_Masterlist";
+		$this->load->view('results_view', $data);	
+	}
+	
 	public function iwpParse() {
 		$this->load->model('iwpimport');
 		$data['results'] = "Imported ".$this->iwpimport->parse_iwpimport()." Author records";
@@ -44,11 +50,20 @@ class IWPData extends CI_Controller {
 	}
 	
 	public function load_iwp_participants(){
-		$this->db->truncate('iwp_participants');
+		$this->load->model('iwp_participants');
+		$this->iwp_participants->clear_table();
+		//$this->db->truncate('iwp_participants');
+		
 		$sql = "COPY iwp_participants (macro_region, region, country, iwp_program, year, family_name, given_name) FROM '" . FCPATH . "application/import_data/iwp_participants.csv' DELIMITER ',' CSV HEADER";
 		$this->db->query($sql);
+		
+		$this->iwp_participants->trim_names();
+		
 		$data['results'] = "Added ".$this->db->count_all('iwp_participants')."records to iwp_participants";
+		//update tables that are dependent upon this
+		
 		$this->load->view('results_view', $data);
+		
 	}
 
 //following functionality has been mobed to controller iwpmap

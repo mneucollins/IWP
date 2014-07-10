@@ -24,7 +24,7 @@ class IWPMap extends CI_Controller {
 		$data['multilingual']=$this->input->post('multilingual');
 		$data['language']=$this->input->post('language');
 		$data['region']=$this->input->post('region');
-		$data['continent']=$this->input->post('continent');
+		$data['macro_region']=$this->input->post('macro_region');
 		$data['role']=$this->input->post('role');
 		
 

@@ -24,10 +24,24 @@
 	        </tr>
 	        <tr>
 	            <td>
-	            <a href="iwpdata/xmlImport">Import</a>
+	            <a href="iwpdata/xmlImport">Import IWPData</a>
 	            </td>
 	            <td>Import Raw IWP Data into local data base </td>
 	        </tr>
+
+			<tr>
+				<td colspan="2">
+				<br />
+					The following option requires that an up-to-date masterlist csv file is in the resources/csv folder. This should include columns macro_region, region, country, iwp_program, years, family_name, given_name, oclc, penname, drupal_nid. Best luck is in creating this CSV file using LibreOffice to read and export the excel file.
+				</td>
+	        <tr>
+	            <td>
+	            <a href="iwpdata/importMasterList">Import Masterlist data</a>
+	            </td>
+	            <td>Import Raw masterlist data into the local data base </td>
+	        </tr>
+
+
 	        <tr>
 	            <td><a href="iwpdata/iwpParse">Process</a></td>
 	            <td>Process IWP Data into relational tables </td>
