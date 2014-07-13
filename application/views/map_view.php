@@ -76,7 +76,7 @@
 	    format: 'image/png',
 	    transparent: true,
 	    version: '1.1.0',
-	    attribution: "<a href='http://nils.weidmann.ws/projects/cshapes'>cshapes country boundaries</a>"
+	    attribution: "<a href='http://www.learnnc.org/lp/editions/mapping/6434'>mollweide projection</a>"
 	});
 	mywms.addTo(map);
 		
