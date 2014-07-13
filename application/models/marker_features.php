@@ -40,7 +40,7 @@ class Marker_Features extends CI_model {
 				
 				$geojson .= "{\"geometry\":".$count->geojson.",\"type\": \"Feature\", \"properties\":{";
 				$geojson .= "\"name\":\"".$count->country."\",";
-				$geojson .= "\"popupContent\":\"<b>".$count->country."(".$count->n.")</b><hr />";
+				$geojson .= "\"popupContent\":\"<b>".$count->country."&nbsp;(".$count->n.")</b><hr />";
 				$n=0;
 				foreach ($authors->result() as $author){
 					$n++;
@@ -54,8 +54,6 @@ class Marker_Features extends CI_model {
 		} 		
 		$geojson = substr($geojson,0,-1);
 		$geojson .=  "]}";
-//fred ($geojson,"geojson");
-//die;
 		return $geojson;	    
     }
 
@@ -124,10 +122,10 @@ class Marker_Features extends CI_model {
 		}
 
 		
-		$continent=$this->input->post('continent');
-		if (!empty($continent)){
-			$this->db->query("CREATE OR REPLACE VIEW continent AS SELECT authors_id FROM author_continents WHERE continent ='".$continent."'"); 
-			$to_join[] = "continent";
+		$macro_region=$this->input->post('macro_region');
+		if (!empty($macro_region)){
+			$this->db->query("CREATE OR REPLACE VIEW macro_region AS SELECT authors_id FROM author_macro_regions WHERE macro_region ='".$macro_region."'"); 
+			$to_join[] = "macro_region";
 		}
 		if (!empty($to_join)) {
 			$sql = "CREATE OR REPLACE VIEW cohort AS SELECT id AS authors_id FROM authors ";
@@ -140,11 +138,18 @@ class Marker_Features extends CI_model {
 	    
 
 	}
+	
+	function update_the_geom() {
+		$sql = "UPDATE country_markers_projected SET the_geom = ST_SetSRID(ST_MakePoint(marker_lon, marker_lat),4326) WHERE the_geom is null";
+		$this->db->query($sql);
+	}
     
     function max_year() {
 	    $sql = "select max(year) AS max_year from author_counts_by_year";
 	    $query = $this->db->query($sql);
 	    return $query->row()->max_year;
     }
+    
+    
 }
 ?>

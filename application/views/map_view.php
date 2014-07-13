@@ -23,7 +23,7 @@
                 <div class="innertube">
                 	<a href="http://iwp.uiowa.edu/">
                     <?php
-                     	echo '<img src="'.base_url("resources/img/iwp-main-logo.gif").'" width="230">';
+                     	echo '<img src="'.base_url("resources/img/iwp-main-logo.png").'" width="230">';
                     ?>
                 	</a>
                     <h3>Choose Map Parameters</h3>
@@ -32,11 +32,6 @@
                     ?>
 					<br />
 					<div class="centered">
-					<?php
-						echo '<a href="'.base_url("timeline/").'">';
-						echo '<img src = "'.base_url("resources/img/timelineButton.gif").'" height="20">';
-						echo '</a>';
-					?>
 					</div>
                     
                 </div>
@@ -45,13 +40,24 @@
 <!--                 <div class="innertube"> -->
                     <div id='map'></div>                        
 <!--                 </div> -->
+	            <div class = "info">
+	            	Navigation: use the +/- buttons to zoom, or hold the shift key then click and drag over area of interest. Click the "Apply/Reset" button to return to default world view.
+	            </div>
             </div>
+<!--
             <div id="bottomsection">
                 <div class="innertube">
                 </div>
             </div>
+-->
             <div id="footer">
                 <a href="http://iwp.uiowa.edu/">University of Iowa International Writing Program.</a> 
+                <?php
+            		echo '<a href="'.base_url("timeline/").'">';
+					echo '<img src = "'.base_url("resources/img/timelineButton.gif").'" height="25" class= "footer_button">';
+					echo '</a>';
+				?>
+
             </div>
         </div>
     </div>
@@ -70,9 +76,10 @@
 	</script>
 
 
+<!-- TODO: the layers should default to calculated max year rather than 2013 if residency is empty in script below -->
 <script>
 	var mywms = L.tileLayer.wms("http://dsph-dev.provost.uiowa.edu:8080/geoserver/IWP/wms?service=WMS", {
-	    layers: '<?php echo "IWP:cshapes_mollweide_042_$residency"; ?>' ,    
+	    layers: '<?php echo !empty($residency)? "IWP:cshapes_mollweide_042_$residency" :"IWP:cshapes_mollweide_042_2013" ; ?>' ,    
 	    format: 'image/png',
 	    transparent: true,
 	    version: '1.1.0',
@@ -113,9 +120,9 @@
 	}).addTo(map);
 	map.setView([15,10], 2.2);
 	
-	/*
+	
 	map.on('click', function(e) { alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng) })
-	*/
+	
 </script>
 
 </body>

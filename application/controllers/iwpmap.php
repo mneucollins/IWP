@@ -7,12 +7,17 @@ class IWPMap extends CI_Controller {
 	{
 		$this->load->model('marker_features');
 		$postvars =$this->input->post();
+/*
 		$residency = $this->input->post('residency'); 
 		if (empty($residency)) {
 			$data['residency'] = date('Y')-1;
 		} else {
 			$data['residency']=$residency;			
 		}
+*/
+		$data['residency'] = $this->input->post('residency'); 
+
+
 /* 		if (!empty($postvars)) { */
 			$data['geojson'] = $this->marker_features->build_markers_geojson(); 
 /* 		} */
@@ -26,13 +31,9 @@ class IWPMap extends CI_Controller {
 		$data['region']=$this->input->post('region');
 		$data['macro_region']=$this->input->post('macro_region');
 		$data['role']=$this->input->post('role');
-		
 
 		/* $data['counts'] = $this->authors->counts_by_country(); */
 
 		$this->load->view('map_view', $data );
 	}
 }
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */

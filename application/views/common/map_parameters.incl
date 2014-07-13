@@ -2,7 +2,7 @@
 <form action="<?php echo site_url('iwpmap') ?>" method="post" accept-charset="utf-8" class="inlineForm" >
     <hr />
         <ul class="no_marker">
-    	<li class='menu_item'>Country:<br />
+    	<li class='menu_item'>Country:
             <select name="country">
                 <option value="0" <?php if($country=='0'){echo "selected";}?> ></option>
                 <?php
@@ -16,12 +16,12 @@
             </select>
         </li>    		
     		
-        <li class='menu_item'>Region:<br />
+        <li class='menu_item'>Region:
             <select name="region">
 
                 <option value="0" <?php if($region=='0'){echo "selected";}?> ></option>
                 <?php
-                	$sql = "SELECT region FROM iwp_participants GROUP BY region ORDER BY region";
+                	$sql = "SELECT region FROM author_regions GROUP BY region ORDER BY region";
                 	$query = $this->db->query($sql);
                 	foreach ($query->result() as $row) {
 	                	echo "<option value=\"{$row->region}\""; 
@@ -31,15 +31,15 @@
 				?>
             </select>
         </li>
-        <li class='menu_item'>Macro Region:<br />
+        <li class='menu_item'>Macro Region:
             <select name="macro_region">
                 <option value="0" <?php if($macro_region=='0'){echo "selected";}?> ></option>
                 <?php 
-                	$sql = "SELECT macro_region FROM iwp_participants GROUP BY macro_region ORDER BY macro_region";
+                	$sql = "SELECT macro_region FROM author_macro_regions GROUP BY macro_region ORDER BY macro_region";
                 	$query = $this->db->query($sql);
                 	foreach ($query->result() as $row) {
 	                	echo "<option value=\"{$row->macro_region}\""; 
-	                	if($region==$row->macro_region){echo "selected";}
+	                	if($macro_region==$row->macro_region){echo "selected";}
 	                	echo ">{$row->macro_region} </option>\n";
                 	}
                 ?>
@@ -49,9 +49,10 @@
             <select name="residency">
                 <option value="0" <?php if($residency=='0'){echo "selected";}?> ></option>
             	<?php 
+  fred ($residency, "residency");
 	            	$beginyr = 1966;
 	            	$endyr = date('Y')-1;
-	            	if (empty($residency)){ $residency=$endyr; }
+	            	//if (empty($residency)){ $residency=$endyr; }
 	            	for ($i = $beginyr;$i <= $endyr; $i++){
 		            	$selected =  ($residency == "$i")? "selected":"";
 		            	echo "<option value = '".$i."' $selected>$i</option>";
