@@ -39,17 +39,19 @@ class IWPData extends CI_Controller {
 	
 	public function iwpParse() {
 		$this->load->model('iwpimport');
-		$data['results'] = "Imported ".$this->iwpimport->parse_iwpimport()." Author records";
+		$data['results'] = $this->iwpimport->process_imported() ;
 		$this->load->view('results_view', $data);
-
 	}
+	
+
 	public function loadMenus() {
 		$this->load->model('menus');
 		$data['results'] = $this->menus->load_csv();
 		$this->load->view('results_view', $data);
 	}
-	
-	public function load_iwp_participants(){
+
+//use masterlist instead of iwp_participants	
+	public function x_load_iwp_participants(){
 		$this->load->model('iwp_participants');
 		$this->iwp_participants->clear_table();
 		//$this->db->truncate('iwp_participants');
@@ -65,6 +67,16 @@ class IWPData extends CI_Controller {
 		$this->load->view('results_view', $data);
 		
 	}
+
+
+	public function loadCountsByYear(){
+		$this->load->model ('author_counts_by_year');
+		$data['results']=$this->author_counts_by_year->add_author_counts();
+//todo need to remove previous csv file
+//Why export? $this->author_counts_by_year->exportCSV();
+		$this->load->view('results_view', $data);		
+	}
+
 
 //following functionality has been mobed to controller iwpmap
 	public function x_iwpMap() {
@@ -87,13 +99,6 @@ class IWPData extends CI_Controller {
 		$this->load->view('map_view', $data );
 	}
 
-	public function loadCountsByYear(){
-		$this->load->model ('author_counts_by_year');
-		$data['results']=$this->author_counts_by_year->add_author_counts();
-//todo need to remove previous csv file
-//Why export? $this->author_counts_by_year->exportCSV();
-		$this->load->view('results_view', $data);		
-	}
 	
 	public function buildCountryMarkers() {
 		$this->load->model ('country_markers');
@@ -120,6 +125,10 @@ class IWPData extends CI_Controller {
 	public function createViews() {
 	$minyear = 1967;
 	$maxyear = 2014;
+	//fix last year problem
+	$sql = "update cshapes_042_mollweide set cowedate = '2014-01-01' where cowedate = '2013-12-31'";
+	$this->db->query($sql);
+	
 	for ($year=1967; $year<2014; $year++) {
 	
 		$vname = "cshapes_mollweide_042_".$year;

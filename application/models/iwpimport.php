@@ -114,66 +114,108 @@ class iwpimport extends dbo {
 		}
 	}
 
-	public function parse_iwpimport() {
-		$this->load->model('authors');
-		$this->authors->clear_table();
+	public function process_imported() {
+		//may need to run the truncate queries as admin
+		//$dbAdmin = $this->load->database('admin', true);		
 		
-		//note a direct insert query would be much faster here
-		$sql = "INSERT INTO authors (nid, given_name, family_name, name_suffix, name_order, pseudonym, gender, year_of_birth, year_of_death, website, bibliography, writing_sample, bio)
-					SELECT id, given_name, family_name, name_suffix, name_order, pseudonym, gender, year_of_birth, year_of_death, website, bibliography, writing_sample, bio
-					FROM iwpimport";
-		$query = $this->db->query($sql);
-		
-		$sql = "SELECT authors.id, year_of_attendance, language, writing_role, continent, country, region 
-			FROM iwpimport JOIN authors ON iwpimport.id = authors.nid";
-		$query = $this->db->query ($sql);
+		//authors table
+		$sql = "TRUNCATE authors CASCADE ";
+		$this->db->query($sql);
 
-		foreach ($query->result() as $iwprecord) {
-			$years = explode(";", $iwprecord->year_of_attendance);
-			foreach ($years as $year) {
-				$year = substr(trim($year),0,4);
-				$sql= "INSERT INTO author_years (authors_id, year_of_attendance) VALUES ($iwprecord->id, $year)";
-				$this->db->query($sql);
-			}
-			$languages = explode(";", $iwprecord->language);
-			foreach ($languages as $language) {
-				$sql= "INSERT INTO author_languages (authors_id, language) VALUES ($iwprecord->id, ".$this->db->escape($language).")";
-				$this->db->query($sql);
-			}
-			$writing_roles = explode(";", $iwprecord->writing_role);
-			foreach ($writing_roles as $writing_role) {
-				$sql= "INSERT INTO author_writing_roles (authors_id, writing_role) VALUES ($iwprecord->id, ".$this->db->escape($writing_role).")";
-				$this->db->query($sql);
-			}
-			
-			//not all incoming continents are continents, some are countries
-			$continentValues = array("Africa". "Americas", "Asia", "Europe", "Oceania");
-			
-			$continents = explode(";", $iwprecord->continent);
-			foreach ($continents as $continent) {
-				if (in_array($continent, $continentValues)) {
-					$sql= "INSERT INTO author_continents (authors_id, continent) VALUES ($iwprecord->id, ".$this->db->escape($continent).")";
-					$this->db->query($sql);					
-				} else { //a country name is stored in the continent field
-					$sql= "INSERT INTO author_countries (authors_id, country) VALUES ($iwprecord->id, ".$this->db->escape($continent).")";
-					$this->db->query($sql);
-					
+		$sql = "INSERT into authors (nid, given_name, family_name) SELECT drupal_nid, given_name, family_name FROM masterlist ";
+		$this->db->query($sql);
+		
+		$sql = "UPDATE authors SET name_order = iwpimport.name_order,
+				pseudonym = iwpimport.pseudonym,
+				gender = iwpimport.gender,
+				year_of_birth = iwpimport.year_of_birth,
+				year_of_death = iwpimport.year_of_death
+				FROM iwpimport WHERE authors.nid = iwpimport.id";
+		$this->db->query($sql);
+		
+		//author_macro_regions table
+		$sql = "TRUNCATE author_macro_regions CASCADE ";
+		$this->db->query($sql);
+
+		$sql = "INSERT into author_macro_regions (authors_id, macro_region) SELECT authors.id, masterlist.macro_region FROM authors JOIN masterlist ON authors.nid = masterlist.drupal_nid GROUP BY authors.id, masterlist.macro_region";
+		$this->db->query($sql);
+
+		//author_regions table
+		$sql = "TRUNCATE author_regions CASCADE ";
+		$this->db->query($sql);
+
+		$sql = "INSERT into author_regions (authors_id, region) SELECT authors.id, masterlist.region FROM authors JOIN masterlist ON authors.nid = masterlist.drupal_nid GROUP BY authors.id, masterlist.region";
+		$this->db->query($sql);
+
+		//author_countries table
+		$sql = "TRUNCATE author_countries CASCADE ";
+		$this->db->query($sql);
+		
+		$sql = "SELECT authors.id, masterlist.country FROM authors JOIN masterlist ON authors.nid = masterlist.drupal_nid 
+				GROUP BY authors.id, masterlist.country ";
+		$query = $this->db->query($sql);
+		foreach ($query->result() as $row) {
+			if (strtoupper(trim($row->country)) != "BURMA/MYANMAR") {
+				$countries = explode("/", $row->country);
+				foreach ($countries as $country) {
+					$sql2 = "INSERT INTO author_countries (authors_id, country) 
+						VALUES (".$row->id.", ".$this->db->escape(trim($country)).")";
+					$this->db->query($sql2);
 				}
+			} else {
+				$sql2 = "INSERT INTO author_countries (authors_id, country) 
+					VALUES (".$row->id.", ".$this->db->escape(trim($row->country)).")";
+				$this->db->query($sql2);
 			}
-			$countries = explode(";", $iwprecord->country);
-			foreach ($countries as $country) {
-				if ($country != "United States") {
-					$sql= "INSERT INTO author_countries (authors_id, country) VALUES ($iwprecord->id, ".$this->db->escape($country).")";
-					$this->db->query($sql);
-				}
-			}
-			$regions = explode(";", $iwprecord->region);
-			foreach ($regions as $region) {
-				$sql= "INSERT INTO author_regions (authors_id, region) VALUES ($iwprecord->id, ".$this->db->escape($region).")";
-				$this->db->query($sql);
-			}
-			
 		}
+		
+		//author_years table
+		$sql = "TRUNCATE author_years CASCADE ";
+		$this->db->query($sql);
+		
+		$sql = "SELECT authors.id, years FROM authors JOIN masterlist ON authors.nid = masterlist.drupal_nid 
+				GROUP BY authors.id, masterlist.years ";
+		$query = $this->db->query($sql);
+		foreach ($query->result() as $row) {
+			$years = explode(",", $row->years);
+			foreach ($years as $year) {
+				$sql2 = "INSERT INTO author_years (authors_id, year_of_attendance) VALUES (".$row->id.", ".$year.")";
+					$this->db->query($sql2);
+			}
+		}
+		
+		//author_languages table
+		$sql = "TRUNCATE author_languages CASCADE ";
+		$this->db->query($sql);
+		
+		$sql = "SELECT authors.id, language FROM authors JOIN iwpimport ON authors.nid = iwpimport.id 
+				GROUP BY authors.id, iwpimport.language ";
+		$query = $this->db->query($sql);
+		foreach ($query->result() as $row) {
+			$languages = explode(";", $row->language);
+			foreach ($languages as $language) {
+				$sql2 = "INSERT INTO author_languages (authors_id, language) 
+					VALUES (".$row->id.", ".$this->db->escape(trim($language)).")";
+				$this->db->query($sql2);
+			}
+		}
+		
+		//author_writing_roles table
+		$sql = "TRUNCATE author_writing_roles CASCADE ";
+		$this->db->query($sql);
+		
+		$sql = "SELECT authors.id, iwpimport.writing_role FROM authors JOIN iwpimport ON authors.nid = iwpimport.id 
+				GROUP BY authors.id, iwpimport.writing_role ";
+		$query = $this->db->query($sql);
+		foreach ($query->result() as $row) {
+			$writing_roles = explode(";", $row->writing_role);
+			foreach ($writing_roles as $writing_role) {
+				$sql2 = "INSERT INTO author_writing_roles (authors_id, writing_role) 
+					VALUES (".$row->id.", ".$this->db->escape(trim($writing_role)).")";
+				$this->db->query($sql2);
+			}
+		}
+		
 		//author_names table
 		$sql = "INSERT INTO author_names (authors_id, given_name, family_name, name_suffix, pseudonym, name_order)
 				SELECT id, given_name, family_name, name_suffix, pseudonym, name_order FROM authors";
@@ -187,15 +229,12 @@ class iwpimport extends dbo {
 
 		$sql = "UPDATE author_names SET author_name = concat(author_name, ' (', pseudonym ,')') WHERE pseudonym is not null";
 		$this->db->query($sql);
-
-
-		
 		
 		$return_string = "Import records parsed:<br />";
 		$return_string .= "&nbsp;&nbsp;Author Records: ".$this->db->count_all('authors')."<br />";
 		$return_string .= "&nbsp;&nbsp;Author year records: ".$this->db->count_all('author_years')."<br />";
 		$return_string .= "&nbsp;&nbsp;Author language records: ".$this->db->count_all('author_languages')."<br />";
-		$return_string .= "&nbsp;&nbsp;Author continent records: ".$this->db->count_all('author_continents')."<br />";
+		$return_string .= "&nbsp;&nbsp;Author macro_region records: ".$this->db->count_all('author_macro_regions')."<br />";
 		$return_string .= "&nbsp;&nbsp;Author region records: ".$this->db->count_all('author_regions')."<br />";
 		$return_string .= "&nbsp;&nbsp;Author country records: ".$this->db->count_all('author_countries')."<br />";
 		return $return_string;

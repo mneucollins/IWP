@@ -24,7 +24,7 @@
 	        </tr>
 	        <tr>
 	            <td>
-	            <a href="iwpdata/xmlImport">Import IWPData</a>
+	            <a href="iwpdata/xmlImport">Import IWPData From Drupal</a>
 	            </td>
 	            <td>Import Raw IWP Data into local data base </td>
 	        </tr>
@@ -38,13 +38,18 @@
 	            <td>
 	            <a href="iwpdata/importMasterList">Import Masterlist data</a>
 	            </td>
-	            <td>Import Raw masterlist data into the local data base </td>
+	            <td>Import Raw masterlist data into the local data base <br /></td>
 	        </tr>
-
+	    
+	        <tr>
+	            <td colspan=2>
+	            <hr />
+	            </td>
+	        </tr>
 
 	        <tr>
 	            <td><a href="iwpdata/iwpParse">Process</a></td>
-	            <td>Process IWP Data into relational tables </td>
+	            <td>Process Imported IWP Data and Masterlist data into relational tables </td>
 	        </tr>
 	        <tr>
 	            <td colspan="2"><i>The next steps will require an up-to-date cshapes file to be loaded into the postgis database. See the file in the resources>notes folder named "Update_cshapes_notes.txt"</i></td>
@@ -60,7 +65,7 @@
 	            <td>Assign Country Markers (capitals or alternate)</td>
 	         </td>   
 	         <tr>
-	            <td colspan="2"><i>Country Markers link is no longer applicable, countries added after 2013 will need to have markers manually added to country_markers_projected table using mouseclick coordinates (uncomment map.on('click'...) line at endd of map script in map_view)<i></td>
+	            <td colspan="2"><i>Country Markers link is no longer applicable, countries added after 2013 will need to have markers manually added to country_markers_projected table using mouseclick coordinates (uncomment map.on('click'...) line at end of map script in map_view)<i></td>
 	        </tr>			
 	        <tr>
 	            <td><a href="iwpdata/createViews">Year Views</a></td>
@@ -79,7 +84,7 @@
 	            <td>Load IWP_Participants CSV File (accurate countries, regions, macro_regions)</td>
 	        </tr>
 	        <tr>
-	            <td><a href="/IWP-svn">View</a></td>
+	            <td><a href="/IWP">View the Map</a></td>
 	            <td>View Map</td>
 	        </tr>
 	        <tr>
