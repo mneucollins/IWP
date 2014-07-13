@@ -50,7 +50,7 @@ class Author_counts_by_year extends dbo {
 		$query=$this->db->query($sql);
 		foreach($query->result() as $row) {
 			$sqlupdate = "UPDATE author_counts_by_year 
-				SET cumulative_count = (SELECT SUM(author_count) from author_counts_by_year WHERE author_country_name='".$row->author_country_name."' AND year <= ".$row->year.")
+				SET cumulative_count = (SELECT SUM(author_count) from author_counts_by_year WHERE author_country_name=".$this->db->escape($row->author_country_name)." AND year <= ".$row->year.")
 				WHERE id = $row->id";
 			$this->db->query($sqlupdate);
 		}		
