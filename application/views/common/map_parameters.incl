@@ -72,7 +72,7 @@
             <input type="radio" name="multilingual" value="multi" class="in1" <?php if($multilingual=='multi'){echo "checked = 'checked'";}?> />
             Multiple&nbsp;&nbsp;&nbsp;
             <input type="radio" name="multilingual" value="any" class="in1" <?php if($multilingual=='any'){echo "checked = 'checked'";}?> />
-            Any<br />
+            Reset<br />
         </li>
         <li class='menu_item'>Language:&nbsp;&nbsp;
             <select name="language">
@@ -109,7 +109,7 @@
             <input type="radio" name="gender" value="Female" class="in1" <?php if($gender=='Female'){echo "checked = 'checked'";}?>/>
             Female&nbsp;&nbsp;&nbsp;
             <input type="radio" name="gender" value="any" class="in1" <?php if($gender=='any'){echo "checked = 'checked'";}?>/>
-            Any<br />
+            Reset<br />
             
         </li>
         <li class='menu_item'>Year of Birth:&nbsp;&nbsp;

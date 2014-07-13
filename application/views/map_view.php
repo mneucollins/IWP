@@ -26,7 +26,7 @@
                      	echo '<img src="'.base_url("resources/img/iwp-main-logo.png").'" width="230">';
                     ?>
                 	</a>
-                    <h3>Choose Map Parameters</h3>
+                    <h3>Choose Search Parameters</h3>
                     <?php
                     	include ("common/map_parameters.incl");
                     ?>
@@ -91,7 +91,7 @@
 	function onEachFeature(feature, layer) {
 	    // does this feature have a property named popupContent?
 	    if (feature.properties && feature.properties.popupContent) {
-	        layer.bindPopup(feature.properties.popupContent,{maxHeight:150,minWidth:200});
+	        layer.bindPopup(feature.properties.popupContent,{maxHeight:150,minWidth:220});
 	    }
 	}
 	
