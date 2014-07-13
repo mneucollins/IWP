@@ -41,7 +41,7 @@ class Author_counts_by_year extends dbo {
 				SET author_count = (SELECT COUNT(*) FROM author_years 
 					JOIN author_countries ON author_years.authors_id = author_countries.authors_id 
 					WHERE year_of_attendance = $row->year
-					AND author_countries.country = '".$row->author_country_name."')
+					AND author_countries.country = ".$this->db->escape($row->author_country_name).")
 				WHERE id=$row->id";
 			$this->db->query($sqlupdate);
 		}
