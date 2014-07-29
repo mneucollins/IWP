@@ -70,7 +70,7 @@
             <input type="radio" name="multilingual" value="single" class="in1" <?php if($multilingual=='single'){echo "checked = 'checked'";}?> />
             Single&nbsp;&nbsp;&nbsp;
             <input type="radio" name="multilingual" value="multi" class="in1" <?php if($multilingual=='multi'){echo "checked = 'checked'";}?> />
-            Multiple&nbsp;&nbsp;&nbsp;
+            Multiple<br />
             <input type="radio" name="multilingual" value="any" class="in1" <?php if($multilingual=='any'){echo "checked = 'checked'";}?> />
             Reset<br />
         </li>
@@ -82,7 +82,7 @@
                 	$query = $this->db->query($sql);
                 	foreach ($query->result() as $row) {
 	                	echo "<option value=\"{$row->language}\""; 
-	                	if($region==$row->language){echo "selected";}
+	                	if($language==$row->language){echo "selected";}
 	                	echo ">{$row->language} </option>\n";
                 	}
                 ?>
@@ -107,7 +107,7 @@
             <input type="radio" name="gender" value="Male" class="in1" <?php if($gender=='Male'){echo "checked = 'checked'";}?> />
             Male&nbsp;&nbsp;&nbsp;
             <input type="radio" name="gender" value="Female" class="in1" <?php if($gender=='Female'){echo "checked = 'checked'";}?>/>
-            Female&nbsp;&nbsp;&nbsp;
+            Female<br />
             <input type="radio" name="gender" value="any" class="in1" <?php if($gender=='any'){echo "checked = 'checked'";}?>/>
             Reset<br />
             
@@ -136,3 +136,13 @@
 		<button name="clear" type="submit" value="clear">Clear</button>
 		</form>
 	</div>
+	<br />
+	<div id="timeline_button">
+	<?php
+		echo '<a href="'.base_url("timeline/").'">';
+		echo '<img src = "'.base_url("resources/img/TimeLineButton2.png").'" >';
+		echo '</a>';
+	?>
+	</div>
+
+	

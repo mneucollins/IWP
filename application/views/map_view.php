@@ -26,7 +26,7 @@
                      	echo '<img src="'.base_url("resources/img/iwp-main-logo.png").'" width="230">';
                     ?>
                 	</a>
-                    <h3>Choose Search Parameters</h3>
+                    <h3>Search By...</h3>
                     <?php
                     	include ("common/map_parameters.incl");
                     ?>
@@ -43,6 +43,10 @@
 	            <div class = "info">
 	            	Navigation: use the +/- buttons to zoom, or hold the shift key then click and drag over area of interest. Click the "Apply/Reset" button to return to default world view.
 	            </div>
+            <div id="footer">
+                <a href="http://iwp.uiowa.edu/">University of Iowa International Writing Program.</a> 
+            </div>
+
             </div>
 <!--
             <div id="bottomsection">
@@ -50,15 +54,6 @@
                 </div>
             </div>
 -->
-            <div id="footer">
-                <a href="http://iwp.uiowa.edu/">University of Iowa International Writing Program.</a> 
-                <?php
-            		echo '<a href="'.base_url("timeline/").'">';
-					echo '<img src = "'.base_url("resources/img/timelineButton.gif").'" height="25" class= "footer_button">';
-					echo '</a>';
-				?>
-
-            </div>
         </div>
     </div>
 

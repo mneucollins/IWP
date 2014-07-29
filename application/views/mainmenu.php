@@ -75,6 +75,7 @@
 	        <tr>
 	            <td colspan="2"><i>&nbsp;</i></td>
 	        </tr>
+<!--
 	        <tr>
 	            <td><a href="iwpdata/loadMenus">Load Menus</a></td>
 	            <td>Load menus from CSV files</td>
@@ -83,6 +84,7 @@
 	            <td><a href="iwpdata/load_iwp_participants">Load IWP_Participants</a></td>
 	            <td>Load IWP_Participants CSV File (accurate countries, regions, macro_regions)</td>
 	        </tr>
+-->
 	        <tr>
 	            <td><a href="/IWP">View the Map</a></td>
 	            <td>View Map</td>
