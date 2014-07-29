@@ -46,6 +46,12 @@ class Masterlist extends dbo {
 		
 		$this->db->query($sql);
 		
+		$sql = "UPDATE masterlist SET 
+			macro_region = initcap(macro_region),
+			region = initcap(region), 
+			country = initcap(country)";
+		$this->db->query($sql);
+		
 		return $this->db->count_all('masterlist');
 	}
 	
