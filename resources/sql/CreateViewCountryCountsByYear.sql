@@ -1,0 +1,1 @@
+﻿CREATE OR REPLACE VIEW country_counts_by_year AS SELECT cshapes_cntry_name, year, sum(cumulative_count) FROM author_counts_by_year GROUP BY cshapes_cntry_name, year ORDER BY cshapes_cntry_name, year

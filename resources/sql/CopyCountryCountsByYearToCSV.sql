@@ -1,0 +1,1 @@
+﻿COPY (SELECT * FROM country_counts_by_year) TO '/Users/mneucoll/Sites/IWP/resources/csv/country_counts_by_year.csv' WITH DELIMITER ',' CSV HEADER

@@ -1,0 +1,1 @@
+﻿COPY (SELECT * FROM author_counts) TO '/Users/mneucoll/Sites/IWP/resources/csv/author_counts_20140713.csv' DELIMITER ',' CSV HEADER 
