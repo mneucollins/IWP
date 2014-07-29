@@ -680,7 +680,7 @@
 		"defaultStageParentHeight":"650px"},
 	"TransitionIdCounter":"398",
 	"CompZoomFactor":"100",
-	"StageZoomFactor":"100",
+	"StageZoomFactor":"75",
 	"pixelsPerMs":"0.071757438976913",
 	"usedBOM":"false",
 	"pref__general__FilterNonAnimatedElements":"false",
