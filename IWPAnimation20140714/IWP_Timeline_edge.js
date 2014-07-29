@@ -721,7 +721,7 @@ var symbols = {
             stroke:[1,"rgba(130,13,12,1.00)","solid"]
          },
          {
-            id:'ButtonBackground',
+            id:'SearchMapButton',
             type:'rect',
             rect:['1067px','592px','10.6%','6.5%','auto','auto'],
             borderRadius:["10px","10px","10px","10px"],
@@ -942,6 +942,15 @@ var symbols = {
             ["style", "left", '-37px'],
             ["style", "display", 'none']
          ],
+         "${_SearchMapButton}": [
+            ["style", "top", '592px'],
+            ["style", "border-style", 'solid'],
+            ["style", "border-width", '1px'],
+            ["style", "height", '6.46%'],
+            ["color", "border-color", 'rgba(130,13,12,1.00)'],
+            ["style", "left", '1067px'],
+            ["gradient", "background-image", [270,[['rgba(197,197,197,1.00)',0],['rgba(255,255,255,1.00)',100]]]]
+         ],
          "${_time_marker_1994}": [
             ["style", "top", '597px'],
             ["style", "opacity", '0.5'],
@@ -1103,15 +1112,6 @@ var symbols = {
             ["style", "top", '597px'],
             ["style", "opacity", '0.5'],
             ["style", "left", '626px']
-         ],
-         "${_ButtonBackground}": [
-            ["style", "top", '592px'],
-            ["style", "border-style", 'solid'],
-            ["style", "border-width", '1px'],
-            ["style", "height", '6.46%'],
-            ["color", "border-color", 'rgba(130,13,12,1.00)'],
-            ["style", "left", '1067px'],
-            ["gradient", "background-image", [270,[['rgba(197,197,197,1.00)',0],['rgba(255,255,255,1.00)',100]]]]
          ],
          "${__2002}": [
             ["style", "top", '12px'],

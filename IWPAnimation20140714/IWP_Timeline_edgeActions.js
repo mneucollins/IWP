@@ -846,11 +846,19 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindElementAction(compId, symbolName, "${_ButtonBackground}", "click", function(sym, e) {
+      Symbol.bindElementAction(compId, symbolName, "${_SearchMapButton}", "click", function(sym, e) {
          // Navigate to a new URL in the current window
          // (replace "_self" with appropriate target attribute for a new window)
          window.open("http://dsph-dev.provost.uiowa.edu/IWP/", "_self");
          
+
+      });
+      //Edge binding end
+
+      Symbol.bindElementAction(compId, symbolName, "${_GotoSearchMap}", "click", function(sym, e) {
+         // Navigate to a new URL in the current window
+         // (replace "_self" with appropriate target attribute for a new window)
+         window.open("http://dsph-dev.provost.uiowa.edu/IWP/", "_self");
 
       });
       //Edge binding end

@@ -128,10 +128,6 @@
 			"timelineColor3":"0x29647e",
 			"animationEnabled":"true",
 			"timelineColor":"0x00a9fa"},
-		"element_${_ButtonBackground}":{
-			"timelineColor2":"0x1095d2",
-			"timelineColor3":"0x29647e",
-			"timelineColor":"0x00a9fa"},
 		"element_${__1979}":{
 			"timelineColor2":"0x4fa275",
 			"timelineColor3":"0x456a55",
@@ -139,6 +135,11 @@
 			"timelineTreeOpened":"false",
 			"animationEnabled":"true",
 			"locked":"true"},
+		"element_${_time_marker_1983}":{
+			"timelineColor2":"0xcbbd71",
+			"timelineColor3":"0x7b7652",
+			"animationEnabled":"true",
+			"timelineColor":"0xeedf79"},
 		"element_${_time_marker_2002}":{
 			"timelineColor2":"0x1095d2",
 			"timelineColor3":"0x29647e",
@@ -180,11 +181,10 @@
 			"timelineColor3":"0x7e4b52",
 			"animationEnabled":"true",
 			"timelineColor":"0xfb657a"},
-		"element_${_time_marker_1983}":{
-			"timelineColor2":"0xcbbd71",
-			"timelineColor3":"0x7b7652",
-			"animationEnabled":"true",
-			"timelineColor":"0xeedf79"},
+		"element_${_SearchMapButton}":{
+			"timelineColor2":"0x1095d2",
+			"timelineColor3":"0x29647e",
+			"timelineColor":"0x00a9fa"},
 		"element_${_time_marker_1978}":{
 			"timelineColor2":"0x5a558a",
 			"timelineColor3":"0x4a485e",

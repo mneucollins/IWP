@@ -201,7 +201,9 @@ Symbol.bindElementAction(compId,symbolName,"${_time_marker_2012}","click",functi
 //Edge binding end
 Symbol.bindElementAction(compId,symbolName,"${_time_marker_2013}","click",function(sym,e){sym.stop("2013");});
 //Edge binding end
-Symbol.bindElementAction(compId,symbolName,"${_ButtonBackground}","click",function(sym,e){window.open("http://dsph-dev.provost.uiowa.edu/IWP/","_self");});
+Symbol.bindElementAction(compId,symbolName,"${_SearchMapButton}","click",function(sym,e){window.open("http://dsph-dev.provost.uiowa.edu/IWP/","_self");});
+//Edge binding end
+Symbol.bindElementAction(compId,symbolName,"${_GotoSearchMap}","click",function(sym,e){window.open("http://dsph-dev.provost.uiowa.edu/IWP/","_self");});
 //Edge binding end
 })("stage");
 //Edge symbol end:'stage'
