@@ -61,7 +61,7 @@
 		var map = L.map('map')
 <?php if ($residency < 1976) : ?>
 		var base = L.tileLayer.wms("http://dsph-dev.provost.uiowa.edu:8080/geoserver/IWP/wms?service=WMS", {
-		    layers: 'IWP:cshapes_mollweide_042_LandMass',
+		    layers: 'IWP:cshapes_mollweide_042_landmass',
 		    format: 'image/png',
 		    transparent: true,
 		    version: '1.1.0'
