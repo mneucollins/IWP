@@ -48,7 +48,7 @@ class Marker_Features extends CI_model {
 					$geojson .= $author->author_name."(".$author->year_of_attendance.")<br />";
 				}
 				
-				$radius = ($count->n + 6) *.4;
+				$radius = ($count->n + 10) *.4;
 				
 				$geojson .= "\"}, \"radius\": ".$radius.", \"id\": ".$count->country_id."},";
 			}
