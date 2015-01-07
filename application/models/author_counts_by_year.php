@@ -24,6 +24,18 @@ class Author_counts_by_year extends dbo {
 		$query = $this->db->query($sql);
 		$maxyear = $query->row()->maxyear;
 
+		//Update cshapes max cowedate to ($maxyear+1).-01-01
+		$sql = "select Max(cowedate) AS maxcowedate  FROM ".self::$cshapesTableName ;
+		$query = $this->db->query($sql);
+
+		$maxcowedate = $query->row()->maxcowedate ;
+		$coweyear = $maxyear+1;
+		
+		$sql = "update ".self::$cshapesTableName." 
+				set cowedate = '".$coweyear."-01-01' where cowedate = '".$maxcowedate."'";
+		$this->db->query($sql);
+		
+		
 		//set up feature/country years
 		for ($year=$minyear; $year<=$maxyear; $year++) {
 			$testdate = "'".$year."-12-31'";

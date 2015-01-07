@@ -33,7 +33,11 @@ if (defined('ENVIRONMENT'))
 	switch (ENVIRONMENT)
 	{
 		case 'development':
+			// Report all errors
 			error_reporting(E_ALL);
+
+            // Display errors in output
+            ini_set('display_errors', 1);
 		break;
 	
 		case 'testing':
@@ -190,6 +194,9 @@ if (defined('ENVIRONMENT'))
 
 		define('APPPATH', BASEPATH.$application_folder.'/');
 	}
+
+
+require_once (FCPATH.'resources/mn_includes/fred.php');   
 
 /*
  * --------------------------------------------------------------------

@@ -124,12 +124,17 @@ class IWPData extends CI_Controller {
 	
 	public function createViews() {
 		$minyear = 1967;
-		$maxyear = 2014;
+		$maxyear = 2015;
 		//fix last year problem
 		$sql = "update cshapes_042_mollweide set cowedate = '2014-01-01' where cowedate = '2013-12-31'";
 		$this->db->query($sql);
 		
-		for ($year=1966; $year<2014; $year++) {
+		//increment cowedate for new year
+		$sql = "update cshapes_042_mollweide set cowedate = '2015-01-01' where cowedate = '2014-01-01'";
+		$this->db->query($sql);
+
+		
+		for ($year=1966; $year<$maxyear; $year++) {
 		
 			$vname = "cshapes_mollweide_042_".$year;
 			$vdate = "$year-12-31";

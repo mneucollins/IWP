@@ -49,7 +49,6 @@
             <select name="residency">
                 <option value="0" <?php if($residency=='0'){echo "selected";}?> ></option>
             	<?php 
-  fred ($residency, "residency");
 	            	$beginyr = 1967;
 	            	$endyr = date('Y')-1;
 	            	//if (empty($residency)){ $residency=$endyr; }
@@ -136,7 +135,6 @@
 		<button name="clear" type="submit" value="clear">Clear</button>
 		</form>
 	</div>
-	<br />
 	<div id="timeline_button">
 	<?php
 		echo '<a href="'.base_url("timeline/").'">';
