@@ -195,7 +195,7 @@ class iwpimport extends dbo {
 				GROUP BY authors.id, iwpimport.language ";
 		$query = $this->db->query($sql);
 		foreach ($query->result() as $row) {
-			$languages = explode(";", $row->language);
+			$languages = explode(",", $row->language);
 			foreach ($languages as $language) {
 				$sql2 = "INSERT INTO author_languages (authors_id, language) 
 					VALUES (".$row->id.", ".$this->db->escape(trim($language)).")";
