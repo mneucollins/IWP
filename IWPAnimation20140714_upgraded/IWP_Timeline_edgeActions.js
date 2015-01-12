@@ -97,12 +97,11 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       });
       //Edge binding end
 
-      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 250, function(sym, e) {
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 500, function(sym, e) {
          // Change an Element's contents.
          //  (sym.$("name") resolves an Edge Animate element name to a DOM
          //  element that can be used with jQuery)
          sym.$("ResYear").html("1966");
-         sym.stop();
          
 
       });
@@ -866,6 +865,13 @@ var Composition = Edge.Composition, Symbol = Edge.Symbol; // aliases for commonl
       Symbol.bindElementAction(compId, symbolName, "${time_marker_2014}", "click", function(sym, e) {
          // stop the timeline at the given position (ms or label)
          sym.stop("2014");
+
+      });
+      //Edge binding end
+
+      Symbol.bindTriggerAction(compId, symbolName, "Default Timeline", 0, function(sym, e) {
+         // insert code here
+         sym.stop();
 
       });
       //Edge binding end

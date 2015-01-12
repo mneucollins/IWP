@@ -799,8 +799,8 @@
                     duration: 25000,
                     autoPlay: true,
                     labels: {
-                        "Start": 250,
-                        "1966": 750,
+                        "Start": 0,
+                        "1966": 500,
                         "1967": 1000,
                         "1968": 1500,
                         "1969": 2000,
@@ -903,104 +903,74 @@
                             '817px'
                         ],
                         [
-                            "eid40",
+                            "eid243",
+                            "top",
+                            14250,
+                            0,
+                            "linear",
+                            "${_1993}",
+                            '12px',
+                            '12px'
+                        ],
+                        [
+                            "eid24",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_1980}",
+                            "${_1996}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid79",
+                            "eid111",
                             "display",
-                            7500,
+                            15500,
                             0,
                             "linear",
-                            "${_1980}",
+                            "${_1996}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid80",
+                            "eid112",
                             "display",
-                            8000,
+                            16000,
                             0,
                             "linear",
-                            "${_1980}",
+                            "${_1996}",
                             'block',
                             'none'
                         ],
                         [
-                            "eid440",
+                            "eid415",
                             "left",
                             24500,
                             0,
                             "linear",
+                            "${time_marker_1978}",
+                            '383px',
+                            '383px'
+                        ],
+                        [
+                            "eid331",
+                            "opacity",
+                            0,
+                            0,
+                            "easeInQuad",
                             "${time_marker_2001}",
-                            '767px',
-                            '767px'
+                            '0.5',
+                            '0.5'
                         ],
                         [
-                            "eid34",
-                            "display",
+                            "eid385",
+                            "opacity",
+                            18000,
                             0,
-                            0,
-                            "linear",
-                            "${_1986}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid91",
-                            "display",
-                            10500,
-                            0,
-                            "linear",
-                            "${_1986}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid92",
-                            "display",
-                            11000,
-                            0,
-                            "linear",
-                            "${_1986}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid29",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${_1991}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid101",
-                            "display",
-                            13000,
-                            0,
-                            "linear",
-                            "${_1991}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid102",
-                            "display",
-                            13500,
-                            0,
-                            "linear",
-                            "${_1991}",
-                            'block',
-                            'none'
+                            "easeInQuad",
+                            "${time_marker_2001}",
+                            '0.5',
+                            '1'
                         ],
                         [
                             "eid242",
@@ -1123,12 +1093,12 @@
                             '534px'
                         ],
                         [
-                            "eid271",
+                            "eid267",
                             "top",
-                            21250,
+                            20250,
                             0,
                             "linear",
-                            "${_2007}",
+                            "${_2005}",
                             '12px',
                             '12px'
                         ],
@@ -1433,12 +1403,12 @@
                             '1'
                         ],
                         [
-                            "eid248",
+                            "eid256",
                             "left",
-                            15250,
+                            17250,
                             0,
                             "linear",
-                            "${_1995}",
+                            "${_1999}",
                             '-37px',
                             '-37px'
                         ],
@@ -1453,32 +1423,32 @@
                             '750px'
                         ],
                         [
-                            "eid249",
-                            "top",
-                            15750,
+                            "eid439",
+                            "left",
+                            24500,
                             0,
                             "linear",
-                            "${_1996}",
-                            '12px',
-                            '12px'
+                            "${time_marker_1976}",
+                            '350px',
+                            '350px'
                         ],
                         [
-                            "eid313",
+                            "eid405",
                             "opacity",
                             0,
                             0,
                             "easeInQuad",
-                            "${time_marker_1975}",
+                            "${time_marker_2014}",
                             '0.5',
                             '0.5'
                         ],
                         [
-                            "eid359",
+                            "eid406",
                             "opacity",
-                            5000,
+                            24500,
                             0,
                             "easeInQuad",
-                            "${time_marker_1975}",
+                            "${time_marker_2014}",
                             '0.5',
                             '1'
                         ],
@@ -1513,34 +1483,34 @@
                             'block'
                         ],
                         [
-                            "eid439",
+                            "eid431",
                             "left",
                             24500,
                             0,
                             "linear",
-                            "${time_marker_1976}",
-                            '350px',
-                            '350px'
+                            "${time_marker_2007}",
+                            '867px',
+                            '867px'
                         ],
                         [
-                            "eid277",
+                            "eid188",
                             "top",
-                            22750,
+                            1750,
                             0,
                             "linear",
-                            "${_2010}",
+                            "${_1968}",
                             '12px',
                             '12px'
                         ],
                         [
-                            "eid231",
-                            "top",
-                            11250,
+                            "eid230",
+                            "left",
+                            10750,
                             0,
                             "linear",
-                            "${_1987}",
-                            '12px',
-                            '12px'
+                            "${_1986}",
+                            '-37px',
+                            '-37px'
                         ],
                         [
                             "eid456",
@@ -1553,54 +1523,44 @@
                             '-37px'
                         ],
                         [
-                            "eid347",
-                            "opacity",
-                            0,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1985}",
-                            '0.5',
-                            '0.5'
-                        ],
-                        [
-                            "eid369",
-                            "opacity",
-                            10000,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1985}",
-                            '0.5',
-                            '1'
-                        ],
-                        [
-                            "eid42",
+                            "eid26",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_1978}",
+                            "${_1994}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid75",
+                            "eid107",
                             "display",
-                            6500,
+                            14500,
                             0,
                             "linear",
-                            "${_1978}",
+                            "${_1994}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid76",
+                            "eid108",
                             "display",
-                            7000,
+                            15000,
                             0,
                             "linear",
-                            "${_1978}",
+                            "${_1994}",
                             'block',
                             'none'
+                        ],
+                        [
+                            "eid427",
+                            "left",
+                            24500,
+                            0,
+                            "linear",
+                            "${time_marker_1972}",
+                            '283px',
+                            '283px'
                         ],
                         [
                             "eid192",
@@ -1623,14 +1583,24 @@
                             '584px'
                         ],
                         [
-                            "eid246",
-                            "left",
-                            14750,
+                            "eid334",
+                            "opacity",
                             0,
-                            "linear",
-                            "${_1994}",
-                            '-37px',
-                            '-37px'
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1998}",
+                            '0.5',
+                            '0.5'
+                        ],
+                        [
+                            "eid382",
+                            "opacity",
+                            16500,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1998}",
+                            '0.5',
+                            '1'
                         ],
                         [
                             "eid280",
@@ -1643,24 +1613,14 @@
                             '-37px'
                         ],
                         [
-                            "eid346",
-                            "opacity",
+                            "eid200",
+                            "left",
+                            3250,
                             0,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1986}",
-                            '0.5',
-                            '0.5'
-                        ],
-                        [
-                            "eid370",
-                            "opacity",
-                            10500,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1986}",
-                            '0.5',
-                            '1'
+                            "linear",
+                            "${_1971}",
+                            '-37px',
+                            '-37px'
                         ],
                         [
                             "eid223",
@@ -1693,44 +1653,44 @@
                             '12px'
                         ],
                         [
-                            "eid9",
+                            "eid213",
+                            "top",
+                            6750,
+                            0,
+                            "linear",
+                            "${_1978}",
+                            '12px',
+                            '12px'
+                        ],
+                        [
+                            "eid42",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_2011}",
+                            "${_1978}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid141",
+                            "eid75",
                             "display",
-                            23000,
+                            6500,
                             0,
                             "linear",
-                            "${_2011}",
+                            "${_1978}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid142",
+                            "eid76",
                             "display",
-                            23500,
+                            7000,
                             0,
                             "linear",
-                            "${_2011}",
+                            "${_1978}",
                             'block',
                             'none'
-                        ],
-                        [
-                            "eid431",
-                            "left",
-                            24500,
-                            0,
-                            "linear",
-                            "${time_marker_2007}",
-                            '867px',
-                            '867px'
                         ],
                         [
                             "eid31",
@@ -1763,14 +1723,14 @@
                             'none'
                         ],
                         [
-                            "eid207",
-                            "top",
-                            5250,
+                            "eid210",
+                            "left",
+                            5750,
                             0,
                             "linear",
-                            "${_1975}",
-                            '12px',
-                            '12px'
+                            "${_1976}",
+                            '-37px',
+                            '-37px'
                         ],
                         [
                             "eid422",
@@ -1823,114 +1783,84 @@
                             '417px'
                         ],
                         [
-                            "eid213",
+                            "eid207",
                             "top",
-                            6750,
+                            5250,
                             0,
                             "linear",
-                            "${_1978}",
+                            "${_1975}",
                             '12px',
                             '12px'
                         ],
                         [
-                            "eid50",
+                            "eid9",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_1970}",
+                            "${_2011}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid59",
+                            "eid141",
                             "display",
-                            2500,
-                            0,
-                            "linear",
-                            "${_1970}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid60",
-                            "display",
-                            3000,
-                            0,
-                            "linear",
-                            "${_1970}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid321",
-                            "opacity",
-                            0,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_2011}",
-                            '0.5',
-                            '0.5'
-                        ],
-                        [
-                            "eid395",
-                            "opacity",
                             23000,
                             0,
-                            "easeInQuad",
-                            "${time_marker_2011}",
-                            '0.5',
-                            '1'
-                        ],
-                        [
-                            "eid5",
-                            "display",
-                            0,
-                            0,
                             "linear",
-                            "${_1966}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid455",
-                            "display",
-                            250,
-                            0,
-                            "linear",
-                            "${_1966}",
+                            "${_2011}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid4",
+                            "eid142",
                             "display",
-                            1000,
+                            23500,
                             0,
                             "linear",
-                            "${_1966}",
+                            "${_2011}",
                             'block',
                             'none'
                         ],
                         [
-                            "eid350",
+                            "eid349",
                             "opacity",
                             0,
                             0,
                             "easeInQuad",
-                            "${time_marker_1982}",
+                            "${time_marker_1983}",
                             '0.5',
                             '0.5'
                         ],
                         [
-                            "eid366",
+                            "eid367",
                             "opacity",
-                            8500,
+                            9000,
                             0,
                             "easeInQuad",
-                            "${time_marker_1982}",
+                            "${time_marker_1983}",
                             '0.5',
                             '1'
+                        ],
+                        [
+                            "eid424",
+                            "left",
+                            24500,
+                            0,
+                            "linear",
+                            "${time_marker_1974}",
+                            '317px',
+                            '317px'
+                        ],
+                        [
+                            "eid428",
+                            "left",
+                            24500,
+                            0,
+                            "linear",
+                            "${time_marker_2009}",
+                            '901px',
+                            '901px'
                         ],
                         [
                             "eid21",
@@ -1993,34 +1923,14 @@
                             '367px'
                         ],
                         [
-                            "eid24",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${_1996}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid111",
-                            "display",
-                            15500,
+                            "eid446",
+                            "left",
+                            24500,
                             0,
                             "linear",
-                            "${_1996}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid112",
-                            "display",
-                            16000,
-                            0,
-                            "linear",
-                            "${_1996}",
-                            'block',
-                            'none'
+                            "${time_marker_1994}",
+                            '650px',
+                            '650px'
                         ],
                         [
                             "eid332",
@@ -2083,14 +1993,24 @@
                             '1'
                         ],
                         [
-                            "eid230",
-                            "left",
-                            10750,
+                            "eid347",
+                            "opacity",
                             0,
-                            "linear",
-                            "${_1986}",
-                            '-37px',
-                            '-37px'
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1985}",
+                            '0.5',
+                            '0.5'
+                        ],
+                        [
+                            "eid369",
+                            "opacity",
+                            10000,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1985}",
+                            '0.5',
+                            '1'
                         ],
                         [
                             "eid10",
@@ -2123,34 +2043,34 @@
                             'none'
                         ],
                         [
-                            "eid200",
-                            "left",
-                            3250,
-                            0,
-                            "linear",
-                            "${_1971}",
-                            '-37px',
-                            '-37px'
-                        ],
-                        [
-                            "eid341",
+                            "eid346",
                             "opacity",
                             0,
                             0,
                             "easeInQuad",
-                            "${time_marker_1991}",
+                            "${time_marker_1986}",
                             '0.5',
                             '0.5'
                         ],
                         [
-                            "eid375",
+                            "eid370",
                             "opacity",
-                            13000,
+                            10500,
                             0,
                             "easeInQuad",
-                            "${time_marker_1991}",
+                            "${time_marker_1986}",
                             '0.5',
                             '1'
+                        ],
+                        [
+                            "eid248",
+                            "left",
+                            15250,
+                            0,
+                            "linear",
+                            "${_1995}",
+                            '-37px',
+                            '-37px'
                         ],
                         [
                             "eid1",
@@ -2193,14 +2113,14 @@
                             '1'
                         ],
                         [
-                            "eid264",
-                            "left",
-                            19250,
+                            "eid211",
+                            "top",
+                            6250,
                             0,
                             "linear",
-                            "${_2003}",
-                            '-37px',
-                            '-37px'
+                            "${_1977}",
+                            '12px',
+                            '12px'
                         ],
                         [
                             "eid203",
@@ -2223,14 +2143,14 @@
                             '467px'
                         ],
                         [
-                            "eid187",
+                            "eid451",
                             "left",
-                            1750,
+                            24500,
                             0,
                             "linear",
-                            "${_1968}",
-                            '-37px',
-                            '-37px'
+                            "${time_marker_1968}",
+                            '217px',
+                            '217px'
                         ],
                         [
                             "eid418",
@@ -2243,74 +2163,44 @@
                             '717px'
                         ],
                         [
-                            "eid327",
+                            "eid315",
                             "opacity",
                             0,
                             0,
                             "easeInQuad",
-                            "${time_marker_2005}",
+                            "${time_marker_1973}",
                             '0.5',
                             '0.5'
                         ],
                         [
-                            "eid389",
+                            "eid357",
                             "opacity",
-                            20000,
+                            4000,
                             0,
                             "easeInQuad",
-                            "${time_marker_2005}",
+                            "${time_marker_1973}",
                             '0.5',
                             '1'
                         ],
                         [
-                            "eid18",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${_2002}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid123",
-                            "display",
-                            18500,
+                            "eid217",
+                            "top",
+                            7750,
                             0,
                             "linear",
-                            "${_2002}",
-                            'none',
-                            'block'
+                            "${_1980}",
+                            '12px',
+                            '12px'
                         ],
                         [
-                            "eid124",
-                            "display",
-                            19000,
+                            "eid231",
+                            "top",
+                            11250,
                             0,
                             "linear",
-                            "${_2002}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid349",
-                            "opacity",
-                            0,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1983}",
-                            '0.5',
-                            '0.5'
-                        ],
-                        [
-                            "eid367",
-                            "opacity",
-                            9000,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1983}",
-                            '0.5',
-                            '1'
+                            "${_1987}",
+                            '12px',
+                            '12px'
                         ],
                         [
                             "eid259",
@@ -2363,14 +2253,14 @@
                             'none'
                         ],
                         [
-                            "eid210",
-                            "left",
-                            5750,
+                            "eid263",
+                            "top",
+                            19250,
                             0,
                             "linear",
-                            "${_1976}",
-                            '-37px',
-                            '-37px'
+                            "${_2003}",
+                            '12px',
+                            '12px'
                         ],
                         [
                             "eid209",
@@ -2453,34 +2343,14 @@
                             'none'
                         ],
                         [
-                            "eid16",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${_2004}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid127",
-                            "display",
-                            19500,
+                            "eid212",
+                            "left",
+                            6250,
                             0,
                             "linear",
-                            "${_2004}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid128",
-                            "display",
-                            20000,
-                            0,
-                            "linear",
-                            "${_2004}",
-                            'block',
-                            'none'
+                            "${_1977}",
+                            '-37px',
+                            '-37px'
                         ],
                         [
                             "eid442",
@@ -2493,24 +2363,44 @@
                             '700px'
                         ],
                         [
-                            "eid260",
-                            "left",
-                            18250,
+                            "eid325",
+                            "opacity",
                             0,
-                            "linear",
-                            "${_2001}",
-                            '-37px',
-                            '-37px'
+                            0,
+                            "easeInQuad",
+                            "${time_marker_2007}",
+                            '0.5',
+                            '0.5'
                         ],
                         [
-                            "eid267",
-                            "top",
-                            20250,
+                            "eid391",
+                            "opacity",
+                            21000,
                             0,
-                            "linear",
-                            "${_2005}",
-                            '12px',
-                            '12px'
+                            "easeInQuad",
+                            "${time_marker_2007}",
+                            '0.5',
+                            '1'
+                        ],
+                        [
+                            "eid306",
+                            "opacity",
+                            0,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1969}",
+                            '0.5',
+                            '0.5'
+                        ],
+                        [
+                            "eid353",
+                            "opacity",
+                            2000,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1969}",
+                            '0.5',
+                            '1'
                         ],
                         [
                             "eid276",
@@ -2523,32 +2413,32 @@
                             '-37px'
                         ],
                         [
-                            "eid47",
+                            "eid7",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_1973}",
+                            "${_2013}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid65",
+                            "eid145",
                             "display",
-                            4000,
+                            24000,
                             0,
                             "linear",
-                            "${_1973}",
+                            "${_2013}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid66",
+                            "eid146",
                             "display",
-                            4500,
+                            24500,
                             0,
                             "linear",
-                            "${_1973}",
+                            "${_2013}",
                             'block',
                             'none'
                         ],
@@ -2603,44 +2493,54 @@
                             'none'
                         ],
                         [
-                            "eid26",
+                            "eid33",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_1994}",
+                            "${_1987}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid107",
+                            "eid93",
                             "display",
-                            14500,
+                            11000,
                             0,
                             "linear",
-                            "${_1994}",
+                            "${_1987}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid108",
+                            "eid94",
                             "display",
-                            15000,
+                            11500,
                             0,
                             "linear",
-                            "${_1994}",
+                            "${_1987}",
                             'block',
                             'none'
                         ],
                         [
-                            "eid428",
-                            "left",
-                            24500,
+                            "eid350",
+                            "opacity",
                             0,
-                            "linear",
-                            "${time_marker_2009}",
-                            '901px',
-                            '901px'
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1982}",
+                            '0.5',
+                            '0.5'
+                        ],
+                        [
+                            "eid366",
+                            "opacity",
+                            8500,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1982}",
+                            '0.5',
+                            '1'
                         ],
                         [
                             "eid270",
@@ -2653,14 +2553,14 @@
                             '-37px'
                         ],
                         [
-                            "eid420",
-                            "left",
-                            24500,
+                            "eid271",
+                            "top",
+                            21250,
                             0,
                             "linear",
-                            "${time_marker_1975}",
-                            '333px',
-                            '333px'
+                            "${_2007}",
+                            '12px',
+                            '12px'
                         ],
                         [
                             "eid447",
@@ -2683,44 +2583,54 @@
                             '12px'
                         ],
                         [
-                            "eid198",
-                            "left",
-                            2750,
+                            "eid48",
+                            "display",
+                            0,
                             0,
                             "linear",
-                            "${_1970}",
+                            "${_1972}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid63",
+                            "display",
+                            3500,
+                            0,
+                            "linear",
+                            "${_1972}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid64",
+                            "display",
+                            4000,
+                            0,
+                            "linear",
+                            "${_1972}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid441",
+                            "left",
+                            24500,
+                            0,
+                            "linear",
+                            "${time_marker_1985}",
+                            '500px',
+                            '500px'
+                        ],
+                        [
+                            "eid222",
+                            "left",
+                            8750,
+                            0,
+                            "linear",
+                            "${_1982}",
                             '-37px',
                             '-37px'
-                        ],
-                        [
-                            "eid219",
-                            "top",
-                            8250,
-                            0,
-                            "linear",
-                            "${_1981}",
-                            '12px',
-                            '12px'
-                        ],
-                        [
-                            "eid331",
-                            "opacity",
-                            0,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_2001}",
-                            '0.5',
-                            '0.5'
-                        ],
-                        [
-                            "eid385",
-                            "opacity",
-                            18000,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_2001}",
-                            '0.5',
-                            '1'
                         ],
                         [
                             "eid336",
@@ -2743,14 +2653,14 @@
                             '1'
                         ],
                         [
-                            "eid415",
+                            "eid266",
                             "left",
-                            24500,
+                            19750,
                             0,
                             "linear",
-                            "${time_marker_1978}",
-                            '383px',
-                            '383px'
+                            "${_2004}",
+                            '-37px',
+                            '-37px'
                         ],
                         [
                             "eid214",
@@ -2773,14 +2683,24 @@
                             '-37px'
                         ],
                         [
-                            "eid243",
-                            "top",
-                            14250,
+                            "eid342",
+                            "opacity",
                             0,
-                            "linear",
-                            "${_1993}",
-                            '12px',
-                            '12px'
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1990}",
+                            '0.5',
+                            '0.5'
+                        ],
+                        [
+                            "eid374",
+                            "opacity",
+                            12500,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1990}",
+                            '0.5',
+                            '1'
                         ],
                         [
                             "eid221",
@@ -2803,94 +2723,104 @@
                             '784px'
                         ],
                         [
-                            "eid411",
-                            "left",
-                            24500,
-                            0,
-                            "linear",
-                            "${time_marker_2003}",
-                            '801px',
-                            '801px'
-                        ],
-                        [
-                            "eid39",
+                            "eid34",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_1981}",
+                            "${_1986}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid81",
+                            "eid91",
                             "display",
-                            8000,
+                            10500,
                             0,
                             "linear",
-                            "${_1981}",
+                            "${_1986}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid82",
+                            "eid92",
                             "display",
-                            8500,
+                            11000,
                             0,
                             "linear",
-                            "${_1981}",
+                            "${_1986}",
                             'block',
                             'none'
                         ],
                         [
-                            "eid441",
-                            "left",
-                            24500,
-                            0,
-                            "linear",
-                            "${time_marker_1985}",
-                            '500px',
-                            '500px'
-                        ],
-                        [
-                            "eid37",
+                            "eid47",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_1983}",
+                            "${_1973}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid85",
+                            "eid65",
                             "display",
-                            9000,
+                            4000,
                             0,
                             "linear",
-                            "${_1983}",
+                            "${_1973}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid86",
+                            "eid66",
                             "display",
-                            9500,
+                            4500,
                             0,
                             "linear",
-                            "${_1983}",
+                            "${_1973}",
                             'block',
                             'none'
                         ],
                         [
-                            "eid273",
-                            "top",
-                            21750,
+                            "eid198",
+                            "left",
+                            2750,
                             0,
                             "linear",
-                            "${_2008}",
-                            '12px',
-                            '12px'
+                            "${_1970}",
+                            '-37px',
+                            '-37px'
+                        ],
+                        [
+                            "eid440",
+                            "left",
+                            24500,
+                            0,
+                            "linear",
+                            "${time_marker_2001}",
+                            '767px',
+                            '767px'
+                        ],
+                        [
+                            "eid323",
+                            "opacity",
+                            0,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_2009}",
+                            '0.5',
+                            '0.5'
+                        ],
+                        [
+                            "eid393",
+                            "opacity",
+                            22000,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_2009}",
+                            '0.5',
+                            '1'
                         ],
                         [
                             "eid275",
@@ -2933,24 +2863,54 @@
                             'none'
                         ],
                         [
-                            "eid266",
-                            "left",
-                            19750,
+                            "eid344",
+                            "opacity",
                             0,
-                            "linear",
-                            "${_2004}",
-                            '-37px',
-                            '-37px'
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1988}",
+                            '0.5',
+                            '0.5'
                         ],
                         [
-                            "eid262",
-                            "left",
-                            18750,
+                            "eid372",
+                            "opacity",
+                            11500,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1988}",
+                            '0.5',
+                            '1'
+                        ],
+                        [
+                            "eid38",
+                            "display",
+                            0,
                             0,
                             "linear",
-                            "${_2002}",
-                            '-37px',
-                            '-37px'
+                            "${_1982}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid83",
+                            "display",
+                            8500,
+                            0,
+                            "linear",
+                            "${_1982}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid84",
+                            "display",
+                            9000,
+                            0,
+                            "linear",
+                            "${_1982}",
+                            'block',
+                            'none'
                         ],
                         [
                             "eid419",
@@ -2973,24 +2933,24 @@
                             '884px'
                         ],
                         [
-                            "eid407",
-                            "left",
-                            25000,
+                            "eid227",
+                            "top",
+                            10250,
                             0,
                             "linear",
-                            "${time_marker_2014}",
-                            '984px',
-                            '984px'
+                            "${_1985}",
+                            '12px',
+                            '12px'
                         ],
                         [
-                            "eid232",
+                            "eid436",
                             "left",
-                            11250,
+                            24500,
                             0,
                             "linear",
-                            "${_1987}",
-                            '-37px',
-                            '-37px'
+                            "${time_marker_1992}",
+                            '617px',
+                            '617px'
                         ],
                         [
                             "eid322",
@@ -3013,54 +2973,44 @@
                             '1'
                         ],
                         [
-                            "eid314",
-                            "opacity",
-                            0,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1974}",
-                            '0.5',
-                            '0.5'
-                        ],
-                        [
-                            "eid358",
-                            "opacity",
-                            4500,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1974}",
-                            '0.5',
-                            '1'
-                        ],
-                        [
-                            "eid318",
-                            "opacity",
-                            0,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1981}",
-                            '0.5',
-                            '0.5'
-                        ],
-                        [
-                            "eid365",
-                            "opacity",
-                            8000,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1981}",
-                            '0.5',
-                            '1'
-                        ],
-                        [
-                            "eid265",
-                            "top",
-                            19750,
+                            "eid224",
+                            "left",
+                            9250,
                             0,
                             "linear",
-                            "${_2004}",
+                            "${_1983}",
+                            '-37px',
+                            '-37px'
+                        ],
+                        [
+                            "eid205",
+                            "top",
+                            4750,
+                            0,
+                            "linear",
+                            "${_1974}",
                             '12px',
                             '12px'
+                        ],
+                        [
+                            "eid296",
+                            "opacity",
+                            0,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1967}",
+                            '0.500000',
+                            '0.500000'
+                        ],
+                        [
+                            "eid352",
+                            "opacity",
+                            1000,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1967}",
+                            '0.500000',
+                            '1'
                         ],
                         [
                             "eid228",
@@ -3123,22 +3073,32 @@
                             '550px'
                         ],
                         [
-                            "eid186",
-                            "top",
-                            1250,
+                            "eid316",
+                            "opacity",
                             0,
-                            "linear",
-                            "${_1967}",
-                            '12px',
-                            '12px'
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1972}",
+                            '0.5',
+                            '0.5'
                         ],
                         [
-                            "eid205",
+                            "eid356",
+                            "opacity",
+                            3500,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1972}",
+                            '0.5',
+                            '1'
+                        ],
+                        [
+                            "eid273",
                             "top",
-                            4750,
+                            21750,
                             0,
                             "linear",
-                            "${_1974}",
+                            "${_2008}",
                             '12px',
                             '12px'
                         ],
@@ -3193,23 +3153,23 @@
                             '917px'
                         ],
                         [
-                            "eid296",
+                            "eid314",
                             "opacity",
                             0,
                             0,
                             "easeInQuad",
-                            "${time_marker_1967}",
-                            '0.500000',
-                            '0.500000'
+                            "${time_marker_1974}",
+                            '0.5',
+                            '0.5'
                         ],
                         [
-                            "eid352",
+                            "eid358",
                             "opacity",
-                            1000,
+                            4500,
                             0,
                             "easeInQuad",
-                            "${time_marker_1967}",
-                            '0.500000',
+                            "${time_marker_1974}",
+                            '0.5',
                             '1'
                         ],
                         [
@@ -3253,36 +3213,6 @@
                             '1'
                         ],
                         [
-                            "eid13",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${_2007}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid133",
-                            "display",
-                            21000,
-                            0,
-                            "linear",
-                            "${_2007}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid134",
-                            "display",
-                            21500,
-                            0,
-                            "linear",
-                            "${_2007}",
-                            'block',
-                            'none'
-                        ],
-                        [
                             "eid27",
                             "display",
                             0,
@@ -3313,64 +3243,114 @@
                             'none'
                         ],
                         [
-                            "eid253",
-                            "top",
-                            16750,
-                            0,
-                            "linear",
-                            "${_1998}",
-                            '12px',
-                            '12px'
-                        ],
-                        [
-                            "eid443",
+                            "eid202",
                             "left",
-                            24500,
+                            3750,
                             0,
                             "linear",
-                            "${time_marker_1991}",
-                            '600px',
-                            '600px'
+                            "${_1972}",
+                            '-37px',
+                            '-37px'
                         ],
                         [
-                            "eid408",
-                            "left",
-                            24500,
-                            0,
-                            "linear",
-                            "${time_marker_2013}",
-                            '967px',
-                            '967px'
-                        ],
-                        [
-                            "eid12",
+                            "eid45",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_2008}",
+                            "${_1975}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid135",
+                            "eid69",
                             "display",
-                            21500,
+                            5000,
                             0,
                             "linear",
-                            "${_2008}",
+                            "${_1975}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid136",
+                            "eid70",
                             "display",
-                            22000,
+                            5500,
                             0,
                             "linear",
-                            "${_2008}",
+                            "${_1975}",
                             'block',
                             'none'
+                        ],
+                        [
+                            "eid32",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${_1988}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid95",
+                            "display",
+                            11500,
+                            0,
+                            "linear",
+                            "${_1988}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid96",
+                            "display",
+                            12000,
+                            0,
+                            "linear",
+                            "${_1988}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid13",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${_2007}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid133",
+                            "display",
+                            21000,
+                            0,
+                            "linear",
+                            "${_2007}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid134",
+                            "display",
+                            21500,
+                            0,
+                            "linear",
+                            "${_2007}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid215",
+                            "top",
+                            7250,
+                            0,
+                            "linear",
+                            "${_1979}",
+                            '12px',
+                            '12px'
                         ],
                         [
                             "eid421",
@@ -3423,74 +3403,64 @@
                             '300px'
                         ],
                         [
-                            "eid435",
+                            "eid258",
                             "left",
-                            24500,
+                            17750,
                             0,
                             "linear",
-                            "${time_marker_2006}",
-                            '851px',
-                            '851px'
-                        ],
-                        [
-                            "eid326",
-                            "opacity",
-                            0,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_2006}",
-                            '0.5',
-                            '0.5'
-                        ],
-                        [
-                            "eid390",
-                            "opacity",
-                            20500,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_2006}",
-                            '0.5',
-                            '1'
-                        ],
-                        [
-                            "eid274",
-                            "left",
-                            21750,
-                            0,
-                            "linear",
-                            "${_2008}",
+                            "${_2000}",
                             '-37px',
                             '-37px'
                         ],
                         [
-                            "eid32",
-                            "display",
+                            "eid340",
+                            "opacity",
                             0,
                             0,
-                            "linear",
-                            "${_1988}",
-                            'none',
-                            'none'
+                            "easeInQuad",
+                            "${time_marker_1992}",
+                            '0.5',
+                            '0.5'
                         ],
                         [
-                            "eid95",
-                            "display",
-                            11500,
+                            "eid376",
+                            "opacity",
+                            13500,
                             0,
-                            "linear",
-                            "${_1988}",
-                            'none',
-                            'block'
+                            "easeInQuad",
+                            "${time_marker_1992}",
+                            '0.5',
+                            '1'
                         ],
                         [
-                            "eid96",
-                            "display",
-                            12000,
+                            "eid309",
+                            "opacity",
+                            0,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1979}",
+                            '0.5',
+                            '0.5'
+                        ],
+                        [
+                            "eid363",
+                            "opacity",
+                            7000,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1979}",
+                            '0.5',
+                            '1'
+                        ],
+                        [
+                            "eid443",
+                            "left",
+                            24500,
                             0,
                             "linear",
-                            "${_1988}",
-                            'block',
-                            'none'
+                            "${time_marker_1991}",
+                            '600px',
+                            '600px'
                         ],
                         [
                             "eid23",
@@ -3523,6 +3493,66 @@
                             'none'
                         ],
                         [
+                            "eid234",
+                            "left",
+                            11750,
+                            0,
+                            "linear",
+                            "${_1988}",
+                            '-37px',
+                            '-37px'
+                        ],
+                        [
+                            "eid253",
+                            "top",
+                            16750,
+                            0,
+                            "linear",
+                            "${_1998}",
+                            '12px',
+                            '12px'
+                        ],
+                        [
+                            "eid17",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${_2003}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid125",
+                            "display",
+                            19000,
+                            0,
+                            "linear",
+                            "${_2003}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid126",
+                            "display",
+                            19500,
+                            0,
+                            "linear",
+                            "${_2003}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid435",
+                            "left",
+                            24500,
+                            0,
+                            "linear",
+                            "${time_marker_2006}",
+                            '851px',
+                            '851px'
+                        ],
+                        [
                             "eid206",
                             "left",
                             4750,
@@ -3531,96 +3561,6 @@
                             "${_1974}",
                             '-37px',
                             '-37px'
-                        ],
-                        [
-                            "eid201",
-                            "top",
-                            3750,
-                            0,
-                            "linear",
-                            "${_1972}",
-                            '12px',
-                            '12px'
-                        ],
-                        [
-                            "eid6",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${_1967}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid53",
-                            "display",
-                            1000,
-                            0,
-                            "linear",
-                            "${_1967}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid54",
-                            "display",
-                            1500,
-                            0,
-                            "linear",
-                            "${_1967}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid340",
-                            "opacity",
-                            0,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1992}",
-                            '0.5',
-                            '0.5'
-                        ],
-                        [
-                            "eid376",
-                            "opacity",
-                            13500,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1992}",
-                            '0.5',
-                            '1'
-                        ],
-                        [
-                            "eid14",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${_2006}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid131",
-                            "display",
-                            20500,
-                            0,
-                            "linear",
-                            "${_2006}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid132",
-                            "display",
-                            21000,
-                            0,
-                            "linear",
-                            "${_2006}",
-                            'block',
-                            'none'
                         ],
                         [
                             "eid348",
@@ -3653,26 +3593,6 @@
                             '12px'
                         ],
                         [
-                            "eid234",
-                            "left",
-                            11750,
-                            0,
-                            "linear",
-                            "${_1988}",
-                            '-37px',
-                            '-37px'
-                        ],
-                        [
-                            "eid438",
-                            "left",
-                            24500,
-                            0,
-                            "linear",
-                            "${time_marker_2012}",
-                            '951px',
-                            '951px'
-                        ],
-                        [
                             "eid252",
                             "left",
                             16250,
@@ -3681,6 +3601,26 @@
                             "${_1997}",
                             '-37px',
                             '-37px'
+                        ],
+                        [
+                            "eid326",
+                            "opacity",
+                            0,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_2006}",
+                            '0.5',
+                            '0.5'
+                        ],
+                        [
+                            "eid390",
+                            "opacity",
+                            20500,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_2006}",
+                            '0.5',
+                            '1'
                         ],
                         [
                             "eid450",
@@ -3693,34 +3633,54 @@
                             '400px'
                         ],
                         [
-                            "eid20",
+                            "eid6",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_2000}",
+                            "${_1967}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid119",
+                            "eid53",
                             "display",
-                            17500,
+                            1000,
                             0,
                             "linear",
-                            "${_2000}",
+                            "${_1967}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid120",
+                            "eid54",
                             "display",
-                            18000,
+                            1500,
                             0,
                             "linear",
-                            "${_2000}",
+                            "${_1967}",
                             'block',
                             'none'
+                        ],
+                        [
+                            "eid337",
+                            "opacity",
+                            0,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1995}",
+                            '0.5',
+                            '0.5'
+                        ],
+                        [
+                            "eid379",
+                            "opacity",
+                            15000,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1995}",
+                            '0.5',
+                            '1'
                         ],
                         [
                             "eid444",
@@ -3763,6 +3723,16 @@
                             '-37px'
                         ],
                         [
+                            "eid208",
+                            "left",
+                            5250,
+                            0,
+                            "linear",
+                            "${_1975}",
+                            '-37px',
+                            '-37px'
+                        ],
+                        [
                             "eid226",
                             "left",
                             9750,
@@ -3771,16 +3741,6 @@
                             "${_1984}",
                             '-37px',
                             '-37px'
-                        ],
-                        [
-                            "eid247",
-                            "top",
-                            15250,
-                            0,
-                            "linear",
-                            "${_1995}",
-                            '12px',
-                            '12px'
                         ],
                         [
                             "eid272",
@@ -3803,34 +3763,44 @@
                             '12px'
                         ],
                         [
-                            "eid208",
-                            "left",
-                            5250,
+                            "eid247",
+                            "top",
+                            15250,
                             0,
                             "linear",
-                            "${_1975}",
-                            '-37px',
-                            '-37px'
+                            "${_1995}",
+                            '12px',
+                            '12px'
                         ],
                         [
-                            "eid337",
-                            "opacity",
+                            "eid20",
+                            "display",
                             0,
                             0,
-                            "easeInQuad",
-                            "${time_marker_1995}",
-                            '0.5',
-                            '0.5'
+                            "linear",
+                            "${_2000}",
+                            'none',
+                            'none'
                         ],
                         [
-                            "eid379",
-                            "opacity",
-                            15000,
+                            "eid119",
+                            "display",
+                            17500,
                             0,
-                            "easeInQuad",
-                            "${time_marker_1995}",
-                            '0.5',
-                            '1'
+                            "linear",
+                            "${_2000}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid120",
+                            "display",
+                            18000,
+                            0,
+                            "linear",
+                            "${_2000}",
+                            'block',
+                            'none'
                         ],
                         [
                             "eid245",
@@ -3873,34 +3843,14 @@
                             'none'
                         ],
                         [
-                            "eid17",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${_2003}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid125",
-                            "display",
-                            19000,
+                            "eid438",
+                            "left",
+                            24500,
                             0,
                             "linear",
-                            "${_2003}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid126",
-                            "display",
-                            19500,
-                            0,
-                            "linear",
-                            "${_2003}",
-                            'block',
-                            'none'
+                            "${time_marker_2012}",
+                            '951px',
+                            '951px'
                         ],
                         [
                             "eid305",
@@ -3923,24 +3873,34 @@
                             '1'
                         ],
                         [
-                            "eid309",
-                            "opacity",
+                            "eid14",
+                            "display",
                             0,
                             0,
-                            "easeInQuad",
-                            "${time_marker_1979}",
-                            '0.5',
-                            '0.5'
+                            "linear",
+                            "${_2006}",
+                            'none',
+                            'none'
                         ],
                         [
-                            "eid363",
-                            "opacity",
-                            7000,
+                            "eid131",
+                            "display",
+                            20500,
                             0,
-                            "easeInQuad",
-                            "${time_marker_1979}",
-                            '0.5',
-                            '1'
+                            "linear",
+                            "${_2006}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid132",
+                            "display",
+                            21000,
+                            0,
+                            "linear",
+                            "${_2006}",
+                            'block',
+                            'none'
                         ],
                         [
                             "eid173",
@@ -3953,24 +3913,44 @@
                             '-23px'
                         ],
                         [
-                            "eid258",
-                            "left",
-                            17750,
-                            0,
-                            "linear",
-                            "${_2000}",
-                            '-37px',
-                            '-37px'
-                        ],
-                        [
-                            "eid215",
+                            "eid201",
                             "top",
-                            7250,
+                            3750,
                             0,
                             "linear",
-                            "${_1979}",
+                            "${_1972}",
                             '12px',
                             '12px'
+                        ],
+                        [
+                            "eid12",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${_2008}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid135",
+                            "display",
+                            21500,
+                            0,
+                            "linear",
+                            "${_2008}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid136",
+                            "display",
+                            22000,
+                            0,
+                            "linear",
+                            "${_2008}",
+                            'block',
+                            'none'
                         ],
                         [
                             "eid184",
@@ -3983,44 +3963,24 @@
                             '12px'
                         ],
                         [
-                            "eid45",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${_1975}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid69",
-                            "display",
-                            5000,
-                            0,
-                            "linear",
-                            "${_1975}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid70",
-                            "display",
-                            5500,
-                            0,
-                            "linear",
-                            "${_1975}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid202",
+                            "eid274",
                             "left",
-                            3750,
+                            21750,
                             0,
                             "linear",
-                            "${_1972}",
+                            "${_2008}",
                             '-37px',
                             '-37px'
+                        ],
+                        [
+                            "eid408",
+                            "left",
+                            24500,
+                            0,
+                            "linear",
+                            "${time_marker_2013}",
+                            '967px',
+                            '967px'
                         ],
                         [
                             "eid238",
@@ -4043,24 +4003,14 @@
                             '12px'
                         ],
                         [
-                            "eid316",
-                            "opacity",
+                            "eid186",
+                            "top",
+                            1250,
                             0,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1972}",
-                            '0.5',
-                            '0.5'
-                        ],
-                        [
-                            "eid356",
-                            "opacity",
-                            3500,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1972}",
-                            '0.5',
-                            '1'
+                            "linear",
+                            "${_1967}",
+                            '12px',
+                            '12px'
                         ],
                         [
                             "eid52",
@@ -4103,104 +4053,94 @@
                             '517px'
                         ],
                         [
-                            "eid224",
-                            "left",
-                            9250,
-                            0,
-                            "linear",
-                            "${_1983}",
-                            '-37px',
-                            '-37px'
-                        ],
-                        [
-                            "eid436",
-                            "left",
-                            24500,
-                            0,
-                            "linear",
-                            "${time_marker_1992}",
-                            '617px',
-                            '617px'
-                        ],
-                        [
-                            "eid227",
+                            "eid265",
                             "top",
-                            10250,
+                            19750,
                             0,
                             "linear",
-                            "${_1985}",
+                            "${_2004}",
                             '12px',
                             '12px'
                         ],
                         [
-                            "eid38",
+                            "eid318",
+                            "opacity",
+                            0,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1981}",
+                            '0.5',
+                            '0.5'
+                        ],
+                        [
+                            "eid365",
+                            "opacity",
+                            8000,
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1981}",
+                            '0.5',
+                            '1'
+                        ],
+                        [
+                            "eid232",
+                            "left",
+                            11250,
+                            0,
+                            "linear",
+                            "${_1987}",
+                            '-37px',
+                            '-37px'
+                        ],
+                        [
+                            "eid262",
+                            "left",
+                            18750,
+                            0,
+                            "linear",
+                            "${_2002}",
+                            '-37px',
+                            '-37px'
+                        ],
+                        [
+                            "eid407",
+                            "left",
+                            25000,
+                            0,
+                            "linear",
+                            "${time_marker_2014}",
+                            '984px',
+                            '984px'
+                        ],
+                        [
+                            "eid40",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_1982}",
+                            "${_1980}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid83",
+                            "eid79",
                             "display",
-                            8500,
+                            7500,
                             0,
                             "linear",
-                            "${_1982}",
+                            "${_1980}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid84",
+                            "eid80",
                             "display",
-                            9000,
+                            8000,
                             0,
                             "linear",
-                            "${_1982}",
+                            "${_1980}",
                             'block',
                             'none'
-                        ],
-                        [
-                            "eid344",
-                            "opacity",
-                            0,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1988}",
-                            '0.5',
-                            '0.5'
-                        ],
-                        [
-                            "eid372",
-                            "opacity",
-                            11500,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1988}",
-                            '0.5',
-                            '1'
-                        ],
-                        [
-                            "eid323",
-                            "opacity",
-                            0,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_2009}",
-                            '0.5',
-                            '0.5'
-                        ],
-                        [
-                            "eid393",
-                            "opacity",
-                            22000,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_2009}",
-                            '0.5',
-                            '1'
                         ],
                         [
                             "eid452",
@@ -4223,24 +4163,34 @@
                             '-37px'
                         ],
                         [
-                            "eid342",
-                            "opacity",
+                            "eid29",
+                            "display",
                             0,
                             0,
-                            "easeInQuad",
-                            "${time_marker_1990}",
-                            '0.5',
-                            '0.5'
+                            "linear",
+                            "${_1991}",
+                            'none',
+                            'none'
                         ],
                         [
-                            "eid374",
-                            "opacity",
-                            12500,
+                            "eid101",
+                            "display",
+                            13000,
                             0,
-                            "easeInQuad",
-                            "${time_marker_1990}",
-                            '0.5',
-                            '1'
+                            "linear",
+                            "${_1991}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid102",
+                            "display",
+                            13500,
+                            0,
+                            "linear",
+                            "${_1991}",
+                            'block',
+                            'none'
                         ],
                         [
                             "eid437",
@@ -4253,14 +4203,34 @@
                             '834px'
                         ],
                         [
-                            "eid222",
-                            "left",
-                            8750,
+                            "eid37",
+                            "display",
+                            0,
                             0,
                             "linear",
-                            "${_1982}",
-                            '-37px',
-                            '-37px'
+                            "${_1983}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid85",
+                            "display",
+                            9000,
+                            0,
+                            "linear",
+                            "${_1983}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid86",
+                            "display",
+                            9500,
+                            0,
+                            "linear",
+                            "${_1983}",
+                            'block',
+                            'none'
                         ],
                         [
                             "eid233",
@@ -4273,32 +4243,32 @@
                             '12px'
                         ],
                         [
-                            "eid48",
+                            "eid39",
                             "display",
                             0,
                             0,
                             "linear",
-                            "${_1972}",
+                            "${_1981}",
                             'none',
                             'none'
                         ],
                         [
-                            "eid63",
+                            "eid81",
                             "display",
-                            3500,
+                            8000,
                             0,
                             "linear",
-                            "${_1972}",
+                            "${_1981}",
                             'none',
                             'block'
                         ],
                         [
-                            "eid64",
+                            "eid82",
                             "display",
-                            4000,
+                            8500,
                             0,
                             "linear",
-                            "${_1972}",
+                            "${_1981}",
                             'block',
                             'none'
                         ],
@@ -4323,122 +4293,102 @@
                             '1'
                         ],
                         [
-                            "eid33",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${_1987}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid93",
-                            "display",
-                            11000,
-                            0,
-                            "linear",
-                            "${_1987}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid94",
-                            "display",
-                            11500,
-                            0,
-                            "linear",
-                            "${_1987}",
-                            'block',
-                            'none'
-                        ],
-                        [
-                            "eid7",
-                            "display",
-                            0,
-                            0,
-                            "linear",
-                            "${_2013}",
-                            'none',
-                            'none'
-                        ],
-                        [
-                            "eid145",
-                            "display",
-                            24000,
-                            0,
-                            "linear",
-                            "${_2013}",
-                            'none',
-                            'block'
-                        ],
-                        [
-                            "eid146",
-                            "display",
+                            "eid411",
+                            "left",
                             24500,
                             0,
                             "linear",
-                            "${_2013}",
+                            "${time_marker_2003}",
+                            '801px',
+                            '801px'
+                        ],
+                        [
+                            "eid219",
+                            "top",
+                            8250,
+                            0,
+                            "linear",
+                            "${_1981}",
+                            '12px',
+                            '12px'
+                        ],
+                        [
+                            "eid50",
+                            "display",
+                            0,
+                            0,
+                            "linear",
+                            "${_1970}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid59",
+                            "display",
+                            2500,
+                            0,
+                            "linear",
+                            "${_1970}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid60",
+                            "display",
+                            3000,
+                            0,
+                            "linear",
+                            "${_1970}",
                             'block',
                             'none'
                         ],
                         [
-                            "eid306",
-                            "opacity",
-                            0,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1969}",
-                            '0.5',
-                            '0.5'
-                        ],
-                        [
-                            "eid353",
-                            "opacity",
-                            2000,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_1969}",
-                            '0.5',
-                            '1'
-                        ],
-                        [
-                            "eid325",
-                            "opacity",
-                            0,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_2007}",
-                            '0.5',
-                            '0.5'
-                        ],
-                        [
-                            "eid391",
-                            "opacity",
-                            21000,
-                            0,
-                            "easeInQuad",
-                            "${time_marker_2007}",
-                            '0.5',
-                            '1'
-                        ],
-                        [
-                            "eid212",
+                            "eid260",
                             "left",
-                            6250,
+                            18250,
                             0,
                             "linear",
-                            "${_1977}",
+                            "${_2001}",
                             '-37px',
                             '-37px'
                         ],
                         [
-                            "eid263",
-                            "top",
-                            19250,
+                            "eid16",
+                            "display",
+                            0,
                             0,
                             "linear",
-                            "${_2003}",
+                            "${_2004}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid127",
+                            "display",
+                            19500,
+                            0,
+                            "linear",
+                            "${_2004}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid128",
+                            "display",
+                            20000,
+                            0,
+                            "linear",
+                            "${_2004}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid277",
+                            "top",
+                            22750,
+                            0,
+                            "linear",
+                            "${_2010}",
                             '12px',
                             '12px'
                         ],
@@ -4453,54 +4403,74 @@
                             '12px'
                         ],
                         [
-                            "eid217",
-                            "top",
-                            7750,
+                            "eid18",
+                            "display",
+                            0,
                             0,
                             "linear",
-                            "${_1980}",
-                            '12px',
-                            '12px'
+                            "${_2002}",
+                            'none',
+                            'none'
                         ],
                         [
-                            "eid315",
+                            "eid123",
+                            "display",
+                            18500,
+                            0,
+                            "linear",
+                            "${_2002}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid124",
+                            "display",
+                            19000,
+                            0,
+                            "linear",
+                            "${_2002}",
+                            'block',
+                            'none'
+                        ],
+                        [
+                            "eid327",
                             "opacity",
                             0,
                             0,
                             "easeInQuad",
-                            "${time_marker_1973}",
+                            "${time_marker_2005}",
                             '0.5',
                             '0.5'
                         ],
                         [
-                            "eid357",
+                            "eid389",
                             "opacity",
-                            4000,
+                            20000,
                             0,
                             "easeInQuad",
-                            "${time_marker_1973}",
+                            "${time_marker_2005}",
                             '0.5',
                             '1'
                         ],
                         [
-                            "eid451",
+                            "eid187",
                             "left",
-                            24500,
+                            1750,
                             0,
                             "linear",
-                            "${time_marker_1968}",
-                            '217px',
-                            '217px'
+                            "${_1968}",
+                            '-37px',
+                            '-37px'
                         ],
                         [
-                            "eid211",
-                            "top",
-                            6250,
+                            "eid264",
+                            "left",
+                            19250,
                             0,
                             "linear",
-                            "${_1977}",
-                            '12px',
-                            '12px'
+                            "${_2003}",
+                            '-37px',
+                            '-37px'
                         ],
                         [
                             "eid240",
@@ -4513,14 +4483,14 @@
                             '-37px'
                         ],
                         [
-                            "eid446",
+                            "eid420",
                             "left",
                             24500,
                             0,
                             "linear",
-                            "${time_marker_1994}",
-                            '650px',
-                            '650px'
+                            "${time_marker_1975}",
+                            '333px',
+                            '333px'
                         ],
                         [
                             "eid235",
@@ -4533,14 +4503,34 @@
                             '12px'
                         ],
                         [
-                            "eid424",
-                            "left",
-                            24500,
+                            "eid5",
+                            "display",
+                            0,
                             0,
                             "linear",
-                            "${time_marker_1974}",
-                            '317px',
-                            '317px'
+                            "${_1966}",
+                            'none',
+                            'none'
+                        ],
+                        [
+                            "eid455",
+                            "display",
+                            250,
+                            0,
+                            "linear",
+                            "${_1966}",
+                            'none',
+                            'block'
+                        ],
+                        [
+                            "eid4",
+                            "display",
+                            1000,
+                            0,
+                            "linear",
+                            "${_1966}",
+                            'block',
+                            'none'
                         ],
                         [
                             "eid261",
@@ -4623,44 +4613,54 @@
                             '-37px'
                         ],
                         [
-                            "eid334",
+                            "eid246",
+                            "left",
+                            14750,
+                            0,
+                            "linear",
+                            "${_1994}",
+                            '-37px',
+                            '-37px'
+                        ],
+                        [
+                            "eid321",
                             "opacity",
                             0,
                             0,
                             "easeInQuad",
-                            "${time_marker_1998}",
+                            "${time_marker_2011}",
                             '0.5',
                             '0.5'
                         ],
                         [
-                            "eid382",
+                            "eid395",
                             "opacity",
-                            16500,
+                            23000,
                             0,
                             "easeInQuad",
-                            "${time_marker_1998}",
+                            "${time_marker_2011}",
                             '0.5',
                             '1'
                         ],
                         [
-                            "eid427",
-                            "left",
-                            24500,
+                            "eid341",
+                            "opacity",
                             0,
-                            "linear",
-                            "${time_marker_1972}",
-                            '283px',
-                            '283px'
+                            0,
+                            "easeInQuad",
+                            "${time_marker_1991}",
+                            '0.5',
+                            '0.5'
                         ],
                         [
-                            "eid188",
-                            "top",
-                            1750,
+                            "eid375",
+                            "opacity",
+                            13000,
                             0,
-                            "linear",
-                            "${_1968}",
-                            '12px',
-                            '12px'
+                            "easeInQuad",
+                            "${time_marker_1991}",
+                            '0.5',
+                            '1'
                         ],
                         [
                             "eid49",
@@ -4693,22 +4693,22 @@
                             'none'
                         ],
                         [
-                            "eid405",
+                            "eid313",
                             "opacity",
                             0,
                             0,
                             "easeInQuad",
-                            "${time_marker_2014}",
+                            "${time_marker_1975}",
                             '0.5',
                             '0.5'
                         ],
                         [
-                            "eid406",
+                            "eid359",
                             "opacity",
-                            24500,
+                            5000,
                             0,
                             "easeInQuad",
-                            "${time_marker_2014}",
+                            "${time_marker_1975}",
                             '0.5',
                             '1'
                         ],
@@ -4723,14 +4723,14 @@
                             '634px'
                         ],
                         [
-                            "eid256",
-                            "left",
-                            17250,
+                            "eid249",
+                            "top",
+                            15750,
                             0,
                             "linear",
-                            "${_1999}",
-                            '-37px',
-                            '-37px'
+                            "${_1996}",
+                            '12px',
+                            '12px'
                         ]
                     ]
                 }
