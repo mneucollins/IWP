@@ -17,7 +17,6 @@ class iwpimport extends dbo {
 
 	function __construct() {
 		parent::__construct();
-
 		foreach (static::$dbFields as $dbField) {
 			//dbFields[tagname]=>attributename
 			switch ($dbField){
@@ -39,9 +38,10 @@ class iwpimport extends dbo {
 				case 'continent' :    $dbFieldTag = 'CONTINENT';    break;
 				case 'country' :    $dbFieldTag = 'COUNTRY';    break;
 				case 'region' :    $dbFieldTag = 'REGION';    break;
-				case 'bio' :     $dbFieldTag = 'BIO';     break;
+				case 'bio' :     $dbFieldTag = 'BIO';   break;
+				default :	$dbFieldTag = null;	break;
 			}
-			static::$dbFieldsTags[$dbFieldTag] = $dbField;
+			if (!empty($dbFieldTag)) {static::$dbFieldsTags[$dbFieldTag] = $dbField;}
 		}
 	}
 
@@ -80,19 +80,21 @@ class iwpimport extends dbo {
 
 	function endElement($parser, $name) {
 		if ($name == $this->recordtag) { //end of record, clean up and write
-		
+
 			foreach (static::$dbFields as $field) {
 				//remove trailing ; from multivalue fields
 				$this->$field = trim($this->$field);
 				$this->$field = rtrim($this->$field, ";");
+//echo "$field: ".$this->$field."<br />";
 			}
-			//fred ($this, "this");
 			//normally would call this->save, but since we are loading the id need to use the create method
+			
+//fred  ($this,"this");
+//die;
 			$this->create();
 			$this->clear_attributes();
 			$this->insideElement = false;
-		} else {
-						
+		} else {						
 			if (in_array($name, $this->multivaluefields)){
 				$attributeName = static::$dbFieldsTags[$name]; 
 				$this->$attributeName .= ";";
@@ -129,7 +131,8 @@ class iwpimport extends dbo {
 				pseudonym = iwpimport.pseudonym,
 				gender = iwpimport.gender,
 				year_of_birth = iwpimport.year_of_birth,
-				year_of_death = iwpimport.year_of_death
+				year_of_death = iwpimport.year_of_death,
+				bio = iwpimport.bio
 				FROM iwpimport WHERE authors.nid = iwpimport.id";
 		$this->db->query($sql);
 		

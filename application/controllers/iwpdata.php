@@ -182,6 +182,14 @@ class IWPData extends CI_Controller {
 	$this->load->view('results_view', $data);		
 
 	}
+	
+	public function update_country_markers_projected(){
+		$this->load->model ('marker_features');
+		$this->marker_features->update_the_geom();
+		redirect ('http://localhost:8888/IWP/index.php/iwpdata');
+	}
+	
+	
 
 }
 

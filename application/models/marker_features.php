@@ -30,12 +30,13 @@ class Marker_Features extends CI_model {
 			foreach ($counts->result() as $count){
 				//calc number of columns of 10 and set width
 				//get authors for popup
-				$sql = "SELECT author_name, year_of_attendance FROM author_names
+				$sql = "SELECT author_name, year_of_attendance, bio, nid FROM author_names
 							JOIN cohort ON author_names.authors_id = cohort.authors_id
 							JOIN author_countries ON author_countries.authors_id = author_names.authors_id
 							JOIN author_years ON author_years.authors_id = author_names.authors_id
+							JOIN authors ON author_names.authors_id = authors.id
 							WHERE author_countries.country = ".$this->db->escape($count->country)."
-							GROUP BY author_name, year_of_attendance
+							GROUP BY author_name, year_of_attendance, bio, nid
 							ORDER BY year_of_attendance DESC";
 				$authors = $this->db->query($sql);
 				
@@ -45,7 +46,11 @@ class Marker_Features extends CI_model {
 				$n=0;
 				foreach ($authors->result() as $author){
 					$n++;
-					$geojson .= $author->author_name."(".$author->year_of_attendance.")<br />";
+					if (!empty($author->bio)){
+						$geojson .= "<a href = http://iwp.uiowa.edu/node/".$author->nid.">".$author->author_name."</a>(".$author->year_of_attendance.")<br />";
+					} else {
+						$geojson .= $author->author_name."(".$author->year_of_attendance.")<br />";
+					}
 				}
 				
 				$radius = ($count->n + 10) *.4;
@@ -141,7 +146,7 @@ class Marker_Features extends CI_model {
 	}
 	
 	function update_the_geom() {
-		$sql = "UPDATE country_markers_projected SET the_geom = ST_SetSRID(ST_MakePoint(marker_lon, marker_lat),4326) WHERE the_geom is null";
+		$sql = "UPDATE country_markers_projected SET the_geom = ST_SetSRID(ST_MakePoint(marker_lon, marker_lat),4326)";
 		$this->db->query($sql);
 	}
     

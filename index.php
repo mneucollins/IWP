@@ -34,6 +34,9 @@ if (defined('ENVIRONMENT'))
 	{
 		case 'development':
 			error_reporting(E_ALL);
+			ini_set('error_reporting', -1);
+			ini_set('display_errors', 1);
+			ini_set('html_errors', 1);
 		break;
 	
 		case 'testing':
@@ -190,6 +193,13 @@ if (defined('ENVIRONMENT'))
 
 		define('APPPATH', BASEPATH.$application_folder.'/');
 	}
+
+
+
+ require_once (FCPATH.'resources/mn_includes/fred.php');   
+
+
+
 
 /*
  * --------------------------------------------------------------------

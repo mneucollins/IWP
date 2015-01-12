@@ -125,14 +125,14 @@ Class DBO extends CI_Model {
     }
 
     public function create() {
-        $attributes = $this->attributes();
-        $fieldstr = "";
-        $valuestr = "";
+        //$attributes = $this->attributes();
+        //$fieldstr = "";
+        //$valuestr = "";
         $attributes = $this->attributes();
         $this->db->insert(static::$tableName, $attributes);
 		if (empty($this->id)) {
         	$this->id = $this->db->insert_id();
-		}
+		}	
     }
 
     public function update() {

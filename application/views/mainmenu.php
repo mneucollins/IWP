@@ -32,7 +32,7 @@
 			<tr>
 				<td colspan="2">
 				<br />
-					The following option requires that an up-to-date masterlist csv file is in the resources/csv folder. This should include columns macro_region, region, country, iwp_program, years, family_name, given_name, oclc, penname, drupal_nid. Best luck is in creating this CSV file using LibreOffice to read and export the excel file.
+					The following option requires that an up-to-date "IWP_Masterlist csv" file is in the resources/csv folder. This should include columns macro_region, region, country, iwp_program, years, family_name, given_name, oclc, penname, drupal_nid. Best luck is in creating this CSV file using LibreOffice to read and export the excel file.
 				</td>
 	        <tr>
 	            <td>
@@ -65,7 +65,8 @@
 	            <td>Assign Country Markers (capitals or alternate)</td>
 	         </td>   
 	         <tr>
-	            <td colspan="2"><i>Country Markers link is no longer applicable, countries added after 2013 will need to have markers manually added to country_markers_projected table using mouseclick coordinates (uncomment map.on('click'...) line at end of map script in map_view)<i></td>
+	            <td colspan="2"><i>Country Markers link is no longer applicable, countries added after 2013 will need to have markers manually added to country_markers_projected table using mouseclick coordinates (uncomment map.on('click'...) line at end of map script in map_view). <br />
+		            <b>Note:</b> If you change any of the lat|lng information in the country_markers_projected table, the geom column needs to be updated by clicking <a href="iwpdata/update_country_markers_projected">here</a><i></td>
 	        </tr>			
 	        <tr>
 	            <td><a href="iwpdata/createViews">Year Views</a></td>
