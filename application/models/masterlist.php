@@ -16,10 +16,10 @@ class Masterlist extends dbo {
 				country character varying(32),
 				iwp_program character varying(32),
 				years character varying(32),
-				family_name character varying(64),
-				given_name character varying(64),
 				oclc character varying(64),
 				penname character varying(64),
+				drupal_family_name character varying(64),
+				drupal_given_name character varying(64),
 				drupal_nid integer,
 				CONSTRAINT \"masterlist_pk\" PRIMARY KEY (id)
 				)
@@ -33,13 +33,14 @@ class Masterlist extends dbo {
 		$this->db->query($sql);
 		$sql = "COPY masterlist ( 
 					macro_region, 
-					region, country, 
+					region, 
+					country, 
 					iwp_program, 
 					years, 
-					family_name, 
-					given_name, 
 					oclc, 
 					penname, 
+					drupal_family_name, 
+					drupal_given_name, 
 					drupal_nid
 					) 
 				FROM '".FCPATH."resources/csv/IWP_Masterlist.csv' DELIMITERS ',' CSV HEADER;";

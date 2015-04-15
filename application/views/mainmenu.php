@@ -32,7 +32,7 @@
 			<tr>
 				<td colspan="2">
 				<br />
-					The following option requires that an up-to-date "IWP_Masterlist csv" file is in the resources/csv folder. This should include columns macro_region, region, country, iwp_program, years, family_name, given_name, oclc, penname, drupal_nid. Best luck is in creating this CSV file using LibreOffice to read and export the excel file.
+					The following option requires that an up-to-date "IWP_Masterlist csv" file is in the resources/csv folder. This should include columns macro_region, region, country, iwp_program, years, oclc, penname, drupal_family_name, drupal_given_name, drupal_nid. Best luck is in creating this CSV file using LibreOffice to read and export the excel file.
 				</td>
 	        <tr>
 	            <td>

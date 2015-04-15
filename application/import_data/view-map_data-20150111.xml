@@ -2513,7 +2513,7 @@
     <website></website>
     <bibliography></bibliography>
     <writing-sample></writing-sample>
-    <country-region><continent>Americas</continent><region>Latin America and the Caribbean</region><subregion>South America</subregion><country>Peru</country></country-region>
+    <country-region><continent>Americas</continent><region>Latin America and the Caribbean</region><subregion>South America</subregion><country>Perú</country></country-region>
     <bio><![CDATA[]]></bio>
     <nid>870</nid>
   </node>
@@ -2933,7 +2933,7 @@
     <website></website>
     <bibliography></bibliography>
     <writing-sample></writing-sample>
-    <country-region><continent>Americas</continent><region>Latin America and the Caribbean</region><subregion>South America</subregion><country>Peru</country></country-region>
+    <country-region><continent>Americas</continent><region>Latin America and the Caribbean</region><subregion>South America</subregion><country>Perú</country></country-region>
     <bio><![CDATA[]]></bio>
     <nid>892</nid>
   </node>
@@ -3509,7 +3509,7 @@
     <website></website>
     <bibliography></bibliography>
     <writing-sample></writing-sample>
-    <country-region><continent>Americas</continent><region>Latin America and the Caribbean</region><subregion>South America</subregion><country>Peru</country></country-region>
+    <country-region><continent>Americas</continent><region>Latin America and the Caribbean</region><subregion>South America</subregion><country>Perú</country></country-region>
     <bio><![CDATA[]]></bio>
     <nid>922</nid>
   </node>
@@ -8448,7 +8448,7 @@
     <website></website>
     <bibliography></bibliography>
     <writing-sample></writing-sample>
-    <country-region><continent>Americas</continent><region>Latin America and the Caribbean</region><subregion>South America</subregion><country>Peru</country></country-region>
+    <country-region><continent>Americas</continent><region>Latin America and the Caribbean</region><subregion>South America</subregion><country>Perú</country></country-region>
     <bio><![CDATA[]]></bio>
     <nid>1181</nid>
   </node>
@@ -8731,7 +8731,7 @@
     <year-of-birth>1969</year-of-birth>
     <year-of-death></year-of-death>
     <sessions-status><session>1995</session></sessions-status>
-    <languages><language>English</language></languages>
+    <languages><language>English, Hindi</language></languages>
     <roles><role>poet</role><role>translator</role></roles>
     <website></website>
     <bibliography></bibliography>
@@ -16998,7 +16998,7 @@
     <website></website>
     <bibliography></bibliography>
     <writing-sample></writing-sample>
-    <country-region><continent>Americas</continent><region>Latin America and the Caribbean</region><subregion>South America</subregion><country>Peru</country></country-region>
+    <country-region><continent>Americas</continent><region>Latin America and the Caribbean</region><subregion>South America</subregion><country>Perú</country></country-region>
     <bio><![CDATA[]]></bio>
     <nid>1627</nid>
   </node>
@@ -17573,7 +17573,7 @@
     <website></website>
     <bibliography></bibliography>
     <writing-sample></writing-sample>
-    <country-region><continent>Americas</continent><region>Latin America and the Caribbean</region><subregion>South America</subregion><country>Peru</country></country-region>
+    <country-region><continent>Americas</continent><region>Latin America and the Caribbean</region><subregion>South America</subregion><country>Perú</country></country-region>
     <bio><![CDATA[]]></bio>
     <nid>1657</nid>
   </node>
@@ -20414,7 +20414,7 @@
   </node>
   <node>
     <given-name>Gozo</given-name>
-    <family-name>YOSHIMASU</family-name>
+    <family-name>YOSHIMAZU</family-name>
     <name-suffix></name-suffix>
     <name-order>Given name first</name-order>
     <pseudonym></pseudonym>
@@ -20428,7 +20428,7 @@
     <bibliography></bibliography>
     <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/IWP2004_Yoshimasu_Gozo.pdf</writing-sample>
     <country-region><continent>Asia</continent><region>Eastern Asia</region><country>Japan</country></country-region>
-    <bio><![CDATA[<p><span class="authorname">Gozo YOSHIMASU</span> (poet; b. 1939, Japan), a returning writer to the International Writers Program, has published several collections of poetry including <em>Shuppatsu</em> ( <em>Departure</em> ) and <em>Devil's Wind: A Thousand Steps or More</em> . Considered to be an emblematic presence in postwar Japanese poetry, he has given readings at the Centre Pompidou in Paris (2000) and the Taipei International Poetry Festival (2001), and exhibited his photographs and calligraphies at the São Paulo Biennale (1990) and in Strasbourg (2000), among others. In May 2003, he received the Purple Ribbon Award from the Japanese government for his significant contributions to Japanese culture. He is participating courtesy of the Freeman Foundation, and will be in Iowa City in October and November.</p>]]></bio>
+    <bio><![CDATA[<p><span class="authorname">Gozo YOSHIMAZU</span> (poet; b. 1939, Japan), a returning writer to the International Writers Program, has published several collections of poetry including <em>Shuppatsu</em> ( <em>Departure</em> ) and <em>Devil's Wind: A Thousand Steps or More</em> . Considered to be an emblematic presence in postwar Japanese poetry, he has given readings at the Centre Pompidou in Paris (2000) and the Taipei International Poetry Festival (2001), and exhibited his photographs and calligraphies at the São Paulo Biennale (1990) and in Strasbourg (2000), among others. In May 2003, he received the Purple Ribbon Award from the Japanese government for his significant contributions to Japanese culture. He is participating courtesy of the Freeman Foundation, and will be in Iowa City in October and November.</p>]]></bio>
     <nid>2339</nid>
   </node>
   <node>
@@ -25565,7 +25565,7 @@
     <given-name>Lili</given-name>
     <family-name>Mendoza</family-name>
     <name-suffix></name-suffix>
-    <name-order>Family name first</name-order>
+    <name-order>Given name first</name-order>
     <pseudonym></pseudonym>
     <gender>Female</gender>
     <year-of-birth></year-of-birth>
@@ -25989,7 +25989,7 @@
     <year-of-birth></year-of-birth>
     <year-of-death></year-of-death>
     <sessions-status><session>2013 Resident</session></sessions-status>
-    <languages><language>French</language></languages>
+    <languages></languages>
     <roles><role>editor</role><role>fiction writer</role></roles>
     <website></website>
     <bibliography></bibliography>

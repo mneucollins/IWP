@@ -124,7 +124,7 @@ class iwpimport extends dbo {
 		$sql = "TRUNCATE authors CASCADE ";
 		$this->db->query($sql);
 
-		$sql = "INSERT into authors (nid, given_name, family_name) SELECT drupal_nid, given_name, family_name FROM masterlist ";
+		$sql = "INSERT into authors (nid, given_name, family_name) SELECT drupal_nid, drupal_given_name, drupal_family_name FROM masterlist ";
 		$this->db->query($sql);
 		
 		$sql = "UPDATE authors SET name_order = iwpimport.name_order,

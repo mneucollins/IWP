@@ -79,17 +79,33 @@ class Marker_Features extends CI_model {
 	    }
 
 		$residency = $this->input->post('residency');
-		if (empty($residency)) {$residency = $this->max_year(); }
+		if (empty($residency)) {
+			$residency = $this->max_year();
+			$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id FROM author_years WHERE year_of_attendance <= ".$residency );
+		} else {
+		    $count_type = $this->input->post('count_type');
+		    if ($count_type=='annual') {
+		    	$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id FROM author_years WHERE year_of_attendance = ".$residency );
+		    } else {    
+		    	$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id FROM author_years WHERE year_of_attendance <= ".$residency );
+		    }
+		}
+		$to_join[] = "residency";			
 		
+/*
 		if (!empty($residency)) {
 		    $count_type = $this->input->post('count_type');
 		    if ($count_type=='annual') {
 		    	$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id FROM author_years WHERE year_of_attendance = ".$residency );
 		    } else {
+			    
 		    	$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id FROM author_years WHERE year_of_attendance <= ".$residency );
 		    }
 			$to_join[] = "residency";
 		}
+*/
+		
+		
 
 		$YOB = $this->input->post('YOB');
 	    if (!empty($YOB)) {
@@ -133,14 +149,18 @@ class Marker_Features extends CI_model {
 			$this->db->query("CREATE OR REPLACE VIEW macro_region AS SELECT authors_id FROM author_macro_regions WHERE macro_region ='".$macro_region."'"); 
 			$to_join[] = "macro_region";
 		}
+		
+		//Create the cohort table
 		if (!empty($to_join)) {
 			$sql = "CREATE OR REPLACE VIEW cohort AS SELECT id AS authors_id FROM authors ";
 			foreach ($to_join as $view) {
 				$sql .= " JOIN $view ON authors.id = $view.authors_id ";
 			}
 			$this->db->query($sql);
-
 		}
+		
+		//Cohort postprocessing
+		//if year of residency is marked, eliminate author records from other years
 	    
 
 	}
