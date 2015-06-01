@@ -51,10 +51,10 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['port'] = 5432; 
-//$db['default']['username'] = 'codeigniter_user';
-//$db['default']['password'] = 'EqEojb3H';
-$db['default']['username'] = 'opengeo';
-$db['default']['password'] = 'opengeo';
+$db['default']['username'] = 'codeigniter_user';
+$db['default']['password'] = 'EqEojb3H';
+//$db['default']['username'] = 'opengeo';
+//$db['default']['password'] = 'opengeo';
 $db['default']['database'] = 'IWP';
 $db['default']['dbdriver'] = 'postgre';
 $db['default']['dbprefix'] = '';
