@@ -18,12 +18,31 @@ class Marker_Features extends CI_model {
     
     	$this->create_cohort();
 		$geojson = "{ \"type\": \"FeatureCollection\", \"features\": [ ";
+		
+		$residency = $this->input->post('residency');
+		$count_type = $this->input->post ('count_type');
+		
+		 
+		if( !empty($residency)) {
+	    	$sql = "SELECT year_of_attendance, country_markers_projected.id AS country_id, author_countries.country, count(*) AS n , ST_AsGeoJSON(the_geom) AS geojson
+						FROM cohort 
+							JOIN author_countries ON cohort.authors_id = author_countries.authors_id
+							JOIN country_markers_projected ON country_markers_projected.author_country =  author_countries.country
+							JOIN author_years ON cohort.authors_id = author_years.authors_id ";
+			if ($count_type == 'annual') {
+		    	$sql .= "WHERE year_of_attendance = $residency ";				
+			} else {
+		    	$sql .= "WHERE year_of_attendance <= $residency ";				
+			} 
+			$sql .= " GROUP BY year_of_attendance, country_id, author_countries.country, geojson " ;
 
-    	$sql = "SELECT country_markers_projected.id AS country_id, author_countries.country, count(*) AS n , ST_AsGeoJSON(the_geom) AS geojson
-					FROM cohort JOIN author_countries
-					JOIN country_markers_projected ON country_markers_projected.author_country =  author_countries.country
-					ON cohort.authors_id = author_countries.authors_id
-					GROUP BY country_id, author_countries.country, geojson";
+		} else {
+	    	$sql = "SELECT country_markers_projected.id AS country_id, author_countries.country, count(*) AS n , ST_AsGeoJSON(the_geom) AS geojson
+						FROM cohort JOIN author_countries
+						JOIN country_markers_projected ON country_markers_projected.author_country =  author_countries.country
+						ON cohort.authors_id = author_countries.authors_id
+						GROUP BY country_id, author_countries.country, geojson";
+    	}
     	
     	$counts = $this->db->query($sql);
 		if ($counts->num_rows() > 0){
@@ -35,9 +54,18 @@ class Marker_Features extends CI_model {
 							JOIN author_countries ON author_countries.authors_id = author_names.authors_id
 							JOIN author_years ON author_years.authors_id = author_names.authors_id
 							JOIN authors ON author_names.authors_id = authors.id
-							WHERE author_countries.country = ".$this->db->escape($count->country)."
-							GROUP BY author_name, year_of_attendance, bio, nid
-							ORDER BY year_of_attendance DESC";
+							WHERE author_countries.country = ".$this->db->escape($count->country) ;
+
+				if( !empty($residency)) {
+					if ($count_type == 'annual') {
+						$sql .= " AND year_of_attendance = $residency" ;
+					} else {
+						$sql .= " AND year_of_attendance <= $residency" ;						
+					}
+				}
+				$sql .= "	GROUP BY author_name, year_of_attendance, bio, nid
+							ORDER BY year_of_attendance DESC" ;
+
 				$authors = $this->db->query($sql);
 				
 				$geojson .= "{\"geometry\":".$count->geojson.",\"type\": \"Feature\", \"properties\":{";
@@ -81,30 +109,16 @@ class Marker_Features extends CI_model {
 		$residency = $this->input->post('residency');
 		if (empty($residency)) {
 			$residency = $this->max_year();
-			$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id FROM author_years WHERE year_of_attendance <= ".$residency );
+			$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id, year_of_attendance FROM author_years WHERE year_of_attendance <= ".$residency );
 		} else {
 		    $count_type = $this->input->post('count_type');
 		    if ($count_type=='annual') {
-		    	$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id FROM author_years WHERE year_of_attendance = ".$residency );
+		    	$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id, year_of_attendance  FROM author_years WHERE year_of_attendance = ".$residency );
 		    } else {    
-		    	$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id FROM author_years WHERE year_of_attendance <= ".$residency );
+		    	$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id, year_of_attendance  FROM author_years WHERE year_of_attendance <= ".$residency );
 		    }
 		}
-		$to_join[] = "residency";			
-		
-/*
-		if (!empty($residency)) {
-		    $count_type = $this->input->post('count_type');
-		    if ($count_type=='annual') {
-		    	$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id FROM author_years WHERE year_of_attendance = ".$residency );
-		    } else {
-			    
-		    	$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id FROM author_years WHERE year_of_attendance <= ".$residency );
-		    }
-			$to_join[] = "residency";
-		}
-*/
-		
+		$to_join[] = "residency";					
 		
 
 		$YOB = $this->input->post('YOB');

@@ -47,7 +47,13 @@
         </li>
         <li class='menu_item'>Year of Residency:&nbsp;&nbsp;
             <select name="residency">
-                <option value="0" <?php if($residency=='0'){echo "selected";}?> ></option>
+                <option value="0"
+	                <?php if($residency=='0'){
+		                echo "selected";
+		                $count_type = "cumulative";
+		                }
+		            ?> >
+		        </option>
             	<?php 
 	            	$beginyr = 1967;
 	            	$endyr = date('Y')-1;
