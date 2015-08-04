@@ -1,4 +1,4 @@
-macroregion,REGION,COUNTRY,IWP PROGRAM,YEAR(S),OCLC,penname,drupal_family_name,drupal_given_name,drupal_nid
+macro_region,region,country,iwp_program,years,oclc,penname,drupal_family_name,drupal_given_name,drupal_nid
 Asia,South-central Asia,Afghanistan,Fall Residency,1977,,,JONAID,Lutfurahman,1246
 Asia,South-central Asia,Afghanistan,Fall Residency,2006,,,NADERI,Partaw,1490
 Asia,South-central Asia,Afghanistan,Fall Residency,2012,,,Zegham,Mohibullah,3153

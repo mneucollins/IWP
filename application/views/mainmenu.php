@@ -94,6 +94,10 @@
 	            <td><a href="iwpdata/scratchPad">Scratchpad</a></td>
 	            <td>Run OpenLayers Scratch Pad</td>
 	        </tr>
+	        <tr>
+	            <td><a href="iwpdata/encode">Fix quotes</a></td>
+	            <td></td>
+	        </tr>
 	    </table>
 		
 	</div>

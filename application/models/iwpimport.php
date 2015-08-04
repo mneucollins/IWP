@@ -213,6 +213,7 @@ class iwpimport extends dbo {
 		foreach ($query->result() as $row) {
 			$writing_roles = explode(";", $row->writing_role);
 			foreach ($writing_roles as $writing_role) {
+				
 				$sql2 = "INSERT INTO author_writing_roles (authors_id, writing_role) 
 					VALUES (".$row->id.", ".$this->db->escape(trim($writing_role)).")";
 				$this->db->query($sql2);

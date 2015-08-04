@@ -96,7 +96,11 @@ class Marker_Features extends CI_model {
 
 	    $country = $this->input->post('country');
 	    if (!empty($country)) {
-	    	$this->db->query ("CREATE OR REPLACE VIEW country as select authors_id FROM author_countries WHERE country = '".$country."'");
+		    
+	    	$this->db->query ("CREATE OR REPLACE VIEW country as select authors_id 
+	    		FROM author_countries
+	    		JOIN countries_to_cntry_name ON author_countries.country = countries_to_cntry_name.author_country
+	    		WHERE countries_to_cntry_name.id = '".$country."'");
 	    	$to_join[]="country";
 	    }
 

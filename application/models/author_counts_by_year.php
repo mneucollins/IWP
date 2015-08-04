@@ -45,7 +45,8 @@ class Author_counts_by_year extends dbo {
 						WHERE ".self::$cshapesTableName.".cowsdate < $testdate AND ".self::$cshapesTableName.".cowedate >= $testdate";
 			$this->db->query($sql);
 		}
-		
+
+	
 		$sql = "SELECT id, author_country_name, year FROM author_counts_by_year ORDER BY year, author_country_name";
 		$query=$this->db->query($sql);
 		foreach($query->result() as $row) {
@@ -57,6 +58,7 @@ class Author_counts_by_year extends dbo {
 				WHERE id=$row->id";
 			$this->db->query($sqlupdate);
 		}
+
 		
 		//rerun the query	
 		$query=$this->db->query($sql);

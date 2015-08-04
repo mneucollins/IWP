@@ -3,6 +3,9 @@
     <hr />
         <ul class="no_marker">
     	<li class='menu_item'>Country:
+    	<?php echo $country_list; ?>
+ 
+<!--
             <select name="country">
                 <option value="0" <?php if($country=='0'){echo "selected";}?> ></option>
                 <?php
@@ -14,6 +17,7 @@
                 	}
                 ?>
             </select>
+-->
         </li>    		
     		
         <li class='menu_item'>Region:
@@ -55,7 +59,7 @@
 		            ?> >
 		        </option>
             	<?php 
-	            	$beginyr = 1967;
+	            	$beginyr = 1966;
 	            	$endyr = date('Y')-1;
 	            	//if (empty($residency)){ $residency=$endyr; }
 	            	for ($i = $beginyr;$i <= $endyr; $i++){

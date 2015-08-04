@@ -189,7 +189,11 @@ class IWPData extends CI_Controller {
 		redirect ('http://localhost:8888/IWP/index.php/iwpdata');
 	}
 	
-	
+	public function encode(){
+		$this->load->model('author_writing_roles');
+		$this->author_writing_roles->replace_quotes();
+		redirect ('http://localhost:8888/IWP/index.php/iwpdata');
+	}
 
 }
 

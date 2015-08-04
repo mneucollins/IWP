@@ -67,4 +67,15 @@ class Masterlist extends dbo {
 		}
 	}
 	
+	public function escape_values() {
+		//loop through all
+		//update using active record pattern should automatically escape the data
+		$masterlist = $this->db->get('masterlist');
+		foreach ($masterlist->result() as $author) {
+			$this->db->where('id', $author->id);
+			$this->db->update('masterlist', $author); 
+		}
+		
+	}
+	
 }

@@ -6,6 +6,8 @@ class IWPMap extends CI_Controller {
 	public function index()
 	{
 		$this->load->model('marker_features');
+		$this->load->model('parameters');
+		
 		$postvars =$this->input->post();
 /*
 		$residency = $this->input->post('residency'); 
@@ -21,7 +23,12 @@ class IWPMap extends CI_Controller {
 /* 		if (!empty($postvars)) { */
 			$data['geojson'] = $this->marker_features->build_markers_geojson(); 
 /* 		} */
-		$data ['country']=$this->input->post('country');
+
+// Note: started to refactor this section so that parameter selection setup was done in the model rather
+// than the view. Leaving it for now.
+//		$data['country']=$this->input->post('country')
+ 
+		$data['country_list'] = $this->parameters->build_country_list($this->input->post('country'));
 
 		$data['count_type']=$this->input->post('count_type');
 		$data['YOB']=$this->input->post('YOB');
