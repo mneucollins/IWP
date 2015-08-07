@@ -3,27 +3,15 @@
     <hr />
         <ul class="no_marker">
     	<li class='menu_item'>Country:
-    	<?php echo $country_list; ?>
- 
-<!--
-            <select name="country">
-                <option value="0" <?php if($country=='0'){echo "selected";}?> ></option>
-                <?php
-                	$sql = "SELECT country FROM author_countries GROUP BY country ORDER BY country";
-                	$query = $this->db->query($sql);
-                	foreach($query->result() as $row) {	
-                		$selected =  ($country == $row->country)? "selected":"";
-						echo "<option value='{$row->country}' $selected >$row->country</option>";
-                	}
-                ?>
-            </select>
--->
+	    	<?php 
+		    	echo $country_list; 
+	    	?>
         </li>    		
     		
         <li class='menu_item'>Region:
             <select name="region">
 
-                <option value="0" <?php if($region=='0'){echo "selected";}?> ></option>
+                <option value="0" <?php if($region=='0'){echo "selected";}?> >[any]</option>
                 <?php
                 	$sql = "SELECT region FROM author_regions GROUP BY region ORDER BY region";
                 	$query = $this->db->query($sql);
@@ -37,7 +25,7 @@
         </li>
         <li class='menu_item'>Macro Region:
             <select name="macro_region">
-                <option value="0" <?php if($macro_region=='0'){echo "selected";}?> ></option>
+                <option value="0" <?php if($macro_region=='0'){echo "selected";}?> >[any]</option>
                 <?php 
                 	$sql = "SELECT macro_region FROM author_macro_regions GROUP BY macro_region ORDER BY macro_region";
                 	$query = $this->db->query($sql);
@@ -56,7 +44,7 @@
 		                echo "selected";
 		                $count_type = "cumulative";
 		                }
-		            ?> >
+		            ?> >[any]
 		        </option>
             	<?php 
 	            	$beginyr = 1966;
@@ -85,7 +73,7 @@
         </li>
         <li class='menu_item'>Language:&nbsp;&nbsp;
             <select name="language">
-                <option value="0" <?php if($language=='0'){echo "selected";}?> > </option>
+                <option value="0" <?php if($language=='0'){echo "selected";}?> >[any]</option>
                 <?php
                 	$sql = "SELECT language FROM author_languages WHERE language <> '' GROUP BY language ORDER BY language ";
                 	$query = $this->db->query($sql);
@@ -99,7 +87,7 @@
         </li>
         <li class='menu_item'>Writing Role:&nbsp;&nbsp;
             <select name="role">
-                <option value="0" <?php if($role=='0'){echo "selected";}?> ></option>
+                <option value="0" <?php if($role=='0'){echo "selected";}?> >[any]</option>
                 <?php
                 	$sql = "SELECT writing_role FROM author_writing_roles WHERE writing_role <> '' GROUP BY writing_role ORDER BY writing_role ";
                 	$query = $this->db->query($sql);
@@ -123,7 +111,7 @@
         </li>
         <li class='menu_item'>Year of Birth:&nbsp;&nbsp;
             <select name="YOB">
-                <option value="0" <?php if($YOB=='0'){echo "selected";}?> ></option>
+                <option value="0" <?php if($YOB=='0'){echo "selected";}?> >[any]</option>
 				<?php $sql = "select Min(year_of_birth) as yob_min, Max(year_of_birth) as yob_max FROM authors"; 
 					$query = $this->db->query($sql);
 					$row = $query->row();

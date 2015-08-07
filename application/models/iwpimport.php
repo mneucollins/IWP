@@ -11,7 +11,7 @@ class iwpimport extends dbo {
 	public $recordtag;
 	public $tag;
 	public $insideElement;
-	public $importfilename = 'application/import_data/view-map_data.xml';
+	public $importfilename = 'application/import_data/map_data.xml';
 
 	public $multivaluefields = array('ROLE', 'REGION', 'COUNTRY', 'CONTINENT', 'LANGUAGE', 'SESSION');
 
@@ -124,7 +124,7 @@ class iwpimport extends dbo {
 		$sql = "TRUNCATE authors CASCADE ";
 		$this->db->query($sql);
 
-		$sql = "INSERT into authors (nid, given_name, family_name) SELECT drupal_nid, drupal_given_name, drupal_family_name FROM masterlist ";
+		$sql = "INSERT into authors (nid, given_name, family_name) SELECT drupal_nid, drupal_given_name, upper(drupal_family_name) FROM masterlist ";
 		$this->db->query($sql);
 		
 		$sql = "UPDATE authors SET name_order = iwpimport.name_order,
@@ -161,6 +161,7 @@ class iwpimport extends dbo {
 			if (strtoupper(trim($row->country)) != "BURMA/MYANMAR") {
 				$countries = explode("/", $row->country);
 				foreach ($countries as $country) {
+					
 					$sql2 = "INSERT INTO author_countries (authors_id, country) 
 						VALUES (".$row->id.", ".$this->db->escape(trim($country)).")";
 					$this->db->query($sql2);

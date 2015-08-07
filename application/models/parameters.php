@@ -25,7 +25,7 @@
 	    $country_list = "<select name='country'>\r\n
 	        				<option value='0' "; 
 	    $selected = ($selected_country=='0') ? 'selected' : '';
-	    $country_list .= " ></option> \r\n";
+	    $country_list .= " ><i>[any]</i></option> \r\n";
 
     	foreach($countries->result() as $row) {	
 		    $selected = ($selected_country==$row->countryid) ? 'selected' : '' ;
@@ -37,6 +37,26 @@
 	    return $country_list;
 		
 	}
+	
+	//region_list needs revision. Select only one region
+	function build_region_list ($selected_region) {
+        $sql = "SELECT region FROM author_regions GROUP BY region ORDER BY region";
+		$regions = $this->db->query($sql);
+		
+	    $region_list = "<select name='region'>\r\n
+	        				<option value='0' "; 
+	    $selected = ($selected_region=='0') ? 'selected' : '';
+	    $region_list .= " ><i>[any]</i></option> \r\n";
+		
+		foreach ($regions->result() as $row) {
+		    $selected = ($selected_region==$row->region) ? 'selected' : '' ;
+			$region_list .= "<option value='".$row->region."'";
+			$region_list .= $selected .">".$row->region."</option>\r\n";
+    	}
+	    $region_list .= "</select>\r\n"; 
+	    return $region_list;
+			
+	}	
 
 }
 

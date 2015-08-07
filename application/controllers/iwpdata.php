@@ -33,8 +33,15 @@ class IWPData extends CI_Controller {
 	
 	public function importMasterList() {
 		$this->load->model("masterlist");
-		$data['results']="Imported ".$this->masterlist->importMasterList()." records from IWP_Masterlist";
-		$this->load->view('results_view', $data);	
+		if ($this->input->post('upload')){
+			$data['results']="Imported ".$this->masterlist->importMasterList()." records from IWP_Masterlist";
+//			$this->load->view('loadMasterlistView');
+// 			$this->load->view('results_view', $data);
+		} elseif ($this->input->post('return')) {
+			$this->load->view('mainmenu');	
+		} else {
+			$this->load->view('loadMasterlistView');
+		}
 	}
 	
 	public function iwpParse() {
@@ -49,25 +56,6 @@ class IWPData extends CI_Controller {
 		$data['results'] = $this->menus->load_csv();
 		$this->load->view('results_view', $data);
 	}
-
-//use masterlist instead of iwp_participants	
-	public function x_load_iwp_participants(){
-		$this->load->model('iwp_participants');
-		$this->iwp_participants->clear_table();
-		//$this->db->truncate('iwp_participants');
-		
-		$sql = "COPY iwp_participants (macro_region, region, country, iwp_program, year, family_name, given_name) FROM '" . FCPATH . "application/import_data/iwp_participants.csv' DELIMITER ',' CSV HEADER";
-		$this->db->query($sql);
-		
-		$this->iwp_participants->trim_names();
-		
-		$data['results'] = "Added ".$this->db->count_all('iwp_participants')."records to iwp_participants";
-		//update tables that are dependent upon this
-		
-		$this->load->view('results_view', $data);
-		
-	}
-
 
 	public function loadCountsByYear(){
 		$this->load->model ('author_counts_by_year');

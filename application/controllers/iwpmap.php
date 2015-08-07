@@ -29,7 +29,7 @@ class IWPMap extends CI_Controller {
 //		$data['country']=$this->input->post('country')
  
 		$data['country_list'] = $this->parameters->build_country_list($this->input->post('country'));
-
+		$data['region_list'] =  $this->parameters->build_region_list($this->input->post('region'));
 		$data['count_type']=$this->input->post('count_type');
 		$data['YOB']=$this->input->post('YOB');
 		$data['gender']=$this->input->post('gender');
