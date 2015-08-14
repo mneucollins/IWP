@@ -6,7 +6,7 @@ CREATE TABLE xls_import_log
 (
   id integer NOT NULL,
   msg character varying(255),
-  "timestamp" timestamp with time zone,
+  last_modified timestamp with time zone,
   CONSTRAINT "Primary Key" PRIMARY KEY (id)
 )
 WITH (
