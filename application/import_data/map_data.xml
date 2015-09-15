@@ -25163,8 +25163,8 @@
     <nid>3115</nid>
   </node>
   <node>
-    <given-name>Tanja</given-name>
-    <family-name>Fricke</family-name>
+    <given-name>Lucy</given-name>
+    <family-name>FRICKE</family-name>
     <name-suffix></name-suffix>
     <name-order>Given name first</name-order>
     <pseudonym></pseudonym>
@@ -26447,10 +26447,10 @@
     <sessions-status><session>2014 Resident</session></sessions-status>
     <languages><language>English, Spanish</language></languages>
     <roles><role>poet</role></roles>
-    <website>http://natashatiniacos.wordpress.com/</website>
+    <website>http://natashatiniacos.com/</website>
     <bibliography></bibliography>
     <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/TINIACOS_excerpt_from_work.pdf</writing-sample>
-    <country-region></country-region>
+    <country-region><continent>Americas</continent><region>Latin America and the Caribbean</region><subregion>South America</subregion><country>Venezuela</country></country-region>
     <bio><![CDATA[<p><strong>Natasha TINIACOS</strong> (poet; Venezuela) is the author of the poetry collections <em>Historia privada de un etcétera</em> [Private Story of an Et Cetera] (2011/2015) and the award-winning <em>Mujer a fuego lento</em> [Woman at Low Heat] (2006). Her work appears in Venezuelan and Spanish journals and magazines; she translates poetry for the site The Verbatim Project and is the editor in chief of BACKROOMCaracas, a platform for contemporary Venezuelan art. Her participation is made possible by the Bureau of Educational and Cultural Affairs at the U.S. Department of State.</p>]]></bio>
     <nid>3947</nid>
   </node>
@@ -26793,7 +26793,7 @@
     <bibliography></bibliography>
     <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/MATEO_writing_sample_final.pdf</writing-sample>
     <country-region></country-region>
-    <bio><![CDATA[<p><strong>Margarita MATEO PALMER</strong> (critic, essayist, novelist; Cuba) has her extensive critical work collected in nine volumes of essays; she is also the author of the novel <em>Desde los blancos manicomios</em> (2008). Her writing on Caribbean literatures has earned her fellowships at Harvard and Tulane, six iterations of Premio Nacional de la Crítica, and many other literary awards. Mateo Palmer is a member of the Cuban Academy of Language. Her participation is made possible by the U.S. Embassy in Havana and the Ludwig Foundation.</p>]]></bio>
+    <bio><![CDATA[<p><strong>Margarita MATEO PALMER</strong> (critic, essayist, novelist; Cuba) has her extensive critical work collected in seven volumes of essays; she is also the author of the novel <em>Desde los blancos manicomios</em> (2008). Her writing on Caribbean literatures has earned her fellowships at Harvard and Tulane, six iterations of Premio Nacional de la Crítica, and many other literary awards. Mateo Palmer is a member of the Cuban Academy of Language. Her participation is made possible by the U.S. Embassy in Havana and the Ludwig Foundation.</p>]]></bio>
     <nid>4272</nid>
   </node>
   <node>
@@ -26909,5 +26909,480 @@
     <country-region><continent>Europe</continent><region>Northern Europe</region><country>Finland</country></country-region>
     <bio><![CDATA[<p><strong>Aki SALMELA</strong> (poet, translator; Finland) is the author of seven poetry collections and a number of translations, including the poetry of John Ashbery, Charles Simic, and James Tate. His work has been widely anthologized, and appears in literary journals throughout Europe. His first collection, <em>Sanomattomia lehtiä</em>, won the Kalevi Jäntti Prize in 2004; in 2008 he received the Finnish Broadcast Corporation’s Tanssiva Karhu Poetry Prize. His participation is made possible by an anonymous donation to the IWP.</p>]]></bio>
     <nid>4282</nid>
+  </node>
+  <node>
+    <given-name>Mookie</given-name>
+    <family-name>KATIGBAK-LACUESTA</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Female</gender>
+    <year-of-birth>1980</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>English</language></languages>
+    <roles><role>non-fiction writer</role><role>poet</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/LACUESTA_Writing%20Sample.pdf</writing-sample>
+    <country-region><continent>Asia</continent><region>South-Eastern Asia</region><country>Philippines</country></country-region>
+    <bio><![CDATA[<p><strong>Mookie KATIGBAK-LACUESTA</strong> (poet, nonfiction writer; Philippines) is the author of two poetry collections: <em>The Proxy Eros</em> (2008) and<em> Burning Houses</em> (2013). Widely awarded, she was the Filipino delegate to the 2012 Medellín Poetry Festival. Her work has been anthologized in publications and online, in the Philippines and abroad. She participates courtesy of the Bureau of Educational and Cultural Affairs at the U.S. Department of State.</p>]]></bio>
+    <nid>4283</nid>
+  </node>
+  <node>
+    <given-name></given-name>
+    <family-name>NISAH HARON</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Female</gender>
+    <year-of-birth>1973</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>Malay</language></languages>
+    <roles><role></role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/HARON_writing_sample.pdf</writing-sample>
+    <country-region><continent>Asia</continent><region>South-Eastern Asia</region><country>Malaysia</country></country-region>
+    <bio><![CDATA[<p><strong>NISAH HARON</strong> (fiction and nonfiction writer, translator; Malaysia) is the author of several story collections and novels, including, most recently, <em>Rindu Seorang Rafik</em> [The Longing of a Rafik]. Her nonfiction deals with the craft and the business of creative writing; she is also a travel writer, with work translated into English and Japanese. She has twice received the Utusan Group Literary Prize for her novels; the stories have earned her three iterations of the Malaysia Premier Literary Prize. Her participation is made possible by Dewan Bahasa dan Pustaka.</p>]]></bio>
+    <nid>4285</nid>
+  </node>
+  <node>
+    <given-name>Harris</given-name>
+    <family-name>KHALIQUE</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Male</gender>
+    <year-of-birth>1966</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>Urdu</language></languages>
+    <roles><role>non-fiction writer</role><role>poet</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/KHALIQUE_writing_sample.pdf</writing-sample>
+    <country-region><continent>Asia</continent><region>Southern Asia</region><country>Pakistan</country></country-region>
+    <bio><![CDATA[<p><strong>Harris KHALIQUE</strong> (poet, nonfiction writer; Pakistan) is the author of eight poetry collections, including <em>Between You and Your Love</em> (2004), <em>Ishq ki taqveem mein</em> (2006) and <em>Melay mein</em> (2012), which won the 2013 UBL Literary Excellence Award for Urdu poetry. His poems have been anthologized internationally. A campaigner for workers’, women’s, and minority rights in Pakistan and abroad, he contributes regularly to national and international news publications. His participation is made possible by the Bureau of Educational and Cultural Affairs at the U.S. Department of State.</p>]]></bio>
+    <nid>4286</nid>
+  </node>
+  <node>
+    <given-name>Teresa</given-name>
+    <family-name>PRÄAUER</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Female</gender>
+    <year-of-birth>1979</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>German</language></languages>
+    <roles><role>fiction writer</role><role>poet</role><role>visual artist</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/PR%C3%84AUER_writing%20sample.pdf</writing-sample>
+    <country-region><continent>Europe</continent><region>Western Europe</region><country>Austria</country></country-region>
+    <bio><![CDATA[<p><strong>Teresa PRÄAUER</strong> (fiction writer, poet, visual artist; Austria) is the author of the novels <em>Johnny und Jean</em> (2014) and <em>Für den Herrscher aus Übersee</em> [For the Emperor from Overseas], which received the Aspekte prize for best German-language prose debut of 2012, as well as of a book of poetry postcards entitled [Pigeons’ Letters] (2009). In 2015 she received a Droste and a Hölderlin promotion award, and was shortlisted for the Leipzig Book Fair Prize. She regularly publishes on the subjects of poetry, theatre, pop culture and fine arts. Her participation is made possible by the Max Kade Foundation.</p>]]></bio>
+    <nid>4287</nid>
+  </node>
+  <node>
+    <given-name>Armen</given-name>
+    <family-name>OHANYAN</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym>ARMEN OF ARMENIA</pseudonym>
+    <gender>Male</gender>
+    <year-of-birth>1979</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>Armenian</language></languages>
+    <roles><role>fiction writer</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/ARMEN_writing_sample.pdf</writing-sample>
+    <country-region><continent>Asia</continent><region>Western Asia</region><country>Armenia</country></country-region>
+    <bio><![CDATA[<p><strong>ARMEN OF ARMENIA</strong> (fiction writer; Armenia) is the author of the story collection [The Return of Kikos] (2013), and the novel [Mommyland; Flag] (2015); a short story of his appeared in the 2015 edition of <em>Best European Fiction</em>. His writing is significantly influenced by his political activism. He participates courtesy of the Bureau of Educational and Cultural Affairs at the U.S. Department of State.</p>]]></bio>
+    <nid>4288</nid>
+  </node>
+  <node>
+    <given-name>El</given-name>
+    <family-name>JONES</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Female</gender>
+    <year-of-birth>1979</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>English</language></languages>
+    <roles><role>performance artist</role><role>poet</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/JONES_writing%20sample.pdf</writing-sample>
+    <country-region><continent>Americas</continent><region>Northern America</region><continent>Canada</continent></country-region>
+    <bio><![CDATA[<p><strong>El JONES</strong> (poet; Canada) is the 2013-2015 poet laureate for Halifax. Named a “Bold Visionary,” one of 23 in her country, she was also the Poet of Honor at the Canadian Festival of Spoken Word in 2015. Her collection of spoken-word poetry <em>Live from the Afrikan Resistance!</em> appeared in 2014. Her participation is made possible by the U.S. Embassy in Ottawa.</p>]]></bio>
+    <nid>4291</nid>
+  </node>
+  <node>
+    <given-name>Johanna</given-name>
+    <family-name>AITCHISON</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Female</gender>
+    <year-of-birth>1980</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>English</language></languages>
+    <roles><role>poet</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/AITCHISON_writing%20sample.pdf</writing-sample>
+    <country-region><continent>Oceania</continent><region>Australia and New Zealand</region><country>New Zealand</country></country-region>
+    <bio><![CDATA[<p><strong>Johanna AITCHISON</strong> (poet; New Zealand) is the author of three books of poetry, including <em>A Long Girl Ago</em> (2007; finalist at the 2008 Montana New Zealand Book Awards) and <em>Miss Dust</em> (2015). Widely anthologized in her home country, Aitchison is also the winner of the 2005 Victoria University Story Inc. Prize for Poetry, and of the 2010 New Zealand Poetry Society International Competition. Her participation is made possible by Creative New Zealand.</p>]]></bio>
+    <nid>4292</nid>
+  </node>
+  <node>
+    <given-name>Ching-Hang</given-name>
+    <family-name>CHENG</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Family name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Male</gender>
+    <year-of-birth>1981</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>Chinese</language></languages>
+    <roles><role>critic</role><role>editor</role><role>poet</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/CHENG_writing%20sample.pdf</writing-sample>
+    <country-region><continent>Asia</continent><region>Eastern Asia</region><country>Hong Kong</country></country-region>
+    <bio><![CDATA[<p><strong>CHENG CHING-HANG (Matthew</strong>) (poet, editor; Hong Kong) is the author of the poetry collection [The First Book of Recollection], co-author of [Wait and See:The Collection of Six Hong Kong Young Writers], and the editor of [An Anthology of Hong Kong Poetry of the 1950s], [Hong Kong Short Stories 2004-2005], and [Hong Kong Cinema Retrospective 2011], among others. The former Vice-Chair of the Hong Kong Film Critics Society, in 2013 he received the Hong Kong Arts Development Award for Best Artist (Arts Criticism). He participates courtesy of the Robert H. N. Ho Family Foundation.</p>]]></bio>
+    <nid>4293</nid>
+  </node>
+  <node>
+    <given-name>Wenyin</given-name>
+    <family-name>CHUNG </family-name>
+    <name-suffix></name-suffix>
+    <name-order>Family name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Female</gender>
+    <year-of-birth>1965</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>Chinese</language></languages>
+    <roles><role>fiction writer</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/CHUNG_writing_sample2.pdf</writing-sample>
+    <country-region><continent>Asia</continent><region>Eastern Asia</region><country>Taiwan</country></country-region>
+    <bio><![CDATA[<p><strong>CHUNG Wenyin</strong> (fiction writer; Taiwan) is the author of story collections [Two People in One Day, The Past, Diary for You, Yesterday Reemerging, Old Appearances of Young Ladies and Cities for Lovers]. Her novels include [Woman Islands] and the historical Island Trilogy, comprised of <em>Decayed Lust</em>, [Decayed History] and <em>Decayed Land</em>. Chung Wen Yin is the recipient of a dozen literary awards, including the 2003 Yunlin County Cultural Award and, in 2005, of the distinguished Wu San-Lien Literature Prize. Her participation is made possible by the Taiwan Ministry of Culture.</p>]]></bio>
+    <nid>4295</nid>
+  </node>
+  <node>
+    <given-name>Kirill</given-name>
+    <family-name>AZERNYI</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Male</gender>
+    <year-of-birth>1990</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>Russian</language></languages>
+    <roles><role>editor</role><role>fiction writer</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/AZERNYI_writing%20sample_part1.pdf</writing-sample>
+    <country-region><continent>Europe</continent><region>Eastern Europe</region><country>Russia</country></country-region>
+    <bio><![CDATA[<p><strong>Kirill Timurovich AZERNYI</strong> (fiction writer; Russia) has published two books of prose [The Present, 2011] and [A Doomsday Man, 2015]. He is the publisher of the magazine <em>Zdes</em>, dedicated to contemporary experimental prose, poetry, and essays. His participation is made possible by the Bureau of Educational and Cultural Affairs at the U.S. Department of State.</p>]]></bio>
+    <nid>4297</nid>
+  </node>
+  <node>
+    <given-name>Yael</given-name>
+    <family-name>NEEMAN</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Female</gender>
+    <year-of-birth>1960</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>Hebrew</language></languages>
+    <roles><role>fiction writer</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/NEEMAN_writing%20sample.pdf</writing-sample>
+    <country-region><continent>Asia</continent><region>Western Asia</region><country>Israel</country></country-region>
+    <bio><![CDATA[<p><strong>Yael NEEMAN</strong> (fiction writer; Israel) is the author of four books, including the novels [We Were the Future] and [Orange Tuesday] (1998) and the story collection [The Option](2013), nominated for the 2014 Sapir Prize for Literature. Other awards include the 2011 Book Publishers Association of Israel’s Golden Book Award and the 2015 Prime Minister’s Prize for Hebrew Writers. Her work has been translated into French, Polish and English. She participates courtesy of the United States-Israeli Education Foundation.</p>]]></bio>
+    <nid>4298</nid>
+  </node>
+  <node>
+    <given-name>Homeira</given-name>
+    <family-name>QADERI</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Female</gender>
+    <year-of-birth>1980</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>Dari</language></languages>
+    <roles><role>fiction writer</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/QADERI_writing%20sample_rev_Rain.pdf</writing-sample>
+    <country-region><continent>Asia</continent><region>Southern Asia</region><country>Afghanistan</country></country-region>
+    <bio><![CDATA[<p><strong>Homeira QADERI</strong> (fiction writer; Afghanistan) is the author of six books, including the novel [Silver Kabul River Girl], published in Iran in 2009 to widespread critical acclaim. An activist for women’s rights and currently a Senior Advisor to the Minister of Labor, Social Affairs, Martyrs and Disabled, she teaches at the University of Kabul. She participates courtesy of the Bureau of Educational and Cultural Affairs at the U.S. Department of State.</p>]]></bio>
+    <nid>4299</nid>
+  </node>
+  <node>
+    <given-name>Feng</given-name>
+    <family-name>YAO</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Family name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Male</gender>
+    <year-of-birth>1958</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>Chinese</language></languages>
+    <roles><role></role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/YAOFeng_full%20sample_Collector.pdf</writing-sample>
+    <country-region><continent>Asia</continent><region>Eastern Asia</region><continent>Macau</continent></country-region>
+    <bio><![CDATA[<p><strong>YAO Feng</strong> (poet, translator, scholar; Macau) is the author of poetry collections [Writing on the Wings of the Wind, One Horizon – Two Views], [The Night Lies Down with Me], [Faraway Song] and [Selected Poems of Yao Feng, In Brief]. He writes in both Chinese and Portuguese, and translates Portuguese poetry into Chinese. A winner of many poetry awards as well as a medal from the Portuguese president, he teaches in the Department of Portuguese at the University of Macau. His participation is made possible by the Paul and Hualing Engle Fund.</p>]]></bio>
+    <nid>4300</nid>
+  </node>
+  <node>
+    <given-name>Rachel</given-name>
+    <family-name>ROSE</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Female</gender>
+    <year-of-birth>1970</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>English</language></languages>
+    <roles><role>fiction writer</role><role>non-fiction writer</role><role>poet</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/ROSE_writing%20sample.pdf</writing-sample>
+    <country-region><continent>Americas</continent><region>Northern America</region><continent>Canada</continent></country-region>
+    <bio><![CDATA[<p><strong>Rachel ROSE</strong> (poet, nonfiction writer; Canada) is a recipient of the 2013 and 2016 Pushcart Prize, and of the Pat Lowther Poetry Award and the Audre Lorde Poetry Award for 2013. Her poetry books include <em>Notes on Arrival and Departure</em> (2005) and <em>Song and Spectacle</em> (2012); her creative nonfiction essays have appeared in a number of anthologies, including <em>Double Lives: Writing and Motherhood</em>. Rose regularly contributes to literary journals and magazines, including the <em>Malahat Review</em> and <em>Prism International</em>. She participates courtesy of the British Columbia Arts Council and Canada Council.</p>]]></bio>
+    <nid>4301</nid>
+  </node>
+  <node>
+    <given-name>Michael</given-name>
+    <family-name>MENDIS</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Male</gender>
+    <year-of-birth>1990</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>English</language></languages>
+    <roles><role>fiction writer</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/MENDIS_writing%20sample.pdf</writing-sample>
+    <country-region><continent>Asia</continent><region>Southern Asia</region><country>Sri Lanka</country></country-region>
+    <bio><![CDATA[<p><strong>Michael MENDIS</strong> (fiction writer; Sri Lanka) has published a number of stories, including “The Sarong-Man in the Old House and an Incubus for a Rainy Night,“ which won the 2013 Commonwealth Short Story Prize for the Asia region. His work has been anthologized internationally; his first collection of stories is forthcoming in 2015. He works as a researcher for the Sri Lanka-based Centre for Policy Alternatives. He participates courtesy of the Bureau of Educational and Cultural Affairs at the U.S. Department of State.</p>]]></bio>
+    <nid>4302</nid>
+  </node>
+  <node>
+    <given-name>Guzal</given-name>
+    <family-name>BEGIM</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Female</gender>
+    <year-of-birth>1974</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>Uzbek</language></languages>
+    <roles><role>poet</role><role>translator</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/BEGIM_writing%20sample_draft1_0.pdf</writing-sample>
+    <country-region><continent>Asia</continent><region>Central Asia</region><country>Uzbekistan</country></country-region>
+    <bio><![CDATA[<p><strong>Guzal BEGIM</strong> (poet, translator; Uzbekistan) is an editor at the Uzbeki children’s magazine <em>Ghunch</em>a, and a reporter. She has three poetry collections, the most recent being <em>Majnunsoat</em> (2012), and a number of poems in international anthologies. She participates courtesy of the Bureau of Educational and Cultural Affairs at the U.S. Department of State.</p>]]></bio>
+    <nid>4303</nid>
+  </node>
+  <node>
+    <given-name>Sara</given-name>
+    <family-name>BAUME</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Female</gender>
+    <year-of-birth>1984</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>English</language></languages>
+    <roles><role>fiction writer</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/BAUME_writing%20sample.pdf</writing-sample>
+    <country-region><continent>Europe</continent><region>Northern Europe</region><country>Ireland</country></country-region>
+    <bio><![CDATA[<p><strong>Sara BAUME</strong> (fiction writer; Ireland) writes stories and essays. “Solesearcher1” won the 2014 Davy Byrnes Short Story Award and appeared in the anthology Davy Byrnes Stories; “Dancing, or Beginning to Dance” was shortlisted for the 2014 Hennessy New Irish Writing Award. Her novel <em>Spill Simmer Falter Wither</em> (2015) has been shortlisted for the Edinburgh First Book Award, longlisted for <em>The Guardian</em>'s first book award, and won the Warwick Prize for Writing. Her participation is made possible by the William B. Quarton Fund through the Cedar Rapids Community Foundation.</p>]]></bio>
+    <nid>4304</nid>
+  </node>
+  <node>
+    <given-name>Raed Anis</given-name>
+    <family-name>AL-JISHI</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Male</gender>
+    <year-of-birth>1976</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>Arabic</language></languages>
+    <roles><role>activist</role><role>fiction writer</role><role>translator</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/AL_JISHI_writing_sample3_finalized.pdf</writing-sample>
+    <country-region><continent>Asia</continent><region>Western Asia</region><country>Saudi Arabia</country></country-region>
+    <bio><![CDATA[<p><strong>Raed Anis Al-JISHI</strong> (poet, translator; Saudi Arabia) has published one novel, seven volumes of poems in Arabic and one, <em>Bleeding Gull: Look, Feel, Fly</em>, in English. Alongside a career as a writer, he teaches high school chemistry in his native city of Qateef. He is a feminist and human rights activist, and works on issues involving children and literacy. His participation is made possible by the U.S. Embassy in Riyadh.</p><p>&nbsp;</p><p class="MsoNormal">&nbsp;</p>]]></bio>
+    <nid>4306</nid>
+  </node>
+  <node>
+    <given-name>EuGene</given-name>
+    <family-name>KIM</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Family name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Female</gender>
+    <year-of-birth>1981</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>Korean</language></languages>
+    <roles><role></role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/KIM_writing%20sample.pdf</writing-sample>
+    <country-region><continent>Asia</continent><region>Eastern Asia</region><country>South Korea</country></country-region>
+    <bio><![CDATA[<p><strong>KIM EuGene</strong> (fiction writer; South Korea) was awarded the Munhakdongne Young Writers Prize in 2011, then went on to win the Hwang Soon-won Young Writers Prize two years later. Under the pen name Kim Yujin she has published three novels, with [Summer] (2012)] being her most recent. She participates courtesy of Arts Council Korea.</p>]]></bio>
+    <nid>4307</nid>
+  </node>
+  <node>
+    <given-name>Rochelle</given-name>
+    <family-name>POTKAR</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Female</gender>
+    <year-of-birth>1979</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>English</language></languages>
+    <roles><role>fiction writer</role><role>poet</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/POTKAR_writing%20sample.pdf</writing-sample>
+    <country-region><continent>Asia</continent><region>Southern Asia</region><country>India</country></country-region>
+    <bio><![CDATA[<p><strong>Rochelle POTKAR</strong> (fiction writer, poet; India) is the author of <em>The Arithmetic of Breasts and Other Stories</em>, and has three works in progress—a novel, a book of prose, and a book of poetry. Widely published online and in print, Rochelle is the co-editor of <em>Neesah</em> magazine, and an active member of Poetry Couture, which hosts poetry readings at cafes across India. Her participation is made possible by the Bureau of Educational and Cultural Affairs at the U.S. Department of State.</p>]]></bio>
+    <nid>4308</nid>
+  </node>
+  <node>
+    <given-name>Anas</given-name>
+    <family-name>ATAKORA</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Male</gender>
+    <year-of-birth>1986</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>French</language></languages>
+    <roles><role>fiction writer</role><role>non-fiction writer</role><role>poet</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/ATAKORA_writing_sample_revised_2.pdf</writing-sample>
+    <country-region><continent>Africa</continent><region>Western Africa</region><country>Togo</country></country-region>
+    <bio><![CDATA[<p><strong>Anas ATAKORA</strong> (poet, fiction writer, nonfiction writer; Togo), currently a PhD candidate at Dalhousie University in Canada, has had his third poetry collection, <em>En attendant le poème</em>, appear in early 2015. The upcoming <em>Tante Béa</em> will be his first short story collection. In 2008, Atakora received the ‘Plumes émergentes’ award from the University of Lomé. He participates courtesy of the Bureau of Educational and Cultural Affairs at the U.S. Department of State.</p>]]></bio>
+    <nid>4311</nid>
+  </node>
+  <node>
+    <given-name>Polen</given-name>
+    <family-name>LY</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Male</gender>
+    <year-of-birth>1989</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>Khmer</language></languages>
+    <roles><role>filmmaker</role><role>screenwriter</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/LY_writing%20sample_1.pdf</writing-sample>
+    <country-region><continent>Asia</continent><region>South-Eastern Asia</region><country>Cambodia</country></country-region>
+    <bio><![CDATA[<p><strong>Polen LY</strong> (screenwriter; Cambodia) has written, directed and produced several short films, including [Red Ink] (2014) and [Colourful Knots] (2014), which won the first prize at the 2015 Tropfest SEA film festival in Malaysia. Among his documentaries are [Gone with the Water] (2012), the winner of the 2012 science film festival in Bangkok, Thailand, and [A Daughter’s Scars] (2013). His participation is made possible by the Bureau of Educational and Cultural Affairs at the U.S. Department of State.</p>]]></bio>
+    <nid>4313</nid>
+  </node>
+  <node>
+    <given-name>Anete</given-name>
+    <family-name>KRUUSMӒGI </family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Female</gender>
+    <year-of-birth>1985</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>Estonian</language></languages>
+    <roles><role>fiction writer</role><role>poet</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/KRUUSMAGI_writing%20sample_1.pdf</writing-sample>
+    <country-region><continent>Europe</continent><region>Northern Europe</region><country>Estonia</country></country-region>
+    <bio><![CDATA[<p><strong>Anete KRUUSMӒGI</strong> (fiction writer, poet; Estonia) is currently studying traditional dance in Indonesia, and working on several novel projects. A regular contributor to <em>Öhtuleht</em>, a major Estonian daily, she also teaches creative writing in Indonesia. Her participation is made possible by CEC ArtsLink.</p>]]></bio>
+    <nid>4314</nid>
+  </node>
+  <node>
+    <given-name>Byambaa</given-name>
+    <family-name>SAKHIYA</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Given name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Male</gender>
+    <year-of-birth>1962</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>Mongolian</language></languages>
+    <roles><role>filmmaker</role><role>screenwriter</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/SAKHIYA_writing%20sample.pdf</writing-sample>
+    <country-region><continent>Asia</continent><region>Eastern Asia</region><country>Mongolia</country></country-region>
+    <bio><![CDATA[<p><strong>Byambaa SAKHIYA</strong> (screenwriter, filmmaker, producer; Mongolia), a graduate of the State Film School VGIK in Moscow, is a documentary and fiction filmmaker with a long record of collaboration on international film productions. His documentary <em>Passion</em> (2011) won main prizes at film festivals in Asia, the Americas, and Europe; his first feature, <em>Remote Control</em>, was supported by the Hubert Bals Script Development Fund, and received the New Current Award at the 2013 Busan International Film Festival. He is the co-founder of Ulaanbatar-based Guru Media. His residency is made possible by the U.S. Embassy in Ulaanbatar.</p>]]></bio>
+    <nid>4315</nid>
+  </node>
+  <node>
+    <given-name></given-name>
+    <family-name>MAUNG YU PY</family-name>
+    <name-suffix></name-suffix>
+    <name-order>Family name first</name-order>
+    <pseudonym></pseudonym>
+    <gender>Male</gender>
+    <year-of-birth>1981</year-of-birth>
+    <year-of-death></year-of-death>
+    <sessions-status><session>2015 Resident</session></sessions-status>
+    <languages><language>Burmese</language></languages>
+    <roles><role>poet</role></roles>
+    <website></website>
+    <bibliography></bibliography>
+    <writing-sample>http://iwp.uiowa.edu/sites/iwp/files/MAUNG_YU%20PY_Writing%20sample_1.pdf</writing-sample>
+    <country-region><continent>Asia</continent><region>South-Eastern Asia</region><country>Burma</country></country-region>
+    <bio><![CDATA[<p><strong>MAUNG YU PY</strong> (poet; Burma) has published poem collections [There is a New Map for That Little Island Town Too] (2007) and [With the Big Television Turned On] (2009). His work is also included in several national poetry collections, as well as in <em>Bones Will Crow: An Anthology of Burmese Poetry</em>. His participation is made possible by the Open Society Institute.</p>]]></bio>
+    <nid>4316</nid>
   </node>
 </xml>

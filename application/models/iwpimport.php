@@ -150,6 +150,22 @@ class iwpimport extends dbo {
 		$sql = "INSERT into author_regions (authors_id, region) SELECT authors.id, masterlist.region FROM authors JOIN masterlist ON authors.nid = masterlist.drupal_nid GROUP BY authors.id, masterlist.region";
 		$this->db->query($sql);
 
+
+		//author_years table
+		$sql = "TRUNCATE author_years CASCADE ";
+		$this->db->query($sql);
+		
+		$sql = "SELECT authors.id, years FROM authors JOIN masterlist ON authors.nid = masterlist.drupal_nid 
+				GROUP BY authors.id, masterlist.years ";
+		$query = $this->db->query($sql);
+		foreach ($query->result() as $row) {
+			$years = explode(",", $row->years);
+			foreach ($years as $year) {
+				$sql2 = "INSERT INTO author_years (authors_id, year_of_attendance) VALUES (".$row->id.", ".$year.")";
+					$this->db->query($sql2);
+			}
+		}
+
 		//author_countries table
 		$sql = "TRUNCATE author_countries CASCADE ";
 		$this->db->query($sql);
@@ -170,23 +186,17 @@ class iwpimport extends dbo {
 				$sql2 = "INSERT INTO author_countries (authors_id, country) 
 					VALUES (".$row->id.", ".$this->db->escape(trim($row->country)).")";
 				$this->db->query($sql2);
-			}
+			}	
 		}
-		
-		//author_years table
-		$sql = "TRUNCATE author_years CASCADE ";
+		//"fix" GDR
+		$sql = "UPDATE author_countries
+			SET country = 'Germany Democratic Republic'
+			FROM author_years
+			WHERE author_countries.authors_id = author_years.authors_id
+			AND author_years.year_of_attendance < 1991
+			AND upper(author_countries.country) LIKE 'GERMANY' ";
 		$this->db->query($sql);
 		
-		$sql = "SELECT authors.id, years FROM authors JOIN masterlist ON authors.nid = masterlist.drupal_nid 
-				GROUP BY authors.id, masterlist.years ";
-		$query = $this->db->query($sql);
-		foreach ($query->result() as $row) {
-			$years = explode(",", $row->years);
-			foreach ($years as $year) {
-				$sql2 = "INSERT INTO author_years (authors_id, year_of_attendance) VALUES (".$row->id.", ".$year.")";
-					$this->db->query($sql2);
-			}
-		}
 		
 		//author_languages table
 		$sql = "TRUNCATE author_languages CASCADE ";

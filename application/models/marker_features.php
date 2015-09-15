@@ -38,11 +38,13 @@ class Marker_Features extends CI_model {
 
 		} else {
 	    	$sql = "SELECT country_markers_projected.id AS country_id, author_countries.country, count(*) AS n , ST_AsGeoJSON(the_geom) AS geojson
-						FROM cohort JOIN author_countries
+						FROM cohort JOIN author_countries ON cohort.authors_id = author_countries.authors_id
 						JOIN country_markers_projected ON country_markers_projected.author_country =  author_countries.country
-						ON cohort.authors_id = author_countries.authors_id
 						GROUP BY country_id, author_countries.country, geojson";
+fred($sql, "geojson");
     	}
+    	
+    	
     	
     	$counts = $this->db->query($sql);
 		if ($counts->num_rows() > 0){
@@ -96,11 +98,11 @@ class Marker_Features extends CI_model {
 
 	    $country = $this->input->post('country');
 	    if (!empty($country)) {
-		    
-	    	$this->db->query ("CREATE OR REPLACE VIEW country as select authors_id 
+		    $sql = "CREATE OR REPLACE VIEW country as SELECT authors_id 
 	    		FROM author_countries
 	    		JOIN countries_to_cntry_name ON author_countries.country = countries_to_cntry_name.author_country
-	    		WHERE countries_to_cntry_name.id = '".$country."'");
+	    		WHERE countries_to_cntry_name.id = '".$country."'" ;
+	    	$this->db->query ($sql);
 	    	$to_join[]="country";
 	    }
 
@@ -175,6 +177,7 @@ class Marker_Features extends CI_model {
 				$sql .= " JOIN $view ON authors.id = $view.authors_id ";
 			}
 			$this->db->query($sql);
+
 		}
 		
 		//Cohort postprocessing
