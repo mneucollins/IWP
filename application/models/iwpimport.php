@@ -177,7 +177,7 @@ class iwpimport extends dbo {
 			if (strtoupper(trim($row->country)) != "BURMA/MYANMAR") {
 				$countries = explode("/", $row->country);
 				foreach ($countries as $country) {
-					if ($country == "United States") {
+					if (strtoupper(trim($country)) == "UNITED STATES") {
 						$country="United States of America";	
 					}
 					$sql2 = "INSERT INTO author_countries (authors_id, country) 
