@@ -41,7 +41,6 @@ class Marker_Features extends CI_model {
 						FROM cohort JOIN author_countries ON cohort.authors_id = author_countries.authors_id
 						JOIN country_markers_projected ON country_markers_projected.author_country =  author_countries.country
 						GROUP BY country_id, author_countries.country, geojson";
-fred($sql, "geojson");
     	}
     	
     	
@@ -76,11 +75,12 @@ fred($sql, "geojson");
 				$n=0;
 				foreach ($authors->result() as $author){
 					$n++;
-					if (!empty($author->bio)){
-						$geojson .= "<a href = http://iwp.uiowa.edu/node/".$author->nid.">".$author->author_name."</a>(".$author->year_of_attendance.")<br />";
-					} else {
-						$geojson .= $author->author_name."(".$author->year_of_attendance.")<br />";
-					}
+					$geojson .= "<a href = 'http://iwp.uiowa.edu/node/".$author->nid."'>".$author->author_name."</a>(".$author->year_of_attendance.")<br />";
+//  					if (!empty($author->bio)){
+//  						$geojson .= "<a href = http://iwp.uiowa.edu/node/".$author->nid.">".$author->author_name."</a>(".$author->year_of_attendance.")<br />";
+//  					} else {
+//  						$geojson .= $author->author_name."(".$author->year_of_attendance.")<br />";
+//  					}
 				}
 				
 				$radius = ($count->n + 10) *.4;
