@@ -7,6 +7,7 @@
 
     <?php 
         echo link_tag('resources/css/style.css');
+        echo link_tag('resources/noUISlider/nouislider.css');
     ?>
 	        
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />       
@@ -37,23 +38,57 @@
                 </div>
             </div>
             <div id="contentcolumn">
-<!--                 <div class="innertube"> -->
-                    <div id='map'></div>                        
-<!--                 </div> -->
-	            <div class = "info">
-	            	Navigation: use the +/- buttons to zoom, or hold the shift key then click and drag over area of interest. Click the "Apply/Reset" button to return to default world view.
-	            </div>
+                <div id='map'></div>                        
+
+			<div id="timeline-container">
+				
+				<script>
+					function toggleTimeline() {
+						var timelinecontainer = document.getElementById('timeline-container');
+						var timelinebutton = document.getElementById('timeline-button');
+						if(timelinecontainer.style.display=='none'){
+							timelinecontainer.style.display='block';
+							timelinebutton.innerHTML='Hide Timeline';
+						} else {
+							timelinecontainer.style.display='none';
+							timelinebutton.innerHTML='Show Timeline';
+						}
+					}
+				</script>
+				<span class ="timeline-label">Timeline:</span>
+				<div id='timeline'>
+	<!-- 				<div>TIMELINE:</div> -->
+					<script src="<?php echo base_url(); ?>resources/noUiSlider/nouislider.min.js"></script>
+					<script src="<?php echo base_url(); ?>resources/noUiSlider/wNumb.js"></script>
+					<script>					
+						var stepSlider = document.getElementById('timeline');
+						noUiSlider.create(stepSlider, {
+							start: [ 1966,2014 ],
+							connect: true,
+							step: 1,
+							tooltips: true,
+							range: {
+								'min': [ 1966 ],
+								'max': [ 2014 ]
+							},
+							format:wNumb({
+								decimals: 0
+							}) 
+						});
+					</script>
+				</div>
+			</div>
+			
+
+	        <div class = "info">
+		            
+	            Navigation: use the +/- buttons to zoom, or hold the shift key then click and drag over area of interest. Click the "Apply/Reset" button to return to default world view.
+	        </div>
             <div id="footer">
                 <a href="http://iwp.uiowa.edu/">University of Iowa International Writing Program.</a> 
             </div>
 
             </div>
-<!--
-            <div id="bottomsection">
-                <div class="innertube">
-                </div>
-            </div>
--->
         </div>
     </div>
 

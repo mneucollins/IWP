@@ -133,12 +133,14 @@
 		<button name="clear" type="submit" value="clear">Clear</button>
 		</form>
 	</div>
-	<div id="timeline_button">
+	<div id="timeline-button" class= "timeline-btn" onclick="toggleTimeline()">Show Timeline
+<!--
 	<?php
 		echo '<a href="'.base_url("timeline/").'">';
 		echo '<img src = "'.base_url("resources/img/TimeLineButton2.png").'" >';
 		echo '</a>';
 	?>
+-->
 	</div>
 
 	

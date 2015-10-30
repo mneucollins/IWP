@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>NoUISLider</title>
+	<meta name="generator" content="BBEdit 10.5" />
+	<!-- In <head> -->
+	<link href="nouislider.min.css" rel="stylesheet">
+</head>
+<body>
+<div><br /><br /></div>
+
+<div id="slider-step" style = "width:50%; margin-left:100px;"></div>
+
+<div><br /><br /></div>
+Range from <div id = 'slider-step-value-lower'></div> To <div id = 'slider-step-value-upper'></div>
+
+<script src="nouislider.min.js"></script>
+<script src="wNumb.js"></script>
+<script>
+
+var stepSlider = document.getElementById('slider-step');
+
+noUiSlider.create(stepSlider, {
+	start: [ 1966,1966 ],
+	connect: true,
+	step: 1,
+	tooltips: true,
+	range: {
+		'min': [ 1966 ],
+		'max': [ 2015 ]
+	},
+	format:wNumb({
+		decimals: 0
+	}) 
+});
+
+var sliderValues = [
+	document.getElementById('slider-step-value-lower'),
+	document.getElementById('slider-step-value-upper')
+];
+
+stepSlider.noUiSlider.on('update', function( values, handle ) {
+	sliderValues[handle].innerHTML = values[handle];
+});
+
+</script>
+
+
+</body>
+</html>
