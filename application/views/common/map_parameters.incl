@@ -1,5 +1,9 @@
 <?php  ?>
-<form action="<?php echo site_url('iwpmap') ?>" method="post" accept-charset="utf-8" class="inlineForm" >
+<form id="map_parameters" name="map_parameters" action="<?php echo site_url('iwpmap') ?>" method="post" accept-charset="utf-8" class="inlineForm" >
+	<!-- 	hidden input fields will be modified by the time slider -->
+	<input id="timeline_start" name="timeline_start" type="hidden" value="1966" />
+	<input id="timeline_end" name="timeline_end" type="hidden" value="<?php echo date("Y");?>" />
+	<input id="timeline_display" name="timeline_display" type="hidden" value="none";
     <hr />
         <ul class="no_marker">
     	<li class='menu_item'>Country:
@@ -133,7 +137,7 @@
 		<button name="clear" type="submit" value="clear">Clear</button>
 		</form>
 	</div>
-	<div id="timeline-button" class= "timeline-btn" onclick="toggleTimeline()">Show Timeline
+	<div id="timeline-button" class= "timeline-btn" onclick="toggleTimeline();">Show Timeline
 <!--
 	<?php
 		echo '<a href="'.base_url("timeline/").'">';

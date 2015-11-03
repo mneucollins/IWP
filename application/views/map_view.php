@@ -4,6 +4,27 @@
 	<meta charset="utf-8" />
 	<title>International Writing Program</title>
 	<meta name="generator" content="BBEdit 10.5" />
+	<script src="<?php echo base_url(); ?>resources/noUiSlider/nouislider.min.js"></script>
+	<script src="<?php echo base_url(); ?>resources/noUiSlider/wNumb.js"></script>
+	<script>					
+	
+		function toggleTimeline() {
+			
+			var timelinecontainer = document.getElementById('timeline-container');
+			var timelinebutton = document.getElementById('timeline-button');
+			if(timelinecontainer.style.display=='none'){
+				timelinecontainer.style.display='block';
+				timelinebutton.innerHTML='Hide Timeline';
+				document.getElementById('timeline_display').value = 'block';
+
+			} else {
+				timelinecontainer.style.display='none';
+				timelinebutton.innerHTML='Show Timeline';
+				document.getElementById('timeline_display').value = 'block';
+			}
+		}	
+		
+	</script>
 
     <?php 
         echo link_tag('resources/css/style.css');
@@ -40,27 +61,21 @@
             <div id="contentcolumn">
                 <div id='map'></div>                        
 
-			<div id="timeline-container">
-				
-				<script>
-					function toggleTimeline() {
-						var timelinecontainer = document.getElementById('timeline-container');
-						var timelinebutton = document.getElementById('timeline-button');
-						if(timelinecontainer.style.display=='none'){
-							timelinecontainer.style.display='block';
-							timelinebutton.innerHTML='Hide Timeline';
-						} else {
-							timelinecontainer.style.display='none';
-							timelinebutton.innerHTML='Show Timeline';
-						}
-					}
-				</script>
+			<!-- note inline style definition needed for javascript toggleTimeline function
+			<div id="timeline-container" style = "display:none;"> -->
+			<?php
+				$timeline_display = $this->input->post('timeline_display');
+fred ($timeline_display);
+				if (empty($timeline_display)) {
+					echo "<div id='timeline-container' style = 'display:none;'>";
+				} else {
+					echo "<div id='timeline-container' style = 'display:".$timeline_display.";'>";
+				}
+			?>				
+
 				<span class ="timeline-label">Timeline:</span>
 				<div id='timeline'>
-	<!-- 				<div>TIMELINE:</div> -->
-					<script src="<?php echo base_url(); ?>resources/noUiSlider/nouislider.min.js"></script>
-					<script src="<?php echo base_url(); ?>resources/noUiSlider/wNumb.js"></script>
-					<script>					
+					<script>
 						var stepSlider = document.getElementById('timeline');
 						noUiSlider.create(stepSlider, {
 							start: [ 1966,2014 ],
@@ -75,6 +90,17 @@
 								decimals: 0
 							}) 
 						});
+						
+
+						stepSlider.noUiSlider.on('change', function(){
+							var values = stepSlider.noUiSlider.get();
+							alert('changed begin:'+values[0]+" end:"+values[1]);
+							document.getElementById('timeline_start').value = values[0];
+							document.getElementById('timeline_end').value = values[1];
+							document.getElementById('map_parameters').submit();
+						});
+
+
 					</script>
 				</div>
 			</div>

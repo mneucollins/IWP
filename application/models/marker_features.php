@@ -94,7 +94,6 @@ class Marker_Features extends CI_model {
     }
 
 	function create_cohort() {
-			        
 
 	    $country = $this->input->post('country');
 	    if (!empty($country)) {
@@ -162,7 +161,6 @@ class Marker_Features extends CI_model {
 			$this->db->query("CREATE OR REPLACE VIEW role AS SELECT authors_id FROM author_writing_roles WHERE writing_role ='".$role."'"); 
 			$to_join[] = "role";
 		}
-
 		
 		$macro_region=$this->input->post('macro_region');
 		if (!empty($macro_region)){
