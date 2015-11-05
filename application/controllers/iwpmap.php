@@ -38,6 +38,10 @@ class IWPMap extends CI_Controller {
 		$data['region']=$this->input->post('region');
 		$data['macro_region']=$this->input->post('macro_region');
 		$data['role']=$this->input->post('role');
+		
+		$data['timeline_display']= $this->input->post('timeline_display');
+		$data['timeline_start']= $this->input->post('timeline_start');
+		$data['timeline_end']= $this->input->post('timeline_end');
 
 		/* $data['counts'] = $this->authors->counts_by_country(); */
 

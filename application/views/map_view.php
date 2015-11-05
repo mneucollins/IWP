@@ -12,15 +12,22 @@
 			
 			var timelinecontainer = document.getElementById('timeline-container');
 			var timelinebutton = document.getElementById('timeline-button');
+			//alert (timelinecontainer.style.display);
 			if(timelinecontainer.style.display=='none'){
 				timelinecontainer.style.display='block';
 				timelinebutton.innerHTML='Hide Timeline';
 				document.getElementById('timeline_display').value = 'block';
+				document.getElementById('map_parameters').submit();
 
 			} else {
 				timelinecontainer.style.display='none';
 				timelinebutton.innerHTML='Show Timeline';
-				document.getElementById('timeline_display').value = 'block';
+				document.getElementById('timeline_display').value = 'none';
+				//empty timeline_start and timeline_end will revert to default values on reload
+				document.getElementById('timeline_start').value = '';
+				document.getElementById('timeline_end').value = '';
+				document.getElementById('map_parameters').submit();
+			
 			}
 		}	
 		
@@ -65,7 +72,6 @@
 			<div id="timeline-container" style = "display:none;"> -->
 			<?php
 				$timeline_display = $this->input->post('timeline_display');
-fred ($timeline_display);
 				if (empty($timeline_display)) {
 					echo "<div id='timeline-container' style = 'display:none;'>";
 				} else {
@@ -75,16 +81,23 @@ fred ($timeline_display);
 
 				<span class ="timeline-label">Timeline:</span>
 				<div id='timeline'>
+					<?php
+						$timeline_min = 1967;
+						$timeline_max = date("Y");
+						if (empty($timeline_start)) { $timeline_start =$timeline_min ; }
+						if (empty($timeline_end)) {$timeline_end = $timeline_max; }
+					?>
 					<script>
 						var stepSlider = document.getElementById('timeline');
+						
 						noUiSlider.create(stepSlider, {
-							start: [ 1966,2014 ],
+							start: [ <?php echo $timeline_start.",".$timeline_end; ?> ],
 							connect: true,
 							step: 1,
 							tooltips: true,
 							range: {
-								'min': [ 1966 ],
-								'max': [ 2014 ]
+								'min': [ <?php echo $timeline_min; ?> ],
+								'max': [ <?php echo $timeline_max; ?> ]
 							},
 							format:wNumb({
 								decimals: 0
@@ -94,9 +107,10 @@ fred ($timeline_display);
 
 						stepSlider.noUiSlider.on('change', function(){
 							var values = stepSlider.noUiSlider.get();
-							alert('changed begin:'+values[0]+" end:"+values[1]);
+ 							//alert('changed begin:'+values[0]+" end:"+values[1]);
 							document.getElementById('timeline_start').value = values[0];
 							document.getElementById('timeline_end').value = values[1];
+							document.getElementById('timeline_display').value = 'block';
 							document.getElementById('map_parameters').submit();
 						});
 
@@ -177,7 +191,11 @@ fred ($timeline_display);
 	map.setView([15,10], 2.2);
 	
 	
-	/*map.on('click', function(e) { alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng) })*/
+	/* map.on('click', function(e) { alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng) })
+	map.on('zoomend', function () {
+		var zoomlvl = map.getZoom();
+		alert("zoom:"+zoomlvl);
+	});*/
 	
 </script>
 

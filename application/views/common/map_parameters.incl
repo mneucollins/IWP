@@ -1,8 +1,8 @@
 <?php  ?>
 <form id="map_parameters" name="map_parameters" action="<?php echo site_url('iwpmap') ?>" method="post" accept-charset="utf-8" class="inlineForm" >
 	<!-- 	hidden input fields will be modified by the time slider -->
-	<input id="timeline_start" name="timeline_start" type="hidden" value="1966" />
-	<input id="timeline_end" name="timeline_end" type="hidden" value="<?php echo date("Y");?>" />
+	<input id="timeline_start" name="timeline_start" type="hidden" value=<?php echo !empty($timeline_start) ? "$timeline_start" : "1967" ; ?> />
+	<input id="timeline_end" name="timeline_end" type="hidden" value="<?php echo !empty($timeline_end) ? "$timeline_end" : date("Y") ; ?>" />
 	<input id="timeline_display" name="timeline_display" type="hidden" value="none";
     <hr />
         <ul class="no_marker">
@@ -41,31 +41,37 @@
                 ?>
             </select>
         </li>
-        <li class='menu_item'>Year of Residency:&nbsp;&nbsp;
-            <select name="residency">
-                <option value="0"
-	                <?php if($residency=='0'){
-		                echo "selected";
-		                $count_type = "cumulative";
-		                }
-		            ?> >[any]
-		        </option>
-            	<?php 
-	            	$beginyr = 1966;
-	            	$endyr = date('Y')-1;
-	            	//if (empty($residency)){ $residency=$endyr; }
-	            	for ($i = $beginyr;$i <= $endyr; $i++){
-		            	$selected =  ($residency == "$i")? "selected":"";
-		            	echo "<option value = '".$i."' $selected>$i</option>";
-	            	}
-            	?>
-            </select><br />
-            <?php if (empty($count_type)) {$count_type = "cumulative" ;} ?>
-            <input type="radio" name="count_type" value="annual" class="in1" <?php if($count_type=='annual'){echo "checked = 'checked'";} ?> />
-            This year only&nbsp;&nbsp;&nbsp;
-            <input type="radio" name="count_type" value="cumulative" class="in1" <?php if($count_type=='cumulative'){echo "checked = 'checked'";} ?>/>
-            Cumulative<br />
-        </li>        
+    
+        <?php if ($timeline_display != 'block') : ?>
+	        <li class='menu_item' id = 'residency'>Year of Residency:&nbsp;&nbsp;
+	            <select name="residency">
+	                <option value="0"
+		                <?php if($residency=='0'){
+			                echo "selected";
+			                $count_type = "cumulative";
+			                }
+			            ?> >[any]
+			        </option>
+	            	<?php 
+		            	$beginyr = 1967;
+		            	$endyr = date('Y')-1;
+		            	//if (empty($residency)){ $residency=$endyr; }
+		            	for ($i = $beginyr;$i <= $endyr; $i++){
+			            	$selected =  ($residency == "$i")? "selected":"";
+			            	echo "<option value = '".$i."' $selected>$i</option>";
+		            	}
+	            	?>
+	            </select><br />	            
+		            
+	            <?php if (empty($count_type)) {$count_type = "cumulative" ;} ?>
+	            <input type="radio" name="count_type" value="annual" class="in1" <?php if($count_type=='annual'){echo "checked = 'checked'";} ?> />
+	            This year only&nbsp;&nbsp;&nbsp;
+	            <input type="radio" name="count_type" value="cumulative" class="in1" <?php if($count_type=='cumulative'){echo "checked = 'checked'";} ?>/>
+	            Cumulative<br />
+	        </li>        
+	    <?php endif; ?>
+
+
         <li class='menu_item'>Author Number of Languages:<br />
             <?php if (empty($multilingual)) {$multilingual = "any" ;} ?>        
             <input type="radio" name="multilingual" value="single" class="in1" <?php if($multilingual=='single'){echo "checked = 'checked'";}?> />
@@ -137,7 +143,11 @@
 		<button name="clear" type="submit" value="clear">Clear</button>
 		</form>
 	</div>
-	<div id="timeline-button" class= "timeline-btn" onclick="toggleTimeline();">Show Timeline
+	<div id="timeline-button" class= "timeline-btn" onclick="toggleTimeline();">
+		<?php
+			if ($timeline_display =="none" || empty($timeline_display)) {echo "Show Timeline";}
+			if ($timeline_display == "block") {echo "Hide Timeline";}
+		?>
 <!--
 	<?php
 		echo '<a href="'.base_url("timeline/").'">';

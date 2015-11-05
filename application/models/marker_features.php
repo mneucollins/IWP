@@ -21,9 +21,9 @@ class Marker_Features extends CI_model {
 		
 		$residency = $this->input->post('residency');
 		$count_type = $this->input->post ('count_type');
+		$timeline_display =  $this->input->post ('timeline_display');
 		
-		 
-		if( !empty($residency)) {
+		if( !empty($residency) && $timeline_display != 'block') {
 	    	$sql = "SELECT year_of_attendance, country_markers_projected.id AS country_id, author_countries.country, count(*) AS n , ST_AsGeoJSON(the_geom) AS geojson
 						FROM cohort 
 							JOIN author_countries ON cohort.authors_id = author_countries.authors_id
@@ -112,16 +112,24 @@ class Marker_Features extends CI_model {
 	    }
 
 		$residency = $this->input->post('residency');
-		if (empty($residency)) {
-			$residency = $this->max_year();
-			$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id, year_of_attendance FROM author_years WHERE year_of_attendance <= ".$residency );
-		} else {
-		    $count_type = $this->input->post('count_type');
-		    if ($count_type=='annual') {
-		    	$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id, year_of_attendance  FROM author_years WHERE year_of_attendance = ".$residency );
-		    } else {    
-		    	$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id, year_of_attendance  FROM author_years WHERE year_of_attendance <= ".$residency );
-		    }
+		$timeline_display =  $this->input->post ('timeline_display');
+
+		if ($timeline_display =='block') {//override form residency values with timeline year values
+				$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id, year_of_attendance FROM author_years 
+					WHERE year_of_attendance BETWEEN ". $this->input->post('timeline_start')." AND ".$this->input->post('timeline_end'));
+			
+		} else { 
+			if (empty($residency)) {
+				$residency = $this->max_year();
+				$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id, year_of_attendance FROM author_years WHERE year_of_attendance <= ".$residency );
+			} else {
+			    $count_type = $this->input->post('count_type');
+			    if ($count_type=='annual') {
+			    	$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id, year_of_attendance  FROM author_years WHERE year_of_attendance = ".$residency );
+			    } else { //cunmulative   
+			    	$this->db->query ("CREATE OR REPLACE VIEW residency AS SELECT authors_id, year_of_attendance  FROM author_years WHERE year_of_attendance <= ".$residency );
+			    }
+			}
 		}
 		$to_join[] = "residency";					
 		
