@@ -35,7 +35,7 @@
 
     <?php 
         echo link_tag('resources/css/style.css');
-        echo link_tag('resources/noUISlider/nouislider.css');
+        echo link_tag('resources/noUiSlider/nouislider.min.css');
     ?>
 	        
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />       
