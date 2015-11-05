@@ -35,7 +35,8 @@
 
     <?php 
         echo link_tag('resources/css/style.css');
-        echo link_tag('resources/noUiSlider/nouislider.min.css');
+        echo link_tag('resources/noUiSlider/nouislider.css');
+        echo link_tag('resources/noUiSlider/nouislider.tooltips.css');
     ?>
 	        
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />       
@@ -79,7 +80,7 @@
 				}
 			?>				
 
-				<span class ="timeline-label">Timeline:</span>
+				<span class ="timeline-label">Residency Timeline:</span>
 				<div id='timeline'>
 					<?php
 						$timeline_min = 1967;
